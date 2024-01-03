@@ -38,6 +38,7 @@ define gui.about = _p("""
 ## or semicolons.
 
 define build.name = "EllenVague"
+define build.directory_name = "Ellen_Vague"
 
 
 ## Sounds and music ############################################################
@@ -185,7 +186,9 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('**.py', None)
+    build.classify('**.bat', None)
     build.classify('**/elevenlabs_api_key.txt', None)
+    build.classify('**/python_debugger_export.txt', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -197,8 +200,7 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-    build.name = "Ellen Vague"
-    build.directory_name = "Ellen_Vague"
+
 
 
 ## A Google Play license key is required to perform in-app purchases. It can be
