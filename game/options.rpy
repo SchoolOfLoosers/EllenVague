@@ -184,6 +184,8 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.py', None)
+    build.classify('**/elevenlabs_api_key.txt', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -195,6 +197,8 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
+    build.name = "Ellen Vague"
+    build.directory_name = "Ellen_Vague"
 
 
 ## A Google Play license key is required to perform in-app purchases. It can be
