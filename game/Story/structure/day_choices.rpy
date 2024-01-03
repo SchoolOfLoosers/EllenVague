@@ -1,0 +1,10 @@
+menu day_choices:
+    "Drive to the Diner" if not completed_dc_diner_1:
+        $completed_dc_diner_1 = True
+
+        pass #todo fill choice
+        jump dc_diner_1
+    "Talk to Karen, the ferrywoman" if not completed_dc_karen_1 and unlocked_dc_karen_1:
+        $completed_dc_karen_1 = True
+        pass #todo fill choice
+        jump dc_karen_1
