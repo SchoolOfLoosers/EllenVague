@@ -1,5 +1,5 @@
 menu evening_choices:
-    "Drinks with Sheriff Fuse" if not completed_ec_sarah_1:
+    "Drinks with Sheriff Fuse" if not completed_ec_sarah_1 and unlocked_ec_sarah_1:
         $completed_ec_sarah_1 = True
 
         pass #todo fill choice

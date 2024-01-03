@@ -14,11 +14,14 @@ def main():
     for line in all_input_lines:
         dialog_line = line.split("\t")
         all_dialog_lines.append(dialog_line)
-        print("ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
-        if not os.path.isfile(os.path.join(os.getcwd(), "audio", "voice",dialog_line[0]+".mp3")):
+        savepath = os.path.join(os.getcwd(), "game","audio", "voice",dialog_line[0]+".mp3")
+        if not os.path.exists(savepath):
+            print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
             speaker = dialog_line[1]
             if speaker == "mc" or speaker == "na":
                 speaker = "Kimber"
+            if speaker == "s":
+                speaker = "Stacey"
 
             audio = generate(
                 text=dialog_line[2],
@@ -26,7 +29,6 @@ def main():
                 model="eleven_multilingual_v2"
             )
             audio.hex
-            savepath = os.path.join(os.getcwd(), "game","audio", "voice",dialog_line[0]+".mp3")
             save(audio, savepath)
 
 if __name__ == '__main__':
