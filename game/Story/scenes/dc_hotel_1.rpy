@@ -11,5 +11,9 @@ label dc_hotel_1:
     j "It's still the quickest way to make a buck, or eat one, I guess."
     "I couldn't tell what it was, but the conversation between us was just...smooth."
     "Fluent, even, like we had known each other for years."
+    scene black with dis #todo
+    j "Anyway, I won't keep you any longer, I bet you are tired from the drive."
+    mc "Oh, you have no idea."
+    scene black with dis #todo
     #todo
     jump day_choices
