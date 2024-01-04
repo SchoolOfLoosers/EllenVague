@@ -18,10 +18,14 @@ def main():
         if not os.path.exists(savepath):
             print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
             speaker = dialog_line[1]
-            if speaker == "mc" or speaker == "na":
+            if speaker == "mc" or speaker == "na" or speaker == "":
                 speaker = "Kimber"
             if speaker == "s":
                 speaker = "Stacey"
+            if speaker == "b":
+                speaker = "Jessie"
+            if speaker == "j":
+                speaker = "Michael"
 
             audio = generate(
                 text=dialog_line[2],

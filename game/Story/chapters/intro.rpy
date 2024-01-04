@@ -64,6 +64,7 @@
             mc "Thank you, then that's my first stop."
             s "Once you are settled in, I need you to come to the station and sign a written report. I know it's annoying, but..."
             mc "Oh, don't worry, of course I'll come."
+            jump day_choices
         "I'm calmer now, if you need some company here.":
             $intro_stayed_with_sarah = True
             s "Hah, I actually wouldn't mind if you could stay a little longer."
@@ -108,9 +109,66 @@
             s "Totally, you picked the perfect time to stay."
             s "Where are you staying, by the way?"
             scene black at topleft with dis #todo
-            mc "Oh, I booked a room at the Motel, nothing fancy."
+            mc "Oh, I booked a room at the Hotel, nothing fancy."
             s "Not a bad choice, the rooms there are cheap and good."
             s "You could have rented one of the cabins by the lake, though, to really get that quiet and away from everything feel."
             mc "I would probably just get scared."
             mc "I like being able to call for help, and people actually being around to hear me."
             s "Hah, that's a smart approach to life in general."
+            scene black at topleft with dis #todo
+            na "If there had been any doubt as to how backwoods the place was..."
+            na "...then the way the Sheriff had called a friend with a pickup to come fetch the body settled things."
+            scene black at topleft with dis #todo
+            "And also that the guy looked like a literal poster boy for Backwoods Magazine."
+            scene black at topleft with dis #todo
+            b "Shit, Sarah, that ain't right. Pike is dead?"
+            b "He didn't even drink. What happened?"
+            scene black at topleft with dis #todo
+            s "Nobody knows yet, Bubba. But if we can, we'll find that out."
+            b "And who are you?"
+            mc "I'm Ellen, I came here for a vacation, I was coming from there and nearly drove over him."
+            b "Well, good thing you didn't, that wouldn't have been a particularly nice thing to do to him, now would it?"
+            "I had meant to ask something, but I just couldn't remember. The guy was slowing time around him, and my brain had trouble adapting."
+            "At least I hoped it was that."
+            scene black at topleft with dis #todo
+            s "Miss Vague, can I ask for your help here? I know it's ugly work, but we need to get him on this tarp and on the truck bed."
+            mc "Uh, of course."
+            scene black at topleft with dis #todo
+            s "Thank you."
+            mc "Can I ask something?"
+            s "Of course."
+            mc "It's early morning now, so this must have happened at night."
+            mc "Why would anyone come out here in the dark?"
+            mc "Was he a hunter?"
+            scene black at topleft with dis #todo
+            b "Well, he was, but nobody hunts at night 'round these parts."
+            scene black at topleft with dis #todo
+            mc "Why are you so sure?"
+            scene black at topleft with dis #todo
+            b "Ain't nobody go'n out to the forest by night, everyone knows that."
+            scene black at topleft with dis #todo
+            "Yes, it definitely wasn't his intellect that...drew me in."
+            scene black at topleft with dis #todo
+            s "Thank you, Bubba, you were very helpful."
+            scene black at topleft with dis #todo
+            b "I was?"
+            scene black at topleft with dis #todo
+            s "Yes, thank you."
+            scene black at topleft with dis #todo
+            b "Oh, of course, for you always, Sarah."
+            scene black at topleft with dis #todo
+            "Was he actually flirting with her? Was he even aware?"
+            scene black at topleft with dis #todo
+            s "Now, remember, you have to drive reaaal careful."
+            scene black at topleft with dis #todo
+            b "I know, because we can't strap him down like a doe. Don't want poor Pike bouncing off the bed, even though he ain't feeling it no more."
+            scene black at topleft with dis #todo
+            s "..."
+            scene black at topleft with dis #todo
+            s "Thank you, Miss Vague, now we can really leave."
+            s "Thank you for staying to help."
+            mc "Of course, it was the least I could do."
+            s "Again, I hope the rest of your stay will be more enjoyable!"
+            mc "That makes two of us."
+            mc "Now: Coffee."
+            jump day_choices
