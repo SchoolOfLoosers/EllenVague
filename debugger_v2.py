@@ -48,7 +48,14 @@ def check_for_variable_reference(line):
     if re.match(r'[\s\t]*?\$(.*?)=',line["Line content"]):
         line["Line content"] = re.search(r'[\s\t]*?\$(.*?)=',line["Line content"]).group(1).strip()
         all_referenced_variables.append(line)
-    #todo also check for inline variables referenced in if statements
+    #Below: Checks for inline reference like '"Menu choice" if not variable_name:' etc.
+    if re.match(r'"\s(if not|if)\s(\w*?)[\s$:]',line["Line content"]):
+        line["Line content"] = re.search(r'"\s(if not|if)\s(\w*?)[\s$:]',line["Line content"]).group(2).strip()
+        all_referenced_variables.append(line)
+    #Below: Checks for inline reference but starting with and/or
+    if re.match(r'\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["Line content"]):
+        line["Line content"] = re.search(r'\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["Line content"]).group(2).strip()
+        all_referenced_variables.append(line)
 
 def check_for_character_reference(line):
     global all_referenced_characters
