@@ -1,4 +1,4 @@
-label dc_patty_1:
+label ec_patty_1:
     scene black at topleft with dis #todo
     #todo
-    jump evening_choices
+    jump next_morning

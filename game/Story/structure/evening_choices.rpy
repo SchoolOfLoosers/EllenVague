@@ -7,4 +7,8 @@ menu evening_choices:
     "Drinks with Mary Rosegold" if not completed_ec_mary_1 and unlocked_ec_mary_1:
         $completed_ec_mary_1 = True
         pass #todo fill choice
-        jump ec_karen_1
+        jump ec_mary_1
+    "Interview with Patty Maynard" if not completed_ec_patty_1 and unlocked_ec_patty_1:
+        $completed_ec_patty_1 = True
+        pass #todo fill choice
+        jump ec_patty_1
