@@ -26,6 +26,8 @@ def main():
                 speaker = "Jessie"
             if speaker == "j":
                 speaker = "Michael"
+            if speaker == "p":
+                speaker = "Stacey"
 
             audio = generate(
                 text=dialog_line[2],
