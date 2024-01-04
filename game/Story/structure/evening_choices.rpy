@@ -13,4 +13,4 @@ label evening_choices:
             $completed_ec_patty_1 = True
             pass #todo fill choice
             jump ec_patty_1
-    jump next_morning
+    return
