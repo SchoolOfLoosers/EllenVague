@@ -50,10 +50,24 @@ def check_for_variable_reference(line):
         all_referenced_variables.append(line)
     #todo also check for inline variables referenced in if statements
 
+def check_for_character_reference(line):
+    global all_referenced_characters
+    if re.match(r'[\s\t]*?(\w*?)\s"',line["Line content"]):
+        line["Line content"] = re.search(r'[\s\t]*?(\w*?)\s"',line["Line content"]).group(1).strip()
+        all_referenced_characters.append(line)
+
+def check_for_jump_reference(line):
+    global all_referenced_jumps
+    if re.match(r'[\s\t]*?jump\s(.*?)$',line["Line content"]):
+        line["Line content"] = re.search(r'[\s\t]*?jump\s(.*?)$',line["Line content"]).group(1).strip()
+        all_referenced_jumps.append(line)
+
 
 def process_line(line):
     check_for_image_reference(line)
     check_for_variable_reference(line)
+    check_for_character_reference(line)
+    check_for_jump_reference(line)
 
 
 
