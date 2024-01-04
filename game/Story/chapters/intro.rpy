@@ -27,9 +27,10 @@
     s "Just sit down in your car and wait, I'll come immediately."
     scene black at topleft with dis #todo
     na "For such a slow town, everything happened pretty fast."
-    scene black at topleft with dis #todo
+    scene 2 at topleft with dis
     s "Are you the one who called us?"
     mc "Yes, thank you for coming so quickly."
+    scene 3 with dis
     s "Of course. My name is Sarah Fuse, I am the Sheriff of Bryatt Fowls."
     s "I will need your name in a minute, but let us first see if there is anything we can do here."
     s "Has he...moved at all since you called?"
