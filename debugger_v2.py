@@ -69,6 +69,44 @@ def check_for_jump_reference(line):
         line["Line content"] = re.search(r'[\s\t]*?jump\s(.*?)$',line["Line content"]).group(1).strip()
         all_referenced_jumps.append(line)
 
+def check_for_character_definition(line):
+    global all_defined_characters
+    if re.match(r'[\s\t]*?define\s(.*?)=\sCharacter.*?"',line["Line content"]):
+        line["Line content"] = re.search(r'define\s(.*?)=\sCharacter.*?"',line["Line content"]).group(1).strip()
+        all_defined_characters.append(line)
+    if re.match(r'[\s\t]*?define\s(.*?)=\sDynamicCharacter.*?"',line["Line content"]):
+        line["Line content"] = re.search(r'define\s(.*?)=\sDynamicCharacter.*?"',line["Line content"]).group(1).strip()
+        all_defined_characters.append(line)
+
+def check_for_variable_definition(line):
+    global all_defined_variables
+    if re.match(r'[\s\t]*?default\s(.*?)=.*?$',line["Line content"]):
+        line["Line content"] = re.search(r'[\s\t]*?default\s(.*?)=.*?$',line["Line content"]).group(1).strip()
+        all_defined_variables.append(line)
+
+def check_for_label_definition(line):
+    global all_defined_labels
+    if re.match(r'[\s\t]*?label\s(.*?)[:]',line["Line content"]):
+        line["Line content"] = re.search(r'[\s\t]*?label\s(.*?)[:]',line["Line content"]).group(1).strip()
+        all_defined_labels.append(line)
+
+def check_for_menu_definition(line):
+    global all_defined_menus
+    if re.match(r'[\s\t]*?menu\s(.*?)[:]',line["Line content"]):
+        line["Line content"] = re.search(r'[\s\t]*?menu\s(.*?)[:]',line["Line content"]).group(1).strip()
+        all_defined_menus.append(line)
+
+def check_for_existing_images(line):
+    global all_existing_images
+    for root, dirs, file in os.walk(os.path.join(os.getcwd(),"game","images")):
+        for image in file:
+            if image.split(".")[-1].lower() in {"png","jpg","jpeg","webp"}:
+                all_existing_images.append({
+                    "fullpath":os.path.join(root, image),
+                    "extension":image.split(".")[-1].lower(),
+                    "filename":image.split("/")[-1]
+                })
+
 
 def process_line(line):
     check_for_image_reference(line)
@@ -76,7 +114,10 @@ def process_line(line):
     check_for_character_reference(line)
     check_for_jump_reference(line)
 
-
+    check_for_character_definition(line)
+    check_for_variable_definition(line)
+    check_for_label_definition(line)
+    check_for_menu_definition(line)
 
 if __name__ == '__main__':
     all_script_files = get_all_script_filepaths()
@@ -92,16 +133,6 @@ if __name__ == '__main__':
                 "File name":script.split("/")[-1]
             }
             process_line(line_processed)
-        #get all image declarations
-        #get all image references
-        #get all variable declarations
-        #get all variable references
-        #get all jump references
-        #get all label declarations
-        #get all named menu declarations
-        #get all music declarations
-        #get all music references
-        #get all character declarations
-        #get all character references
+    check_for_existing_images(line)
 
     test = "test"
