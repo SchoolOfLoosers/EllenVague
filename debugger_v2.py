@@ -1,6 +1,7 @@
 import os
 import re
-import shutil
+from PIL import Image
+
 
 #section global variables
 all_defined_labels = []
@@ -139,6 +140,28 @@ def check_images_that_dont_exist():
                 all_referenced_images_that_dont_exist.append(image)
                 append_messages_to_log(f'Image {image["content"]} that was referenced in {image["filename"]} (Line: {image["number"]}) does not exist in game/images folder')
 
+def check_wrong_image_resolution():
+    game_resolution = (1, 2)
+    with open(os.path.join(os.getcwd(),"game","gui.rpy"), "r") as config:
+        text = config.read()
+        res = re.search(r"gui.init\((\d*?, \d*?)\)",text).group(1)
+        res = res.split(",")
+        game_resolution = (int(res[0]), int(res[1]))
+
+    for root, dirs, file in os.walk(os.path.join(os.getcwd(),"game","images")):
+        for image in file:
+            if image.split(".")[-1].lower() in {"png","jpg","jpeg","webp"}:
+
+                # get image
+                filepath = os.path.join(root, image)
+                img = Image.open(filepath)
+
+                # get width and height
+                width = img.width
+                height = img.height
+                if width!= game_resolution[0] or height!= game_resolution[1]:
+                    append_messages_to_log(f'Image {image} has resolution {width}x{height}, which differs from the game resolution defined in gui.rpy ({game_resolution[0]}x{game_resolution[1]})')
+
 def check_images_that_exist_multiple_times():
     global all_existing_images
     global all_referenced_images
@@ -172,6 +195,46 @@ def check_variables_that_dont_exist():
         else:
             all_referenced_variables_that_dont_exist.append(referenced_variable)
             append_messages_to_log(f'Variable {referenced_variable["content"]} that was referenced in {referenced_variable["filename"]} (Line: {referenced_variable["number"]}) has not been defined anywhere in your game files')
+
+def check_variables_with_different_capitalization():
+    global all_defined_variables
+    global all_referenced_variables
+    global all_referenced_variables_that_dont_exist
+    for ref1 in all_referenced_variables:
+        for ref2 in all_referenced_variables:
+            if ref1["content"] != ref2["content"] and ref1["content"].lower() == ref2["content"].lower():
+                append_messages_to_log(f'Variable {ref1["content"]} (File: {ref1["filename"]} (Line: {ref1["number"]})) and variable {ref1["content"]}(File: {ref2["filename"]} (Line: {ref2["number"]})) have the same name with different capitalization.')
+    for def1 in all_defined_variables:
+        for def2 in all_defined_variables:
+            if def1["content"] != def2["content"] and def1["content"].lower() == def2["content"].lower():
+                append_messages_to_log(f'Variable {def1["content"]}(File: {def1["filename"]} (Line: {def1["number"]})) and variable {def1["content"]}(File: {def2["filename"]} (Line: {def2["number"]})) have the same name with different capitalization.')
+
+def check_characters_with_different_capitalization():
+    global all_defined_characters
+    global all_referenced_characters
+    for ref1 in all_referenced_characters:
+        for ref2 in all_referenced_characters:
+            if ref1["content"] != ref2["content"] and ref1["content"].lower() == ref2["content"].lower():
+                append_messages_to_log(f'character {ref1["content"]} (File: {ref1["filename"]} (Line: {ref1["number"]})) and character {ref1["content"]}(File: {ref2["filename"]} (Line: {ref2["number"]})) have the same name with different capitalization.')
+    for def1 in all_defined_characters:
+        for def2 in all_defined_characters:
+            if def1["content"] != def2["content"] and def1["content"].lower() == def2["content"].lower():
+                append_messages_to_log(f'character {def1["content"]}(File: {def1["filename"]} (Line: {def1["number"]})) and character {def1["content"]}(File: {def2["filename"]} (Line: {def2["number"]})) have the same name with different capitalization.')
+
+def check_labels_with_different_capitalization():
+    global all_defined_labels
+    for ref1 in all_defined_labels:
+        for ref2 in all_defined_labels:
+            if ref1["content"] != ref2["content"] and ref1["content"].lower() == ref2["content"].lower():
+                append_messages_to_log(f'label {ref1["content"]} (File: {ref1["filename"]} (Line: {ref1["number"]})) and label {ref1["content"]}(File: {ref2["filename"]} (Line: {ref2["number"]})) have the same name with different capitalization.')
+
+def check_menus_with_different_capitalization():
+    global all_defined_menus
+    for ref1 in all_defined_menus:
+        for ref2 in all_defined_menus:
+            if ref1["content"] != ref2["content"] and ref1["content"].lower() == ref2["content"].lower():
+                append_messages_to_log(f'menu {ref1["content"]} (File: {ref1["filename"]} (Line: {ref1["number"]})) and menu {ref1["content"]}(File: {ref2["filename"]} (Line: {ref2["number"]})) have the same name with different capitalization.')
+
 
 def check_jumps_that_dont_exist():
     global all_defined_labels
@@ -220,6 +283,11 @@ def process_errors():
 
 def process_warnings():
     check_unused_variables()
+    check_wrong_image_resolution()
+    check_variables_with_different_capitalization()
+    check_characters_with_different_capitalization()
+    check_labels_with_different_capitalization()
+    check_menus_with_different_capitalization()
 
 def append_messages_to_log(message):
     with open(os.path.join(os.getcwd(),"debugger_report.txt"),"a+") as log:
@@ -232,8 +300,9 @@ if __name__ == '__main__':
     all_script_files = get_all_script_filepaths()
     all_errors = []
     all_warning = []
-    if os.path.exists(os.path.join(os.getcwd(),"debugger_report.txt")):
-        os.remove(os.path.join(os.getcwd(),"debugger_report.txt"))
+    log_file_path = os.path.join(os.getcwd(),"debugger_report.txt")
+    if os.path.exists(log_file_path):
+        os.remove(log_file_path)
     for script in all_script_files:
         plaintext = get_plain_text_from_script_file(script)
         for idx, line in enumerate(plaintext):
@@ -244,6 +313,8 @@ if __name__ == '__main__':
             }
             process_line(line_processed)
     check_for_existing_images(line)
+    append_messages_to_log("--------\nErrors:\n--------")
     process_errors()
+    append_messages_to_log("--------\nWarnings:\n--------")
     process_warnings()
     test = "test"
