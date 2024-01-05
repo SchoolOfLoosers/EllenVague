@@ -9,8 +9,6 @@ default completed_ec_sarah_1 = False
 default unlocked_dc_karen_1 = False
 
 default dc_diner_1_talked_to_mary = False
-default dc_diner_1_talked_to_iggy = False
-default dc_diner_1_talked_to_ragnar = False
 default unlocked_ec_mary_1 = False
 default completed_ec_mary_1 = False
 default unlocked_ec_patty_1 = False
@@ -28,3 +26,17 @@ default dc_diner_1_talked_to_ragnar_and_iggy = False
 default played_dream_gas_station_1_sequence = False
 default played_dream_nightmare_interview_1_sequence = False
 default completed_ec_jay_1 = False
+
+default dream_nightmare_interview_1_real_writer = False
+default dream_nightmare_interview_1_slut_writer = False
+default dream_nightmare_interview_1_more_money = False
+default unlocked_ec_patty_2 = False
+default ec_sarah_1_said_no_to_balcony_cuddling = False
+default ec_sarah_1_cuddled_on_balcony = False
+default ec_sarah_1_said_no_to_sex = False
+default ec_sarah_1_had_sex_with_sarah = False
+default unlocked_ec_patty_2 = False
+default completed_ec_patty_2 = False
+default completed_ec_jay_2 = False
+default completed_ec_jay_3 = False
+default played_ec_sarah_1_had_sex_with_sarah_reaction = False
