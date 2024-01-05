@@ -23,3 +23,8 @@ default ec_patty_1_picked_laundryroom_affair_favorite = False
 default ec_patty_1_masturbated_at_home = False
 default ec_patty_1_did_not_masturbate_at_home = False
 default played_ec_patty_1_masturbated_at_home_reaction = False
+
+default dc_diner_1_talked_to_ragnar_and_iggy = False
+default played_dream_gas_station_1_sequence = False
+default played_dream_nightmare_interview_1_sequence = False
+default completed_ec_jay_1 = False

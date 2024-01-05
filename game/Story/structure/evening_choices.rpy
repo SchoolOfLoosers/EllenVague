@@ -13,4 +13,8 @@ label evening_choices:
             $completed_ec_patty_1 = True
             pass #todo fill choice
             jump ec_patty_1
+        "Drink at the hotel bar" if not completed_ec_jay_1:
+            $completed_ec_jay_1 = True
+            pass #todo fill choice
+            jump ec_jay_1
     return

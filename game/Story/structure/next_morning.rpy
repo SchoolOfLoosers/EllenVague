@@ -1,5 +1,6 @@
 label next_morning:
-    scene black at topleft with dis #todo
+    call dream_sequence
+    scene black at topleft with dis
     if ec_patty_1_masturbated_at_home and not played_ec_patty_1_masturbated_at_home_reaction:
         $played_ec_patty_1_masturbated_at_home_reaction = True
         scene black at topleft with dis #todo
