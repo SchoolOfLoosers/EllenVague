@@ -34,6 +34,10 @@ def main():
                 speaker = "Fin"
             if speaker == "m":
                 speaker = "Freya"
+            if speaker == "man":
+                speaker = "Clyde"
+            if speaker == "k":
+                speaker = "Grace"
 
             audio = generate(
                 text=dialog_line[2],

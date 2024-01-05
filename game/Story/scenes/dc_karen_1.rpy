@@ -67,5 +67,5 @@ label dc_karen_1:
     scene black at topleft with dis #todo
 
 
-    #todo unlock radio interview with patty
+    #todo go up to lover's peak (and then what?) --> maybe tease a shot with one of the shadow monsters looking down at her? Possible masturbation scene, with shadow monsters collecting in the trees around?
     jump evening_choices

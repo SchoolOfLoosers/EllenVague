@@ -140,6 +140,7 @@ label ec_patty_1:
             mc "Deal."
     p "I need to get back to my listeners now, but don't be a stranger!"
     p "If you ever get bored, you know where to find me, and that I can't really escape unnoticed."
+    $unlocked_ec_patty_2 = True
     p "I wouldn't mind to hang out sometime, this was a fun evening."
     mc "Likewise, I enjoyed it a lot."
     mc "Time to get home."
