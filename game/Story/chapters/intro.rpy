@@ -77,7 +77,7 @@
             jump day_choices
         "I'm calmer now, if you need some company here.":
             $intro_stayed_with_sarah = True
-            scene 41 with dis
+            scene 42 with dis
             s "Hah, I actually wouldn't mind if you could stay a little longer."
             s "I really didn't look forward to waiting here all alone with a dead man."
             scene 41 with dis
@@ -169,7 +169,6 @@
             mc "Was he a hunter?"
             scene 54 at topleft with dis #todo
             b "Well, he was, but nobody hunts at night 'round these parts."
-            scene at topleft with dis #todo
             mc "Why are you so sure?"
             b "Ain't nobody go'n out to the forest by night, everyone knows that."
             "Yes, it definitely wasn't his intellect that...drew me in."
