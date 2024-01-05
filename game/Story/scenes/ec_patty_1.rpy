@@ -142,11 +142,10 @@ label ec_patty_1:
     p "If you ever get bored, you know where to find me, and that I can't really escape unnoticed."
     p "I wouldn't mind to hang out sometime, this was a fun evening."
     mc "Likewise, I enjoyed it a lot."
-
-
-
-    #todo
-    scene black at topleft with dis #todo
+    mc "Time to get home."
+    p "Word to the wise, don't stop anywhere along the way."
+    p "Never know what's lurking in the darkness out here."
+    scene 35 at topleft with dis
     mc "Damn, this whole evening has me...worked up a bit."
     mc "I mean, that's exactly what I came here for, wasn't it?"
     mc "But still, THAT is what gets me in the mood these days? Getting interviewed?"
