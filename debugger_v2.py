@@ -11,6 +11,7 @@ all_defined_variables = []
 all_existing_images = []
 
 all_referenced_jumps = []
+all_referenced_calls = []
 all_referenced_variables = []
 all_referenced_characters = []
 all_referenced_images = []
@@ -77,6 +78,12 @@ def check_for_jump_reference(line):
         line["content"] = re.search(r'[\s\t]*?jump\s(.*?)$',line["content"]).group(1).strip()
         all_referenced_jumps.append(line)
 
+def check_for_call_reference(line):
+    global all_referenced_calls
+    if re.match(r'[\s\t]*?call\s(.*?)$',line["content"]):
+        line["content"] = re.search(r'[\s\t]*?call\s(.*?)$',line["content"]).group(1).strip()
+        all_referenced_calls.append(line)
+
 def check_for_character_definition(line):
     global all_defined_characters
     if re.match(r'[\s\t]*?define\s(.*?)=\sCharacter.*?"',line["content"]):
@@ -121,6 +128,7 @@ def process_line(line):
     check_for_variable_reference(line)
     check_for_character_reference(line)
     check_for_jump_reference(line)
+    check_for_call_reference(line)
 
     check_for_character_definition(line)
     check_for_variable_definition(line)
@@ -252,9 +260,10 @@ def check_jumps_that_dont_exist():
 def check_unreachable_labels():
     global all_defined_labels
     global all_referenced_jumps
+    global all_referenced_calls
     global all_unreachable_labels
     for defined_label in all_defined_labels:
-        for referenced_jump in all_referenced_jumps:
+        for referenced_jump in all_referenced_jumps + all_referenced_calls:
             if defined_label["content"] == referenced_jump["content"]:
                 break
         else:

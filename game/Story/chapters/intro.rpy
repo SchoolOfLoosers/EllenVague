@@ -164,7 +164,7 @@
             scene black at topleft with dis #todo
             b "I know, because we can't strap him down like a doe. Don't want poor Pike bouncing off the bed, even though he ain't feeling it no more."
             scene black at topleft with dis #todo
-            s "..."
+            s "...Exactly"
             scene black at topleft with dis #todo
             s "Thank you, Miss Vague, now we can really leave."
             s "Thank you for staying to help."

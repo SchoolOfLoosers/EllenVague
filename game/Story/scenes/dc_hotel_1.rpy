@@ -14,6 +14,13 @@ label dc_hotel_1:
     scene black with dis #todo
     j "Anyway, I won't keep you any longer, I bet you are tired from the drive."
     mc "Oh, you have no idea."
-    scene black with dis #todo
-    #todo
-    jump day_choices
+    scene black with dis #todo use this asset: https://www.daz3d.com/winter-vacation-house-bundle
+    mc "Wow, the pictures didn't lie, this room is beautiful!"
+    mc "My god, this is literally perfect."
+
+
+    #todo unpack
+    if not completed_dc_diner_1:
+        mc "Well, I better visit the Diner now, before I die of coffee starvation."
+        jump day_choices
+    jump evening_choices
