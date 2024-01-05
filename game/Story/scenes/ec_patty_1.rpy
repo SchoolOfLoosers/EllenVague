@@ -1,39 +1,57 @@
 label ec_patty_1:
-    scene black at topleft with dis #todo make her studio in "the author" lookout tower room.
+    scene 61 at topleft with dis
     p "Now, folks, you won't believe who just wandered into the studio."
     p "I mean, I don't want to keep you guessing, so why don't you come with me to welcome her?"
-    scene black at topleft with dis #todo
     p "Welcome, Miss Vague, it is an honor to have you here."
+    scene 62 at topleft with dis
     mc "Hah, the honor is all mine. What a cozy little studio!"
+    scene 63 at topleft with dis
     p "I know, right? Why do you think I spend nearly every night in here, talking into a microphone?"
     mc "I can imagine the view has something to do with it."
     p "Oh, absolutely, there is nothing better than sitting here, watching the sun disappearing behind the trees past the lake."
     p "But enough about me, I am sure our listeners haven't tuned in tonight to hear me wax about my cozy little studio."
     p "Before we start: Do your editors know you are here tonight?"
+    scene 64 at topleft with dis
     mc "Oh no, they would probably panic if they knew I go anywhere without a stack of cards full of talking points."
+    scene 65 at topleft with dis
     p "In that case, let me speak for all our listeners and promise that we will keep tonight a secret."
+    scene 64 at topleft with dis
     mc "Hah, thank you."
+    scene 65 at topleft with dis
     p "Now, I am sure you are already well-known around here, and I would bet that not a lot of people would admit as much."
     p "But please, for those who are not yet addicted to your works, would you quickly introduce yourself?"
+    scene 66 at topleft with dis
     mc "Eh, sure. My name is Ellen Vague, and I write romance books for a living."
+    scene 65 at topleft with dis
     p "Now, that is clearly selling it short, folks. Because when Ellen says romance, she means romance with a capital R, as in rawr."
+    scene 67 at topleft with dis
     mc "That's...actually a really good tag line, do you mind if I steal that?"
     mc "I would love to put that on the back of the next book."
+    scene 65 at topleft with dis
     p "Oh, totally. My own name on a certified Vague? Now, what do we say to that, folks?"
     p "Speaking of which, is there any telling when we can expect a new book from you?"
+    scene 66 at topleft with dis
     mc "To be perfectly honest, I have not yet started to work on one, which is part of the reason I even came out here."
     mc "I just needed a vacation, to...refresh my mind, I guess."
+    scene 68 at topleft with dis
     p "And haven't you come to the perfect place to do so!"
     p "Well, I am sure that I speak for my listeners when I say we would all love to see our small town of Bryatt Fowls serving as inspiration for some deep and dark secrets."
     p "Another question, if you don't mind."
+    scene 64 at topleft with dis
     mc "Of course, I don't have anywhere to be tonight."
+    scene 68 at topleft with dis
     p "I am glad to hear that."
     p "Well, I have wondered ever since you agreed to come out and up here."
+    scene 69 at topleft with dis
     p "Any of those stories true? Or, you know, loosely based on actual events?"
+    scene 64 at topleft with dis
     mc "Oh heavens no."
+    scene 67 at topleft with dis
     mc "Not if there is a chance that my parents and my neighbor's wives are listening."
+    scene 68 at topleft with dis
     p "Well, you heard it here first, folks, you better lock your husbands up when Miss Ellen Vague is in town."
     p "Thank you for coming here tonight, Miss Vague, and I can NOT wait to hold your next book in my hands."
+    scene 63 at topleft with dis
     mc "Thank you for having me, Miss Maynard."
     p "Now, folks, excuse me for a moment while I bring Miss Vague to the door."
     p "Enjoy listening to some chill late night hip hop that I whipped up in honor of tonight."
@@ -43,6 +61,7 @@ label ec_patty_1:
     play music track_ec_patty_1
     pause 85
     stop music fadeout 1.0
+    scene 70 with dis
     p "Wait, let me check that the microphones are turned off..."
     p "Yep, looks safe enough."
     p "I hope that was fun for you. I know we aren't the biggest station around the country, but..."
@@ -89,6 +108,7 @@ label ec_patty_1:
     menu:
         "Instructed by my yoga instructor":
             $ec_patty_1_picked_yoga_favorite = True
+            mc "Instructed by my yoga instructor, I think."
             p "Oh, I haven't read that one yet."
             p "Is it any good?"
             mc "Well, it's the answer to your question earlier, if any story was based on true events."
@@ -107,6 +127,7 @@ label ec_patty_1:
             p "Hah, I'm sure it was."
         "Bumfucked in Bumfuck Nowhere":
             $ec_patty_1_picked_bumfuck_favorite = True
+            mc "Bumfucked in Bumfuck Nowhere, probably."
             p "Oh my god, that title alone!"
             p "How on earth did you get away with getting that printed?"
             mc "I still wonder that myself to this day, but it's also one of the best selling ones we have."
@@ -116,6 +137,7 @@ label ec_patty_1:
             p "Going off, even."
         "Whispers to your wife":
             $ec_patty_1_picked_whispers_wife_favorite = True
+            mc "Whispers To Your Wife, I always thought that title had a real ring to it."
             p "Oh, I read the sample chapter at the end of \"Inside my Neighbor's Wife\", but I never got to read the full story."
             mc "It's probably my favorite, because it's so...psychological."
             mc "I still don't know where all that was coming from, but I wrote the first draft in a single week."
@@ -125,6 +147,7 @@ label ec_patty_1:
             mc "And then some."
         "The laundry room affair":
             $ec_patty_1_picked_laundryroom_affair_favorite = True
+            mc "That price would have to go to \"The Laundry Room Affair\""
             p "Oh, I loved that one!"
             p "I thought it was super cool that the whole story takes place in just that apartment laundry room."
             mc "Getting filthy while the clothes are getting clean."
@@ -155,33 +178,38 @@ label ec_patty_1:
     menu:
         "Give in":
             $ec_patty_1_masturbated_at_home = True
-            scene black at topleft with dis #todo
+            scene 71 at topleft with dis
             mc "Screw this, it was a losing battle from the start..."
             mc "Who would I even impress if I kept my chin and my morals up?"
+            scene 72 at topleft with dis
             mc "Nobody, that's who."
             mc "And honestly, who could really blame me?"
+            scene 73 at topleft with dis
             mc "This whole trip has been a complete mess from the start, so it's my time to catch up."
             mc "Time to get messy."
+            scene 74 at topleft with dis
             mc "Time to stop being in charge of my own actions..."
             mc "God, that's just what I need tonight."
+            scene 75 at topleft with dis
             mc "How did Patty say? In the vicinity of hot?"
             mc "Yeah, that's right, tonight was in the vicinity of hot."
+            scene 76 at topleft with dis
             mc "Actually..."
             mc "That makes for a really nice first sentence."
-            scene black at topleft with dis #todo gets up to typewriter, naked
+            scene 77 at topleft with dis
             mc "\"The thing about Jason that drove me mad was that he wasn't even hot. Okay, maybe in the vicinity of hot.\""
             mc "Damn, that totally works."
             mc "\"He was your average looking guy, neighbor next door, married to a wife who had everything going for her, and little against.\""
             mc "\"So naturally, I could resist his charms as little as I could resist the temptation itself.\""
-            scene black at topleft with dis #todo
             mc "Good job, Ellen, looks like you're finding back to your old ways."
+            scene 78 at topleft with dis
             mc "Fine, that's enough for one night, back to bed."
             mc "I hope I didn't wake up the neighbors with my...typing."
             jump next_morning
         "Nah, I'll stay strong":
             $ec_patty_1_did_not_masturbate_at_home = True
             $renpy.notify("Achievement unlocked:\nPlaying the game for the story, huh?")
-            scene black at topleft with dis #todo
+            scene 72 at topleft with dis
             mc "Ugh, okay, FINE!"
             mc "I know I'm better than this, no need to tell me, Ellen!"
             mc "Look at yourself, you are such an embarrassment."
