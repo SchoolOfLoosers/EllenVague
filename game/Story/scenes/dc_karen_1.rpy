@@ -65,6 +65,7 @@ label dc_karen_1:
     k "Have fun, and don't forget to give my friend Patty a call sometime."
     mc "I won't."
     scene black at topleft with dis #todo
+    "The hike up to the peak is not yet implemented, jumping straight to evening choices. I will finish this part as soon as possible, thank you for your understanding."
 
 
     #todo go up to lover's peak (and then what?) --> maybe tease a shot with one of the shadow monsters looking down at her? Possible masturbation scene, with shadow monsters collecting in the trees around?

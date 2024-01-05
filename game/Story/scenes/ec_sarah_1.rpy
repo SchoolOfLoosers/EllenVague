@@ -62,8 +62,43 @@ label ec_sarah_1:
             menu:
                 "Actually, I don't really think we should...":
                     $ec_sarah_1_said_no_to_sex = True
-
-                    pass #todo fill choice
+                    s "Oh, don't worry, I really don't want to make you uncomfortable."
+                    mc "You're not, this is...very comfortable."
+                    s "Then let's just stay here like this, what do you think?"
+                    mc "That...would be great, thank you."
+                    s "Just so you know, I won't run away just because you need some time to...adjust, if you catch my drift."
+                    s "Anytime you think you need a muse, I'm here to do some musing."
+                    mc "Hah, okay, thanks."
+                    s "Do you want to still stay here tonight?"
+                    s "There's really no need to drive home in the dark, the roads are tricky out here."
+                    mc "That sounds tricky in its own right."
+                    s "Oh, totally, I will wait until you are asleep, and then..."
+                    mc "I'll call the cops."
+                    s "Good, they already know my address."
+                    s "All kidding aside, I have an extra blanket and a couch that misses being abused by friends sometimes."
+                    s "And, like it or not, but you're my friend now, Miss Vague."
+                    mc "I like it quite a lot."
+                    mc "I've never been on friendly terms with the law."
+                    s "Hah, good one."
+                    s "What do you say, should we go to sleep?"
+                    s "Or would you rather finish this bottle of wine with me?"
+                    mc "God, I'm way too drunk already."
+                    s "Another reason why you shouldn't be driving in the dark."
+                    s "You never know if a cop might stop you."
+                    mc "I don't know what you're talking about, officer, I am totally sober."
+                    s "Oh yeah? Then why don't you show me that you can walk in a straight line, from here to the couch?"
+                    mc "Watch me."
+                    s "Closely."
+                    scene black at topleft with dis #todo
+                    s "That went surprisingly smoothly."
+                    mc "You mean I would be safe to drive home?"
+                    s "I'm way too drunk to drive after you."
+                    mc "Hah, the one night I'm actually trying to outrun the cops, the cop doesn't feel like running at all."
+                    mc "Good night, Sarah, and thanks for letting me stay here tonight."
+                    s "Always, this house is way too empty most nights."
+                    s "Sleep tight, Miss Vague."
+                    mc "Night, officer."
+                    jump next_morning
                 "I'm already starting to get ideas here...":
                     $ec_sarah_1_had_sex_with_sarah = True
                     scene black at topleft with dis #todo

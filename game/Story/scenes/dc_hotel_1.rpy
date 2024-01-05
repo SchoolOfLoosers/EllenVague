@@ -24,10 +24,13 @@ label dc_hotel_1:
     scene 35 with dis
     mc "Wow, the pictures didn't lie, this room is beautiful!"
     mc "My god, this is literally perfect."
-
-
-    #todo unpack
+    mc "And hello bed, you and I are gonna spend a lot of time together for the next few weeks."
+    mc "I hope you don't mind if I get a little cuddly sometimes."
+    mc "No? Great, I love to hear that."
     if not completed_dc_diner_1:
         mc "Well, I better visit the Diner now, before I die of coffee starvation."
         jump dc_hotel_1
+    mc "Well, let's see, how should I spend my first evening out here?"
+    mc "No need to stress yourself, Ellen, vacations don't have to be PRODUCTIVE."
+    mc "God, stupid me..."
     jump evening_choices
