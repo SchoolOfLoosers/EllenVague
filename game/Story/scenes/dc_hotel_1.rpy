@@ -21,7 +21,7 @@ label dc_hotel_1:
     j "Anyway, I won't keep you any longer, I bet you are tired from the drive."
     scene 34 with dis
     mc "Oh, you have no idea."
-    scene black with dis #todo use this asset: https://www.daz3d.com/winter-vacation-house-bundle
+    scene 35 with dis
     mc "Wow, the pictures didn't lie, this room is beautiful!"
     mc "My god, this is literally perfect."
 
