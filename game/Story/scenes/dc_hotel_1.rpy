@@ -22,5 +22,5 @@ label dc_hotel_1:
     #todo unpack
     if not completed_dc_diner_1:
         mc "Well, I better visit the Diner now, before I die of coffee starvation."
-        jump day_choices
+        jump dc_hotel_1
     jump evening_choices
