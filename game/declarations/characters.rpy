@@ -11,3 +11,4 @@ define j = Character("Jay Killhide", what_color="#d95afc")
 define p = Character("Patty Maynard", what_color="#d95afc") # student and radio host, original pat maine
 define m = Character("Mary Rosegold", what_color="#d95afc") # Rose marigold in original
 define s = Character("Sarah Fuse", what_color="#d95afc")
+define k = Character("Karen Sticks", what_color="#d95afc")
