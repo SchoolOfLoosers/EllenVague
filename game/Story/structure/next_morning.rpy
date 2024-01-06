@@ -1,5 +1,5 @@
 label next_morning:
-    $rng = renpy.random.randint (1, 4)
+    $rng = renpy.random.randint (1, 3)
     if rng == 2:
         call dream_sequence
 

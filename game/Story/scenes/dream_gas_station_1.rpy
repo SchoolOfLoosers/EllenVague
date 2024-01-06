@@ -20,7 +20,7 @@ label dream_gas_station_1:
     "In my dreams, this always worked, flawlessly and without fail."
     "If only the real world could be easy like that sometimes."
     scene 84 at topleft with dis
-    "But then again, as I collected the keys from the fading corpse of the gas station owner, I realized that it was time to wake up, before any of his shadowy friends could react to the shop."
+    "But then again, as I collected the keys from the fading corpse of the gas station owner, I realized that it was time to wake up, before any of his shadowy friends could react to the shot."
     "The only problem was, there was only one way to wake out of that dream..."
     scene 85 at topleft with dis
     mc "Oh my god, this is SO embarrassing."

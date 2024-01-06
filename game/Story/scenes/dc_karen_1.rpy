@@ -60,7 +60,7 @@ label dc_karen_1:
     k "I take off at eight, so you better be back by then."
     mc "Got it, thank you."
     k "Little word to the wise, I would take the left path up, then the right path down."
-    k "That way, you catch the best view on your way up, and the way down is lit with a few lanters in case you only make it back down after sundown."
+    k "That way, you catch the best view on your way up, and the way down is lit with a few lanterns in case you only make it back down after sundown."
     mc "Thank you!"
     k "Have fun, and don't forget to give my friend Patty a call sometime."
     mc "I won't."

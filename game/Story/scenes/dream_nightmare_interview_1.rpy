@@ -2,7 +2,8 @@ label dream_nightmare_interview_1:
     scene black at topleft with dis #todo
     #todo reuse interview asset to make a nightmare interview, make Patty with red glowing eyes or something
     p "Now, folks, you won't believe who I have back here in the studio tonight!"
-    p "That is RIGHT, our most favorite writer is back in this chair - Miss Ellen, wait for it, Vague!"
+    p "That is RIGHT, our most favorite writer is back in this chair."
+    p "Miss Ellen - wait for it... Vague!"
     scene black at topleft with dis #todo
     p "Only this time, I have tied her to her chair, and she can't leave."
     p "Now, what do we say to that, folks?"

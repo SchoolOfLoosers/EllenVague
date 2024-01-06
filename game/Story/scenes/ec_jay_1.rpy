@@ -51,7 +51,7 @@ label ec_jay_1:
             mc "You have a way with words, I'll give you that."
             j "And so do you, from what I am hearing."
             mc "Hearing?"
-            j "I figured since our authorship path and my readership habits have not crossed before, I would spare you the act of brushing up on your literary works after you booked your stay with us."
+            j "I figured since your authorship path and my readership habits have not crossed before, I would spare you the act of brushing up on your literary works after you booked your stay with us."
             mc "That is...honest."
             j "I like to think that you will come to appreciate that most about me, if we end up sharing more than the occasional conversation."
             menu ec_jay_1_menu_share:
@@ -84,7 +84,7 @@ label ec_jay_1:
                     j "Have a good night, Miss Vague."
                     mc "Uh, you too, have a good night."
                     jump next_morning
-                "We can share something tonight, if you want.":
+                "We can share something tonight, if you want." if not ec_jay_1_can_share_bed_tonight:
                     $ec_jay_1_can_share_bed_tonight = True
                     j "While I do appreciate your bluntness, I am still unsure as of yet of what to make of you."
                     mc "I am very soft and pliable in the right hands, so you could make of me whatever you like."
