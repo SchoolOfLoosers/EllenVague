@@ -7,6 +7,7 @@ define n = Character("Robert Mockingbird", color="#059f00", what_color="#059f00"
 define r = Character("Ragnar Oki", color="#059f00", what_color="#059f00")
 define y = Character("Yggy Drasil", color="#059f00", what_color="#059f00")
 define man = Character("Man", color="#0184b8", what_color="#0184b8")
+define shadow = Character("Shadow", color="#e97101", what_color="#e97101")
 
 define j = Character("Jay Killhide", what_color="#d95afc", color="#d95afc")
 define p = Character("Patty Maynard", what_color="#d95afc", color="#d95afc") # student and radio host, original pat maine
