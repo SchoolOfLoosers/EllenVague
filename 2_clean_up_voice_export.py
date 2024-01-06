@@ -15,7 +15,7 @@ def main():
         dialog_line = line.split("\t")
         all_dialog_lines.append(dialog_line)
         savepath = os.path.join(os.getcwd(), "game","audio", "voice",dialog_line[0]+".mp3")
-        if not os.path.exists(savepath) and not dialog_line[2]=="Not implemented yet" and not dialog_line[1]=="shadow":
+        if (not os.path.exists(savepath) and not dialog_line[2]=="Not implemented yet") and not dialog_line[1]=="shadow":
             print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
             speaker = dialog_line[1]
             if speaker == "mc" or speaker == "na" or speaker == "":
@@ -33,7 +33,7 @@ def main():
             if speaker == "r":
                 speaker = "Fin"
             if speaker == "m":
-                speaker = "Freya"
+                speaker = "Rachel"
             if speaker == "man":
                 speaker = "Clyde"
             if speaker == "k":

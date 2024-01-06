@@ -16,12 +16,12 @@
     na "Well, this man was definitely dead, and nobody had watched him die."
     na "And that was just my welcome to the town of Bryat Fowls. It got worse, after."
     scene 37 at topleft with dis
-    s "911, what is your emergency?"
+    s "9 1 1, what is your emergency?"
     mc "Yes, hello, uh, there is this man, in the middle of the road, and I think he's dead! I nearly drove over him with my car!"
     s "Ma'am, do not panic, we are coming. I just need to know where you are right now, and I'll come out immediately."
     mc "God, I...I don't know, I'm not from around here. I just came out of a tunnel, and now..."
     s "A tunnel, that's good. We don't have a lot of tunnels. Is there...a bend in the road right after it?"
-    mc "Yes! Exactly!"
+    mc "Yes, Exactly."
     s "Okay, then I know where you are, that's Rushmoore Pass. Don't move, it will take about half an hour for me to get there. Can you do that for me?"
     mc "Yes, of course. And... Thank you, I'm really shaken up."
     s "Just sit down in your car and wait, I'll come immediately."
@@ -91,8 +91,9 @@
             s "Why does your name sound so familiar?"
             scene 41 at topleft with dis
             mc "Uh, you might have read one of my books."
-            scene 42 at topleft with dis
+            scene 43 at topleft with dis
             s "No way that's actually you!"
+            scene 42 at topleft with dis
             s "I thought for sure you'd say something like \"you might mistake me for that book author who has the same name.\""
             scene 40 at topleft with dis
             mc "No it's really me."
@@ -134,10 +135,13 @@
             s "Where are you staying, by the way?"
             scene 50 at topleft with dis
             mc "Oh, I booked a room at the Hotel, nothing fancy."
+            scene 49 at topleft with dis
             s "Not a bad choice, the rooms there are cheap and good."
             s "You could have rented one of the cabins by the lake, though, to really get that quiet and away from everything feel."
+            scene 50 at topleft with dis
             mc "I would probably just get scared."
             mc "I like being able to call for help, and people actually being around to hear me."
+            scene 47 at topleft with dis
             s "Hah, that's a smart approach to life in general."
             scene 51 at topleft with dis
             na "If there had been any doubt as to how backwoods the place was..."
@@ -150,7 +154,6 @@
             s "Nobody knows yet, Bubba. But if we can, we'll find that out."
             scene 54 at topleft with dis #todo
             b "And who are you?"
-            scene 51 at topleft with dis #todo
             mc "I'm Ellen, I came here for a vacation, I was coming from there and nearly drove over him."
             scene 54 at topleft with dis #todo
             b "Well, good thing you didn't, that wouldn't have been a particularly nice thing to do to him, now would it?"
@@ -186,7 +189,7 @@
             scene 53 at topleft with dis #todo
             b "I know, because we can't strap him down like a doe. Don't want poor Pike bouncing off the bed, even though he ain't feeling it no more."
             scene 57 at topleft with dis #todo
-            s "...Exactly"
+            s "Exactly"
             scene 58 at topleft with dis #todo
             s "Thank you, Miss Vague, now we can really leave."
             s "Thank you for staying to help."

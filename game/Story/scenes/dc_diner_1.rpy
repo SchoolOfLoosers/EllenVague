@@ -32,7 +32,7 @@ label dc_diner_1_talk_to_mary:
     mc "My name is Ellen, nice to meet you."
     scene 7 with dis
     m "I'm Mary, welcome again. Coffee?"
-    mc "Oh my god, please."
+    mc "Oh please."
     m "Long trip?"
     mc "That and..."
     mc "I guess everyone will know sooner rather than later, anyway."
@@ -116,7 +116,7 @@ label dc_diner_1_talk_to_mary:
 
 label dc_diner_1_talk_to_ragnar_and_iggy:
     scene 18 at topleft with dis
-    m "Hi, Ragnar, right? And... Sorry, I didn't catch your name."
+    mc "Hi, Ragnar, right? And... Sorry, I didn't catch your name."
     y "I'm Yggy."
     mc "how are you?"
     y "Hungover."

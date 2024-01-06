@@ -8,7 +8,7 @@ label day_choices:
             $completed_dc_hotel_1 = True
             pass #todo fill choice
             jump dc_hotel_1
-        "Talk to Karen, the ferrywoman" if not completed_dc_karen_1 and unlocked_dc_karen_1:
+        "Talk to Karen, the ferrywoman" if not completed_dc_karen_1 and unlocked_dc_karen_1 and completed_dc_hotel_1 and completed_dc_diner_1:
             $completed_dc_karen_1 = True
             pass #todo fill choice
             jump dc_karen_1
