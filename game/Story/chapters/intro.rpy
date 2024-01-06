@@ -1,16 +1,4 @@
 ﻿label start:
-    python:
-
-
-        args = [ "dialogue", None]
-
-
-
-        args.append("--escape")
-
-        project.current.launch(args, wait=True)
-        project.current.update_dump(force=True)
-
     scene 1 at topleft with dis
     na "Stephen Wry once said: You are who you are when no one is watching."
     na "Well, I, for one, was horny as hell, and somehow unable to turn that into words on a page."
