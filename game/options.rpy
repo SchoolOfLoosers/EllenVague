@@ -187,8 +187,15 @@ init python:
     build.classify('**/thumbs.db', None)
     build.classify('**.py', None)
     build.classify('**.bat', None)
+    build.classify('**.duf', None)
     build.classify('**/elevenlabs_api_key.txt', None)
     build.classify('**/python_debugger_export.txt', None)
+    build.classify('**/debugger_report.txt', None)
+    build.classify('**/lint.txt', None)
+    build.classify('**/linttest.txt', None)
+    build.classify('characters/**.**', None)
+    build.classify('locations/**.**', None)
+    build.classify('scenes/**.**', None)
 
     ## To archive files, classify them as 'archive'.
 
