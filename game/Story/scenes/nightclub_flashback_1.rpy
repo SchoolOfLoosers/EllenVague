@@ -1,6 +1,7 @@
 label nightclub_flashback_1:
+    "This scene is not yet ready to play, I will work on it as soon as I find the time. Thanks for your understanding."
+    return #todo remove this and line above
     scene black at topleft with dis #todo
-    #todo remember using this with call statement from outside
     #todo https://www.daz3d.com/the-neon-bar-environment-bundle
     mc "So, I was going through this phase, okay?"
     s "What kind of phase?"
