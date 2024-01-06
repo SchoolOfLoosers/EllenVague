@@ -54,7 +54,6 @@ default ec_patty_2_talked_about_lovers_peak = False
 default ec_patty_2_talked_about_spending_time_wiht_yourself_on_lovers_peak = False
 default ec_patty_2_pointed_at_crotch = False
 default ec_patty_2_naked = False
-default ec_patty_2_naked = False
 default ec_patty_2_talked_about_fishing_at_pier = False
 default ec_patty_2_talked_about_exploring_lumberyard = False
 default rng = 0
