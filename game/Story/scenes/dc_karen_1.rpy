@@ -65,16 +65,56 @@ label dc_karen_1:
     k "Have fun, and don't forget to give my friend Patty a call sometime."
     mc "I won't."
     scene black at topleft with dis #todo
-    "The hike up to the peak is not yet implemented, jumping straight to evening choices. I will finish this part as soon as possible, thank you for your understanding."
-    jump evening_choices #todo remove
     "Like everyone had told me, the hike up to Lover's Peak was a sight worth taking in."
     "There were trees chirping, and birds moving in the wind..."
     "And anytime the path curved, it was like stepping through the door into a whole new ecosystem."
     "It felt as if I...wasn't alone out there, and like the whole forest was brimming with life..."
     "And not just the birds, either."
     "It felt more like a general...presence, that was out there, entwined with the forest like ivy growing on the bark."
-
-
-
-    #todo go up to lover's peak (and then what?) --> maybe tease a shot with one of the shadow monsters looking down at her? Possible masturbation scene, with shadow monsters collecting in the trees around?
+    scene black at topleft with dis #todo
+    "And then, finally, I ran out of mountain to climb, and reached the summit."
+    "Lover's peak, it seemed, could have rescued failing marriages, or create them in the first place."
+    "The air was brimming with silence, and not a soul was to be seen around."
+    scene black at topleft with dis #todo
+    "So, naturally, my mind immediately started to...drift."
+    menu:
+        "What good are pants, anyway?":
+            $dc_karen_1_masturbated_on_lovers_peak = True
+            scene black at topleft with dis #todo
+            "It's hard to say what it was about the place, but the atmosphere damn near dragged my pants off of me, and I could feel invisible fingers running along my hips, following the contours of my body on their way down..."
+            scene black at topleft with dis #todo
+            "There was no urgency to the situation, nobody likely to come up anytime soon..."
+            "And still, I felt the same rush that I would have felt taking my pants off in a crowded shopping mall, or in a high brow restaurant in front of people who were wearing suits."
+            scene black at topleft with dis #todo
+            "I can't say exactly what I was thinking, only that I quickly stopped thinking at all."
+            "I rushed my way to the finish line, barely stared out into the valley long enough to catch my breath..."
+            "And immediately went at it again."
+            scene black at topleft with dis #todo shadow watching her
+            "There was just something in the air, the feeling of being watched that I just couldn't shake..."
+            scene black at topleft with hpunch #todo
+            "Not until I myself was starting to shake."
+            "I just couldn't help it, I was too hungry for illicit touches, and there simply was nobody but me around to administer them."
+            "No matter how much I might stare at the trees, hoping someone might step out of them..."
+            "But of course, nobody did, nobody came out to laugh at me, or ask if I needed any help - and heck, nobody came to take me without even asking."
+            "And part of me was even thankful for that."
+            scene black at topleft with dis #todo
+            "So, before long, I realized I had no other choice but to get dressed again, and making my way back down."
+            "After all, I had a ferry to catch..."
+        "Nuh-uh, I'm better than that.":
+            $dc_karen_1_resisted_masturbating_on_lovers_peak = True
+            scene black at topleft with dis #todo
+            "After the shortest moment of catching myself, I realized the overwhelming solitude and lack of noise that played their tricks on my mind."
+            "I brushed my clothes flat, looking around as if to tell the trees that I hadn't, in fact, seriously entertained the thought of...entertaining myself."
+            scene black at topleft with dis #todo
+            "And then, I realized I had to my way back down."
+            "After all, I had a ferry to catch."
+    scene black at topleft with dis #todo
+    k "There you are, welcome back!"
+    k "Was it worth it?"
+    mc "Thank you, this was a great hike!"
+    mc "But now I'm starving."
+    k "In that case, let me take you the short route this time."
+    mc "Oh please, as great as this view is..."
+    k "It has nothing on the view over a decent plate of hotel dinner?"
+    mc "Ugh, your words, my thoughts."
     jump evening_choices
