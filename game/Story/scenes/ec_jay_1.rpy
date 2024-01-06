@@ -1,5 +1,5 @@
 label ec_jay_1:
-    scene black at topleft with dis #todo
+    scene 112 at topleft with dis
     j "Good evening, Miss Vague, here for a drink?"
     mc "Please, I can use one."
     j "And can you also use company?"
@@ -35,7 +35,7 @@ label ec_jay_1:
             j "Or, even worse, to do the same purely for the reason of \"not seeing my work go to waste\" - which is the ultimate arrogance in my opinion."
             mc "Fascinating, thank you for that insight."
             j "And what about you, Miss Vague?"
-            j "What is that makes you eccentric in the eyes of the many, and fascinating to the eyes of the few?"
+            j "What is it that makes you eccentric in the eyes of the many, and fascinating to the eyes of the few?"
             jump ec_jay_1_menu_conversation
         "Do you flirt with all your guests?":
             $ec_jay_1_asked_if_he_flirts_with_all_guests = True
