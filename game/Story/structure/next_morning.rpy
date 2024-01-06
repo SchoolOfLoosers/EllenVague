@@ -1,5 +1,7 @@
 label next_morning:
-    call dream_sequence
+    $rng = renpy.random.randint (1, 4)
+    if rng == 2:
+        call dream_sequence
     scene black at topleft with dis
     if ec_sarah_1_had_sex_with_sarah and not played_ec_sarah_1_had_sex_with_sarah_reaction:
         $played_ec_sarah_1_had_sex_with_sarah_reaction = True

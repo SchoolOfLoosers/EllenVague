@@ -15,10 +15,10 @@ label evening_choices:
         "Have a drink at the hotel bar" if not completed_ec_jay_1:
             $completed_ec_jay_1 = True
             jump ec_jay_1
-        "Go hiking with Jay" if not completed_ec_jay_2 if unlocked_ec_jay_2:
+        "Go hiking with Jay" if not completed_ec_jay_2 and unlocked_ec_jay_2:
             $completed_ec_jay_2 = True
             jump ec_jay_2
-        "Go hunting with Jay" if not completed_ec_jay_3 if unlocked_ec_jay_3:
+        "Go hunting with Jay" if not completed_ec_jay_3 and unlocked_ec_jay_3:
             $completed_ec_jay_3 = True
             jump ec_jay_3
     return
