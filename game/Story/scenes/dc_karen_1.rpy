@@ -66,6 +66,14 @@ label dc_karen_1:
     mc "I won't."
     scene black at topleft with dis #todo
     "The hike up to the peak is not yet implemented, jumping straight to evening choices. I will finish this part as soon as possible, thank you for your understanding."
+    jump evening_choices #todo remove
+    "Like everyone had told me, the hike up to Lover's Peak was a sight worth taking in."
+    "There were trees chirping, and birds moving in the wind..."
+    "And anytime the path curved, it was like stepping through the door into a whole new ecosystem."
+    "It felt as if I...wasn't alone out there, and like the whole forest was brimming with life..."
+    "And not just the birds, either."
+    "It felt more like a general...presence, that was out there, entwined with the forest like ivy growing on the bark."
+
 
 
     #todo go up to lover's peak (and then what?) --> maybe tease a shot with one of the shadow monsters looking down at her? Possible masturbation scene, with shadow monsters collecting in the trees around?

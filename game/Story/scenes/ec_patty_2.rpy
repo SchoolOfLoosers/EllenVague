@@ -106,10 +106,10 @@ label ec_patty_2:
                             pass #todo fill choice
                     pass #todo fill choice
             pass #todo fill choice
-        "I spent a day fishing down by the pier":
+        "I spent a day fishing down by the pier": #todo condition
             $ec_patty_2_talked_about_fishing_at_pier = True
             pass #todo fill choice
-        "I explored the old lumberyard":
+        "I explored the old lumberyard": #todo condition
             $ec_patty_2_talked_about_exploring_lumberyard = True
             pass #todo fill choice
     jump next_morning
