@@ -113,22 +113,67 @@ label ec_sarah_1:
     s "Come on, don't leave me hanging like this."
     s "I'll be embarrassed with you."
     scene 129 at topleft with dis
-    mc "Ugh, fine, I see I'm out of options here."
-    s "Exactly!"
-    call nightclub_flashback_1
-    scene 136 at topleft with dis
-    mc "So, there is that. That's what I was thinking about."
-    s "That's really something, no wonder it made you squirm."
-    scene 134 at topleft with dis
-    mc "I know, right? But I guess that's part of the reason why my books even sell at all, much less well."
-    scene 135 at topleft with dis
-    mc "Just knowing that I can tap into this darker side of my mind when I need to, and that I have lived through some messed up stuff."
-    mc "All my youth, I never really had much influence over what was happening to me, so I don't really mind anything I did back then."
-    mc "But this is the kind of stuff that I did myself, willingly, and then again as soon as the shame washed off of me."
-    scene 136 at topleft with dis
-    s "Honestly, thank you for sharing that story with me."
-    scene 135 at topleft with dis
-    mc "Thanks for listening"
+    menu:
+        "Tell her the story about the night club":
+            $ec_sarah_1_told_nightclub_story = True
+            mc "Ugh, fine, I see I'm out of options here."
+            s "Exactly!"
+            call nightclub_flashback_1
+            scene 136 at topleft with dis
+            mc "So, there is that. That's what I was thinking about."
+            s "That's really something, no wonder it made you squirm."
+            scene 134 at topleft with dis
+            mc "I know, right? But I guess that's part of the reason why my books even sell at all, much less well."
+            scene 135 at topleft with dis
+            mc "Just knowing that I can tap into this darker side of my mind when I need to, and that I have lived through some messed up stuff."
+            mc "All my youth, I never really had much influence over what was happening to me, so I don't really mind anything I did back then."
+            mc "But this is the kind of stuff that I did myself, willingly, and then again as soon as the shame washed off of me."
+            scene 136 at topleft with dis
+            s "Honestly, thank you for sharing that story with me."
+            scene 135 at topleft with dis
+            mc "Thanks for listening"
+        "Tell her about that day you slept with your boss (not yet implemented)":#todo change this
+            $ec_sarah_1_told_her_about_affair_with_your_boss = True
+            call boss_flashback_1
+            scene 136 at topleft with dis
+            mc "So, there is that. That's what I was thinking about."
+            s "That's really something, no wonder it made you squirm."
+            scene 134 at topleft with dis
+            mc "I know, right? But I guess that's part of the reason why my books even sell at all, much less well."
+            scene 135 at topleft with dis
+            mc "Just knowing that I can tap into this darker side of my mind when I need to, and that I have lived through some messed up stuff."
+            mc "All my youth, I never really had much influence over what was happening to me, so I don't really mind anything I did back then."
+            mc "But this is the kind of stuff that I did myself, willingly, and then again as soon as the shame washed off of me."
+            scene 136 at topleft with dis
+            s "Honestly, thank you for sharing that story with me."
+            scene 135 at topleft with dis
+            mc "Thanks for listening"
+            pass #todo fill choice
+        "Can we just...change the subject?":
+            $ec_sarah_1_changed_subject = True
+            s "Oh yes, of course, I didn't mean to pry."
+            s "How about you tell me about something nice?"
+            s "Something you enjoyed?"
+            mc "Anything?"
+            s "Just whatever comes to your mind when I say fun and enjoyable and relaxing."
+            mc "Hah, okay."
+            mc "There was this one day out by the lake..."
+            s "Already selling me on it, I love hanging out by the lake."
+            mc "Oh yeah, me too."
+            mc "So, I was there with some friends..."
+            mc "And we all just... had, you know, the atmosphere was...loaded."
+            mc "Everyone was massaging each other, rubbing lotion on our backs even though we are already well lotioned up..."
+            s "Mhm, that sounds steamy."
+            mc "Yeah, but that's the thing. It wasn't really anything like that, you know?"
+            mc "It was still a public lake, half of us had something going on with one of the others, and...you know, it just didn't amount to anything I would have written a book about."
+            s "Hah, I get what you mean."
+            mc "Right, in the evening, we collected sticks and made a fire, someone went to grab drinks, and we kinda just slept there under the light of the moon, on our towels with the backpacks for pillows."
+            s "That does sound super nice."
+            mc "It really was, a pretty special day."
+            mc "One that I won't forget for a while."
+            s "Yeah, I can imagine."
+            s "That's good, you gotta tell me more stories like that."
+            mc "We have all night."
     scene 137 at topleft with dis
     mc "But now, I really need some more wine."
     s "That, I can provide."

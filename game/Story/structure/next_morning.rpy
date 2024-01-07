@@ -6,10 +6,11 @@ label next_morning:
     scene black at topleft with dis
     if ec_sarah_1_had_sex_with_sarah and not played_ec_sarah_1_had_sex_with_sarah_reaction:
         $played_ec_sarah_1_had_sex_with_sarah_reaction = True
-        scene black at topleft with dis #todo wake up in her room
+        scene 198 at topleft with dis
         mc "Jesus Christ."
-        scene black at topleft with dis #todo
+        scene 199 at topleft with dis
         s "Sarah is fine."
+        scene 200 at topleft with dis
         mc "Oh my god, she's talking..."
         s "How's your head?"
         mc "Hurts."
@@ -18,6 +19,7 @@ label next_morning:
         mc "No you're not."
         mc "You look fine, but you aren't fine. Don't lie to me."
         s "Not even if I lie next to you?"
+        scene 201 at topleft with dis
         mc "That was bad."
         s "Unlike you, Miss Writer."
         mc "I can't believe you are flirting with me."
@@ -38,7 +40,7 @@ label next_morning:
         s "So, in that case, let us put the cover of silence on this matter, shall we?"
         mc "I won't say a word."
         s "Not if my lips can prevent it."
-        scene black at topleft with dis #todo
+        scene 202 at topleft with dis
         mc "Oh my god, what time is it?"
         s "Too late to get up early."
         mc "Don't you have somewhere to be?"
@@ -46,8 +48,10 @@ label next_morning:
         mc "Not that I heard."
         s "Then I don't have anywhere to be."
         s "But if you want to leave, then be my guest."
+        scene 203 at topleft with dis
         s "Actually, feel free to be my guest again sometime."
         mc "I wouldn't mind that."
+        scene 200 at topleft with dis
         s "Then you better get your cute little butt out of my bed, get dressed and get going."
         mc "You are throwing me out?"
         s "I think your pants are still upstairs, in case you forgot."
@@ -61,14 +65,13 @@ label next_morning:
 
     if ec_patty_1_masturbated_at_home and not played_ec_patty_1_masturbated_at_home_reaction:
         $played_ec_patty_1_masturbated_at_home_reaction = True
-        scene black at topleft with dis #todo
+        scene 93 at topleft with dis
         mc "Ugh, I am such a mess, aren't I?"
         mc "Light of day didn't exactly put my choices into a better light, now did it?"
         mc "Come on, Ellen, get a grip."
         mc "What's done is done, there is no way back."
         mc "And wouldn't you know, that's the first page of a new book, and at least one person will chuckle when she reads that sentence."
         mc "That's fan service's finest hour, isn't it? Writing for an audience of one?"
-        scene black at topleft with dis #todo
         mc "Come on, Ellen, time to get up, get dressed, get kicking."
-    #todo
+
     jump day_choices
