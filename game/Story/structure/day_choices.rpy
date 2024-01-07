@@ -14,7 +14,7 @@ label day_choices:
             $completed_dc_karen_1 = True
             pass #todo fill choice
             jump dc_karen_1
-        "Drive to the sheriff station to sign the witness report" if not completed_dc_sarah_1 and unlocked_dc_sarah_1:
+        "Drive to the sheriff station to sign the witness report" if not completed_dc_sarah_1:
             $completed_dc_sarah_1 = True
             pass #todo fill choice
             jump dc_sarah_1
