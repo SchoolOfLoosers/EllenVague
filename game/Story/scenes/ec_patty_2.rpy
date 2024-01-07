@@ -11,20 +11,35 @@ label ec_patty_2:
     p "Likewise, and from what I've been hearing, our listeners out there won't mind another round, either."
     p "Isn't that right, folks?"
     scene black at topleft with dis #todo
-    p "Well, Ellen, it has been a hot minute since you last sat in that chair, why don't you tell our listeners how have you been faring in our lovely little town?"
+    p "Well, Ellen, it has been a hot minute since you last sat in that chair, why don't you tell our listeners how you have been faring in our lovely little town?"
     menu:
         "It is a beautiful little town":
             $ec_patty_2_beautiful_town = True
+            mc "It is a beautiful little town."
             p "I know, right?"
             p "I have lived her pretty much all my life, and I still fail to get bored by the views."
-
-            pass #todo fill choice
-        "The more time I spend here, the more I start to think about selling my big city apartment":
+        "The more time I spend here, the more I start thinking about selling my big city apartment":
             $ec_patty_2_selling_apartment = True
-            pass #todo fill choice
+            mc "The more time I spend here, the more I start thinking about selling my big city apartment"
+            p "Is that right?"
+            p "Well, folks, it does appear that Bryatt Fowls has not lost its ability to charm the tourists, now has it?"
+            p "What to you say, Ellen, should I put the word out that a rich and famous author is looking for some affordable real estate?"
+            mc "Hah, more like starving and barely able to feed myself, if we are going into any sort of negotiations."
+            p "Smart."
         "Everyone I've met has been so friendly":
             $ec_patty_2_people_friendly = True
-            pass #todo fill choice
+            mc "Everyone I've met has been so friendly."
+            mc "I'm simply not used to that."
+            mc "At home, you get yelled at the moment you step out of the door, and standing in line for a coffee makes you clutch your purse and look over your shoulder."
+            p "Hah, that can't happen to you out here."
+            mc "I know, right?"
+            p "It's been a long time since I've seen a queue forming anywhere."
+            mc "Hah, good one."
+            mc "That caught me by surprise."
+            p "Yes, us townsfolk are full of surprises."
+            scene black at topleft with dis #todo
+            p "You should try it sometime."
+            "I couldn't shake the feeling that there was an undertone to her voice, one that I couldn't quite figure out."
     scene black at topleft with dis #todo
     p "So, I'm curious, Ellen, what kind of places have you visited so far?"
     menu:
@@ -42,7 +57,7 @@ label ec_patty_2:
                     $ec_patty_2_talked_about_spending_time_wiht_yourself_on_lovers_peak = True
 
                     pass #todo fill choice
-                "Oh, you know, I just enjoyed spending some time with my own thoughts (point at your crotch)": #todo make this dependent on choice in karen_1 / lovers peak masturbation scene
+                "Oh, you know, I just enjoyed spending some time with my own thoughts (point at your crotch)" if dc_karen_1_masturbated_on_lovers_peak:
                     $ec_patty_2_pointed_at_crotch = True
                     scene black at topleft with dis #todo
                     p "Oh, is that so?"
@@ -57,7 +72,7 @@ label ec_patty_2:
                             scene black at topleft with dis #todo finger shush lips
                             p "Why don't you tell us a bit more about your...explorations, Ellen?"
                             scene black at topleft with dis #todo
-                            mc "I'm not sure how interesting it is to listen to that, it is a lot of walking down empty paths."
+                            mc "I'm not sure how interesting it is to listen to that, it is a lot of walking alone down empty paths."
                             scene black at topleft with dis #todo patty takes her own pants off
                             p "Yep, that's hiking for you, isn't it?"
                             scene black at topleft with dis #todo
@@ -113,5 +128,44 @@ label ec_patty_2:
             pass #todo fill choice
         "I explored the old lumberyard": #todo condition
             $ec_patty_2_talked_about_exploring_lumberyard = True
-            pass #todo fill choice
+            scene black at topleft with dis #todo
+            p "Oh, I haven't been there in ages."
+            mc "I really enjoyed it. A very...mysterious place, if you ask me."
+            mc "Made the hair on my neck stand up, like there was somethere there with me."
+            mc "Watching me."
+            p "Yep, that tracks."
+            p "It's also a great place for first kisses - or so I've heard."
+            mc "Oh really, huh?"
+            p "Yep."
+            p "I mean, not that I still think about him from time to time or anything, but..."
+            mc "But me mentioning the place brought some memories back, huh?"
+            p "Exactly."
+    scene black at topleft with dis #todo
+    s "Well, Ellen, it was great having you over again, thank you for coming."
+    mc "Oh, I am such a sucker for this view here, there was no way I would decline your invitation."
+    s "I know, right?"
+    s "Okay, folks, that is it for tonight, thank you all for tuning in."
+    s "And now, I will let you off into the evening with another of my songs that I create up in my little studio in the skies."
+    s "It's called \"Trunk Music\" - and if you think you know what that means, then think again."
+    scene black at topleft with dis
+    play music trunkmusic.mp3
+    pause 30 #todo change this
+    stop music fadeout 1.0
+    if ec_patty_2_naked:
+        scene black at topleft with dis #todo
+        p "Okay...microphones off, all systems shut off - done."
+        scene black at topleft with dis #todo
+        p "Jesus Christ, Ellen, that was the HOTTEST thing ever!"
+        p "I barely managed to talk anymore!"
+        mc "Still better than I faired, with my mumbling and drifting thoughts."
+        mc "I'm sorry, I don't know what's gotten into me."
+        p "Yeah, I don't know about you, but there is no way I'll make it home tonight."
+        p "And I REALLY need you to stay here with me."
+        p "We have a lot of things left to...discuss."
+        p "And you are still wearing your sweater."
+        mc "I really like yours, by the way."
+        p "I know, right?"
+        p "I bought it last year, and I don't think I've really left it out of my sight for a day since."
+        p "So what, you here to trade compliments?"
+        mc "I'm here to make sure you're taking that off, and leaving it out of sight for a while."
     jump next_morning
