@@ -1,8 +1,4 @@
 
-
-
-
-
 default completed_dc_diner_1 = False
 default completed_dc_hotel_1 = False
 default completed_dc_karen_1 = False
@@ -57,5 +53,13 @@ default unlocked_ec_jay_2 = False
 default unlocked_ec_jay_3 = False
 default unlocked_ec_mary_1 = False
 default unlocked_ec_patty_1 = False
-default unlocked_ec_patty_2 = False
 default unlocked_ec_sarah_1 = False
+default unlocked_ec_patty_2 = False
+default unlocked_dc_sarah_1 = False
+default completed_dc_sarah_1 = False
+default unlocked_dc_yggy_1 = False
+default completed_dc_yggy_1 = False
+default unlocked_ec_sarah_1 = False
+default unlocked_ec_patty_2 = False
+default unlocked_ec_concert_1 = False
+default completed_ec_concert_1 = False
