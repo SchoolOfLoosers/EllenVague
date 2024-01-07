@@ -21,4 +21,7 @@ label evening_choices:
         "Go hunting with Jay" if not completed_ec_jay_3 and unlocked_ec_jay_3:
             $completed_ec_jay_3 = True
             jump ec_jay_3
+        "Go to Ragnar's home concert" if not completed_ec_concert_1 and unlocked_ec_concert_1:
+            $completed_ec_concert_1 = True
+            jump ec_concert_1
     return
