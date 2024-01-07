@@ -1,6 +1,8 @@
 label dc_hotel_1:
     scene 27 at topleft with dis
-    #todo write introduction of hotel
+    "Walking into the hotel felt like traveling back in time, if only ever so slightly."
+    "Back to a time when people took each other seriously, and where everything looked like a movie set."
+    "Including the man behind the reception desk."
     scene 28 at topleft with dis
     j "Welcome, you must be Miss Vague, we have been expecting you."
     j "We have prepared you our nicest room, we hope you enjoy your stay."
