@@ -14,7 +14,7 @@ label dc_sarah_1:
             scene 206 at topleft with dis
             "Something about the file on the Sheriff's desk drew me in like the hot, kissable lips of a secret lover."
             "I knew it was wrong, and I only had time for a passing glance, without shifting any of the papers around."
-            "The top paper was a letter, from some Robert Nighttingale, FBI."
+            "The top paper was a letter, from some Robert Mockingbird, FBI."
             "In it, he asked for updates about \"the case\", without any hint as to what case exactly they were discussing."
             "The only thing I was sure about was that the name did not ring a bell for me - and yet, it was like the clouds opened up and a downpour of disdain and shivers washed over me."
             scene black at topleft with dis
