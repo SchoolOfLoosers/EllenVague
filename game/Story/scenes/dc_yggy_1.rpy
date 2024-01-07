@@ -49,4 +49,12 @@ label dc_syggy_1:
     y "Always, and never, but sooner rather than later."
     mc "How very mysterious."
     y "You will like it, trust me."
+    mc "And if I do, I won't tell you about it."
+    y "But you will buy more."
+    mc "Hah, that's probably true."
+    mc "Anyway, thanks for the batteries."
+    y "For your flashlight."
+    mc "Right."
+    y "Have a nice evening."
+    mc "I'm sure I will."
     jump evening_choices
