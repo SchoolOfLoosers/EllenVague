@@ -148,55 +148,55 @@
             "...then the way the Sheriff had called a friend with a pickup to come fetch the body settled things."
             scene 52 at topleft with dis
             "And also that the guy looked like a literal poster boy for Backwoods Magazine."
-            scene 53 at topleft with dis #todo
+            scene 53 at topleft with dis
             b "Shit, Sarah, that ain't right. Pike is dead?"
             b "He didn't even drink. What happened?"
             s "Nobody knows yet, Bubba. But if we can, we'll find that out."
-            scene 54 at topleft with dis #todo
+            scene 54 at topleft with dis
             b "And who are you?"
             mc "I'm Ellen, I came here for a vacation, I was coming from there and nearly drove over him."
-            scene 54 at topleft with dis #todo
+            scene 54 at topleft with dis
             b "Well, good thing you didn't, that wouldn't have been a particularly nice thing to do to him, now would it?"
-            scene 51 at topleft with dis #todo
+            scene 51 at topleft with dis
             "I had meant to ask something, but I just couldn't remember. The guy was slowing time around him, and my brain had trouble adapting."
             "At least I hoped it was that."
-            scene 55 at topleft with dis #todo
+            scene 55 at topleft with dis
             s "Miss Vague, can I ask for your help here? I know it's ugly work, but we need to get him on this tarp and on the truck bed."
             mc "Uh, of course."
             s "Thank you."
-            scene 51 at topleft with dis #todo
+            scene 51 at topleft with dis
             mc "Can I ask something?"
             s "Of course."
             mc "It's early morning now, so this must have happened at night."
             mc "Why would anyone come out here in the dark?"
             mc "Was he a hunter?"
-            scene 54 at topleft with dis #todo
+            scene 54 at topleft with dis
             b "Well, he was, but nobody hunts at night 'round these parts."
             mc "Why are you so sure?"
             b "Ain't nobody go'n out to the forest by night, everyone knows that."
             "Yes, it definitely wasn't his intellect that...drew me in."
-            scene 56 at topleft with dis #todo
+            scene 56 at topleft with dis
             s "Thank you, Bubba, you were very helpful."
-            scene 53 at topleft with dis #todo
+            scene 53 at topleft with dis
             b "I was?"
-            scene 56 at topleft with dis #todo
+            scene 56 at topleft with dis
             s "Yes, thank you."
-            scene 53 at topleft with dis #todo
+            scene 53 at topleft with dis
             b "Oh, of course, for you always, Sarah."
             "Was he actually flirting with her? Was he even aware?"
-            scene 56 at topleft with dis #todo
+            scene 56 at topleft with dis
             s "Now, remember, you have to drive reaaal careful."
-            scene 53 at topleft with dis #todo
+            scene 53 at topleft with dis
             b "I know, because we can't strap him down like a doe. Don't want poor Pike bouncing off the bed, even though he ain't feeling it no more."
-            scene 57 at topleft with dis #todo
+            scene 57 at topleft with dis
             s "Exactly"
-            scene 58 at topleft with dis #todo
+            scene 58 at topleft with dis
             s "Thank you, Miss Vague, now we can really leave."
             s "Thank you for staying to help."
             mc "Of course, it was the least I could do."
             s "Again, I hope the rest of your stay will be more enjoyable!"
-            scene 59 at topleft with dis #todo
+            scene 59 at topleft with dis
             mc "That makes two of us."
-            scene 60 at topleft with dis #todo
+            scene 60 at topleft with dis
             mc "Now: Coffee."
             jump day_choices
