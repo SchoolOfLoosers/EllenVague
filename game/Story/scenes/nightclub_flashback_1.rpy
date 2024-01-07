@@ -33,7 +33,7 @@ label nightclub_flashback_1:
     mc "See, you get that, I get that - why didn't they get it?"
     mc "Anyway, it made me want to show them how in charge of myself I was, walking on clouds in places that made them paranoid."
     mc "And, I won't lie, it was always kinda cute how protective they got, swarming around us girls as if they were afraid of losing us to the darkness."
-    s "You know, that does sound kida cute."
+    s "You know, that does sound kinda cute."
     mc "But that's normal-bad clubs, you know? The kind where you leave and think \"damn, I wonder if that guy who looked so sketch was actually trying to spike my drink\""
     mc "But that place, it was more like when, not if, and it was downright confusing if nothing crazy happened within five minutes of entering there."
     scene 185 at topleft with dis
