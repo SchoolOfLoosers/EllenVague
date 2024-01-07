@@ -1,10 +1,10 @@
 ﻿label start:
     scene 1 at topleft with dis
-    na "Stephen Wry once said: You are who you are when no one is watching."
-    na "Well, I, for one, was horny as hell, and somehow unable to turn that into words on a page."
-    na "But that's the thing about cute little sexy stories, they have to keep you at the edge of your seat all the way through, yearning for that release that may never come."
-    na "In a sex story, there can be no logic, and it shouldn't really require any."
-    na "Logic, by definition, is the anti-thesis of sexy, and so it has no place in a naughty story."
+    "Stephen Wry once said: You are who you are when no one is watching."
+    "Well, I, for one, was horny as hell, and somehow unable to turn that into words on a page."
+    "But that's the thing about cute little sexy stories, they have to keep you at the edge of your seat all the way through, yearning for that release that may never come."
+    "In a sex story, there can be no logic, and it shouldn't really require any."
+    "Logic, by definition, is the anti-thesis of sexy, and so it has no place in a naughty story."
     scene main_menu at topleft with dis
     mc "My name is Ellen Vague, and I'm a writer."
     scene black at topleft with hpunch
@@ -12,9 +12,9 @@
     mc "Fuck!"
     scene 36 at topleft with dis
     mc "Hey, are you okay? Oh my god, please tell me I didn't hit you!"
-    na "Stephen Fry once said, you are who you are when nobody is watching."
-    na "Well, this man was definitely dead, and nobody had watched him die."
-    na "And that was just my welcome to the town of Bryat Fowls. It got worse, after."
+    "Stephen Fry once said, you are who you are when nobody is watching."
+    "Well, this man was definitely dead, and nobody had watched him die."
+    "And that was just my welcome to the town of Bryat Fowls. It got worse, after."
     scene 37 at topleft with dis
     s "9 1 1, what is your emergency?"
     mc "Yes, hello, uh, there is this man, in the middle of the road, and I think he's dead! I nearly drove over him with my car!"
@@ -26,11 +26,11 @@
     mc "Yes, of course. And... Thank you, I'm really shaken up."
     s "Just sit down in your car and wait, I'll come immediately."
     scene black at topleft with dis
-    na "For such a slow town, everything happened pretty fast."
+    "For such a slow town, everything happened pretty fast."
     scene 2 at topleft with dis
     s "Are you the one who called us?"
     mc "Yes, thank you for coming so quickly."
-    scene 3 with dis
+    scene 3 at topleft with dis
     s "Of course. My name is Sarah Fuse, I am the Sheriff of Bryatt Fowls."
     s "I will need your name in a minute, but let us first see if there is anything we can do here."
     s "Has he...moved at all since you called?"
@@ -68,22 +68,22 @@
             s "Hah, I can imagine."
             s "Well, Mary at the Odin's Diner serves a mean coffee that will pick you right back up."
             s "You can't miss it when you drive into town."
-            scene 41 with dis
+            scene 41 at topleft with dis
             mc "Thank you, then that's my first stop."
-            scene 42 with dis
+            scene 42 at topleft with dis
             s "Once you are settled in, I need you to come to the station and sign a written report. I know it's annoying, but..."
-            scene 40 with dis
+            scene 40 at topleft with dis
             mc "Oh, don't worry, of course I'll come."
             jump day_choices
         "I'm calmer now, if you need some company here.":
             $intro_stayed_with_sarah = True
-            scene 42 with dis
+            scene 42 at topleft with dis
             s "Hah, I actually wouldn't mind if you could stay a little longer."
             s "I really didn't look forward to waiting here all alone with a dead man."
-            scene 41 with dis
+            scene 41 at topleft with dis
             mc "No, I can imagine."
             mc "Can I ask, how come you are so...calm about this? Especially if you knew him?"
-            scene 42 with dis
+            scene 42 at topleft with dis
             s "Oh, that comes with the job, you learn to expect the unexpected."
             s "And honestly, it's not like I had much to do with him. He mostly stuck to himself."
             s "But, I have to ask you a question back."
@@ -118,7 +118,7 @@
             s "Well, I totally wouldn't mind to have a drink or two with you sometime, if you want to that is."
             s "I've never met any of my favorite authors or anything like that before, this is super cool!"
             $unlocked_ec_sarah_1 = True
-            scene 49 with dis
+            scene 49 at topleft with dis
             mc "Uh, sure, I'd like that!"
             s "Cool! Just let me know when you feel like it, I have most of my evenings off."
             mc "Really? I thought police officers were always on call?"
@@ -144,8 +144,8 @@
             scene 47 at topleft with dis
             s "Hah, that's a smart approach to life in general."
             scene 51 at topleft with dis
-            na "If there had been any doubt as to how backwoods the place was..."
-            na "...then the way the Sheriff had called a friend with a pickup to come fetch the body settled things."
+            "If there had been any doubt as to how backwoods the place was..."
+            "...then the way the Sheriff had called a friend with a pickup to come fetch the body settled things."
             scene 52 at topleft with dis
             "And also that the guy looked like a literal poster boy for Backwoods Magazine."
             scene 53 at topleft with dis #todo

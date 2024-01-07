@@ -61,7 +61,7 @@ label ec_patty_1:
     play music track_ec_patty_1
     pause 85
     stop music fadeout 1.0
-    scene 70 with dis
+    scene 70 at topleft with dis
     p "Wait, let me check that the microphones are turned off..."
     p "Yep, looks safe enough."
     p "I hope that was fun for you. I know we aren't the biggest station around the country, but..."

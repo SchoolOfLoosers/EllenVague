@@ -17,11 +17,11 @@ label dc_hotel_1:
     j "It's still the quickest way to make a buck, or eat one, I guess."
     "I couldn't tell what it was, but the conversation between us was just...smooth."
     "Fluent, even, like we had known each other for years."
-    scene 33 with dis
+    scene 33 at topleft with dis
     j "Anyway, I won't keep you any longer, I bet you are tired from the drive."
-    scene 34 with dis
+    scene 34 at topleft with dis
     mc "Oh, you have no idea."
-    scene 35 with dis
+    scene 35 at topleft with dis
     mc "Wow, the pictures didn't lie, this room is beautiful!"
     mc "My god, this is literally perfect."
     mc "And hello bed, you and I are gonna spend a lot of time together for the next few weeks."

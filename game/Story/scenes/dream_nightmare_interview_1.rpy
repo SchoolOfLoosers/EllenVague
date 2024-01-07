@@ -16,7 +16,7 @@ label dream_nightmare_interview_1:
     mc "Mh-hm."
     scene 96 at topleft with dis
     p "Oh, that is right, I completely forgot to take the gag out of her mouth."
-    scene 98 with dis
+    scene 98 at topleft with dis
     p "Go on, Ellen, scream all you like, nobody is gonna hear you."
     scene 101 at topleft with dis
     p "And, it looks like we have our first caller!"
@@ -26,7 +26,7 @@ label dream_nightmare_interview_1:
     man "Yes, hello. I want to ask Miss Vague if she thinks she will ever be accepted by REAL writers."
     p "Now, that's the kind of question I think we all would like an answer to, don't we folks?"
     p "And, what does Miss Vague have to say about that?"
-    scene 95 with dis
+    scene 95 at topleft with dis
     menu:
         "I AM a real writer!":
             $dream_nightmare_interview_1_real_writer = True
@@ -43,14 +43,14 @@ label dream_nightmare_interview_1:
     p "What do you say, folks, should we take Miss Vague's pants off, and give her something that...buzzes, when you guys call in?"
     p "Yes, I know, that is a GREAT idea."
     p "So, what do you say to that, Ellen?"
-    scene 102 with dis
+    scene 102 at topleft with dis
     mc "Get away from me!"
-    scene 103 with dis
+    scene 103 at topleft with dis
     p "Now, that is no way to treat a friend, is it?"
     scene 104 at topleft with dis
     p "And poof, there go her pants, just like that."
     p "No pants between friends, right?"
-    scene 105 with dis
+    scene 105 at topleft with dis
     p "And before you people out there listening call in to ask..."
     p "I won't give away if I'm still wearing my pants."
     p "That is not a question you should ask a lady, now is it?"
@@ -74,7 +74,7 @@ label dream_nightmare_interview_1:
     man "No, she even begged me to join in, but I wasn't going to do it."
     man "I mean, who knows where she's been, right? And who's been there with her?"
     p "Right, that makes a lot of sense."
-    scene 106 with dis
+    scene 106 at topleft with dis
     p "Well, it looks like your call has been doing things to her, the little buzzer wasn't even going and she looks like she's...enjoying herself."
     man "Oh, I bet she is."
     scene 107 at topleft with hpunch

@@ -62,9 +62,9 @@ label ec_patty_2:
                             p "Yep, that's hiking for you, isn't it?"
                             scene black at topleft with dis #todo
                             mc "Hiking, sure."
-                            scene black with dis #todo
+                            scene black at topleft with dis #todo
                             mc "Listen, uh, what was the question again?"
-                            scene black with dis #todo
+                            scene black at topleft with dis #todo
                             p "Hah, I kinda forgot myself, let us try this again."
                             p "So, uh, why don't you tell us a little about your life in the city?"
                             p "I know I always come home completely exhausted whenever I spend a day out there."
@@ -79,7 +79,7 @@ label ec_patty_2:
                             mc "You can always go out, have a coffee, talk to someone..."
                             mc "You can't quite stick to yourself in the city, life always finds a way to get to you."
                             mc "I'm pretty sure life would start a fire in my apartment complex or something if I dared to stay inside for a week."
-                            scene black with dis #todo
+                            scene black at topleft with dis #todo
                             p "Hah, that's probably true."
                             p "So, what you're saying is, you go out at least once per week?"
                             mc "That sounds about right, yes."
@@ -102,7 +102,7 @@ label ec_patty_2:
                             p "Oh yes, please, it's better to keep that stuffed where it belongs."
                             mc "That's a good idea, I will do that right away."
 
-                            scene black with dis #todo
+                            scene black at topleft with dis #todo
 
 
                             pass #todo fill choice

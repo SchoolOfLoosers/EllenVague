@@ -7,17 +7,17 @@ label ec_sarah_1:
     mc "Hah, you read my thoughts."
     s "There's no way I could afford this place otherwise, believe me."
     s "You'd think that property prices would be low this far out and away from everything, but..."
-    scene 118 with dis
+    scene 118 at topleft with dis
     s "Anyway, come on in."
     s "You want a drink?"
-    scene 119 with dis
+    scene 119 at topleft with dis
     mc "Yes please."
     mc "What do you have?"
-    scene 120 with dis
+    scene 120 at topleft with dis
     s "I have wine, wine, and...let me see..."
-    scene 118 with dis
+    scene 118 at topleft with dis
     s "Would you look at that, a whole bottle of wine."
-    scene 119 with dis
+    scene 119 at topleft with dis
     mc "Hah, I'd love a glass of that."
     s "Coming right up."
     s "Sit down, I'll be right with you."
@@ -127,7 +127,7 @@ label ec_sarah_1:
     mc "But this is the kind of stuff that I did myself, willingly, and then again as soon as the shame washed off of me."
     scene 136 at topleft with dis
     s "Honestly, thank you for sharing that story with me."
-    scene 135 with dis
+    scene 135 at topleft with dis
     mc "Thanks for listening"
     scene 137 at topleft with dis
     mc "But now, I really need some more wine."

@@ -30,18 +30,18 @@ label dc_diner_1_talk_to_mary:
     m "Welcome to the Odin's Diner! I don't think I have seen you around here before."
     mc "No, that is right, I am here on vacation."
     mc "My name is Ellen, nice to meet you."
-    scene 7 with dis
+    scene 7 at topleft with dis
     m "I'm Mary, welcome again. Coffee?"
     mc "Oh please."
     m "Long trip?"
     mc "That and..."
     mc "I guess everyone will know sooner rather than later, anyway."
     mc "When I came out of the tunnel at Rushmoore Pass, there was a dead man lying in the street, I nearly drove over him."
-    scene 8 with dis
+    scene 8 at topleft with dis
     m "Wait, what? Who's dead?"
     mc "The sheriff said his name was...Pike, I think."
     m "No way."
-    scene 9 with dis
+    scene 9 at topleft with dis
     m "Guys, did you hear that? Pike is dead."
     scene 10 at topleft with dis
     r "Say that again?"
@@ -80,7 +80,7 @@ label dc_diner_1_talk_to_mary:
     m "I'm not sure anyone has told you yet, but there are some rules that everyone sticks to."
     m "I guess I might as well tell you, before nobody else does, and you end up not coming back from what could have been a relaxing vacation."
     mc "Uh, sure, that would be nice."
-    scene 14 with dis
+    scene 14 at topleft with dis
     m "What I'm known for."
     m "So, it's not a lot, but that doesn't make them any less important."
     m "Always carry a flashlight on you, night falls quick around these parts."
@@ -109,7 +109,7 @@ label dc_diner_1_talk_to_mary:
     m "Anyway, listen, sorry I started about the witch."
     m "Maybe an extra tip: Don't take your clothes off when you meet a stranger in the woods, okay?"
     mc "Hah, good to know."
-    scene 13 with dis
+    scene 13 at topleft with dis
     m "Now, I have to prepare some stuff, I hope you enjoy your time in Bryatt Fowls."
     mc "Thank you."
     return
@@ -137,7 +137,7 @@ label dc_diner_1_talk_to_ragnar_and_iggy:
     $unlocked_dc_karen_1 = True
     y "Well, in that case, you should really talk to Karen at the ferry."
     y "She can bring you over to the other side of the lake."
-    scene 21 with dis
+    scene 21 at topleft with dis
     r "It's not a lake, Yggy, it's an ocean."
     y "Maybe for someone as narrow minded as you, Ragnar."
     y "It's not an ocean when you can see the other side of it."
@@ -154,13 +154,13 @@ label dc_diner_1_talk_to_ragnar_and_iggy:
     y "Oh, wait, before I forget."
     y "Put this coin in your pocket, it brings good luck."
     mc "Oh thank you."
-    scene 21 with dis
+    scene 21 at topleft with dis
     r "Throw a dime to the cockslut, and she takes it all off."
-    scene 22 with dis
+    scene 22 at topleft with dis
     mc "Excuse me?!"
-    scene 23 with dis
+    scene 23 at topleft with dis
     y "Jesus Christ, Ragnar, that song again?"
-    scene 20 with dis
+    scene 20 at topleft with dis
     y "Don't mind him, that's an old song that used to come up on the radio sometimes."
     r "Yeah, exactly!"
     y "You just go on and talk to Karen, let me deal with him."
