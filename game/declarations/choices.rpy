@@ -64,3 +64,5 @@ default unlocked_ec_mary_1 = False
 default unlocked_ec_patty_1 = False
 default unlocked_ec_patty_2 = False
 default unlocked_ec_sarah_1 = False
+default dc_sarah_1_snooped_through_file = False
+default dc_sarah_1_left_the_file_alone = False
