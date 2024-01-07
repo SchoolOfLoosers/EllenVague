@@ -203,6 +203,8 @@ def check_variables_that_dont_exist():
         else:
             all_referenced_variables_that_dont_exist.append(referenced_variable)
             append_messages_to_log(f'Variable {referenced_variable["content"]} that was referenced in {referenced_variable["filename"]} (Line: {referenced_variable["number"]}) has not been defined anywhere in your game files')
+            with open(os.path.join(os.getcwd(),"game","declarations","choices.rpy"), "a") as f:
+                f.write(f"\ndefault {referenced_variable['content']} = False")
 
 def check_variables_with_different_capitalization():
     global all_defined_variables
