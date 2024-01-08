@@ -2,6 +2,17 @@ label dc_sarah_1:
     scene 204 at topleft with dis
     s "Oh good, there you are."
     mc "Yes, I came as soon as I could."
+    if ec_sarah_1_had_sex_with_sarah:
+        s "I know, I was there, remember?"
+        mc "Really, we are going there?"
+        s "Come on, it was too good of an opportunity."
+        mc "Can't deny the truth."
+        s "You denied me very little last night."
+        mc "Seems like a trend, huh?"
+        s "Feel free to drop by sometime in case you need a refresher on that subject."
+        $unlocked_ec_sarah_2 = True
+        mc "I might stumble against your front door sometime soonish."
+        s "Anytime, girl."
     s "Well, sit down, I have already prepared the statement for you, so you can just check if I got everything right, then sign it."
     s "I'll just need to fetch it real quick, then you can be on your way again."
     scene 205 at topleft with dis
