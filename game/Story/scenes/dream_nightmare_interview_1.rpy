@@ -30,14 +30,21 @@ label dream_nightmare_interview_1:
     menu:
         "I AM a real writer!":
             $dream_nightmare_interview_1_real_writer = True
-
-            pass #todo fill choice
+            mc "I AM a real writer!"
+            p "Oh really, is that so?"
+            p "I have read better character writing in fifth grade pseudo-essays."
+            p "Now, let's be real here, Ellen - you are a hack, and your only skill is that you can write down what your pussy thinks."
         "I will always be the slut of the writer world":
             $dream_nightmare_interview_1_slut_writer = True
-            pass #todo fill choice
+            man "That is god damn righ, Ellen, you will always be the slut other writers stick their dicks into."
+            man "They will keep using you anytime they need a break from the thing that you could never do:"
+            man "REAL writing."
         "I don't have to be a real writer to make real money, and probably more than you make.":
             $dream_nightmare_interview_1_more_money = True
-            pass #todo fill choice
+            p "Now, that is just no way to treat our listeners, is it, Ellen?"
+            p "But then again, that is what's to be expected of a writer with as little talent and class as you."
+            man "Damn, I couldn't have said it better."
+    p "Well, thank you for calling, that was an interesting question."
     scene 101 at topleft with dis
     p "Now, folks, I just realized that this whole thing could be a lot more fun if we added some...spice."
     p "What do you say, folks, should we take Miss Vague's pants off, and give her something that...buzzes, when you guys call in?"
