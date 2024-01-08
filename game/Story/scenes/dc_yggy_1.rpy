@@ -50,6 +50,7 @@ label dc_yggy_1:
             mc "You'll sell enough of those next week when everyone comes for the parade."
         "Not just thinking about it, I HAVE to get that.":
             $dc_yggy_1_bought_aphrodisiac_potion = True
+            $inventory_has_aphrodisiac_potion = True
             mc "Not just thinking about it, I HAVE to get that."
             mc "Let me guess: No refunds?"
             y "Only repeat sales."

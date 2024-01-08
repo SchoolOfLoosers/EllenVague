@@ -74,4 +74,19 @@ label next_morning:
         mc "That's fan service's finest hour, isn't it? Writing for an audience of one?"
         mc "Come on, Ellen, time to get up, get dressed, get kicking."
 
+    if completed_ec_potion_masturbation_1:
+        scene black at topleft with hpunch #todo bright day, make this the same pose as in masturbation scene final render
+        mc "Woah, that was intense."
+        mc "Wait what?"
+        mc "How can it be morning already?"
+        scene black at topleft with dis #todo
+        mc "No way, what the heck happened?"
+        mc "I must have fallen asleep..."
+        scene black at topleft with dis #todo
+        mc "But...I remember sitting here in this very pose, certainly I did not fall asleep like that..."
+        mc "And oh my god, my legs are cramped..."
+        scene black at topleft with dis #todo roll over on back
+        mc "Holy moly, I can't believe that happened."
+        scene black at topleft with dis #todo sit up
+        mc "What on earth is in that stuff?"
     jump day_choices
