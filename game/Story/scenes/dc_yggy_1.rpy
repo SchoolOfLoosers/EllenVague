@@ -43,21 +43,28 @@ label dc_yggy_1:
     y "Well, those who use it, only speak about it in hushed tones, and they say that it's secret is that it allows for secret moments to keep you shrouded in secrecy for just a little longer."
     mc "You are selling me an aphrodisiac?"
     y "And you are thinking about buying it from me."
-    mc "Not just thinking about it, I HAVE to get that."
-    mc "Let me guess: No refunds?"
-    y "Only repeat sales."
-    mc "Big words, Mister."
-    y "I always leave my customers satisfied."
-    mc "I'm sure you do."
-    y "Listen, if you want to dive into the depth of what this town has to offer, you should consider coming to Ragnar's concert."
-    #todo unlock variable for day choices menu
-    mc "Oh, and when is that?"
-    y "Always, and never, but sooner rather than later."
-    mc "How very mysterious."
-    y "You will like it, trust me."
-    mc "And if I do, I won't tell you about it."
-    y "But you will buy more."
-    mc "Hah, that's probably true."
+    menu:
+        "I'm good, thanks.":
+            $dc_yggy_1_did_not_buy_aphrodisiac_potion = True
+            y "Your loss, but suit yourself."
+            mc "You'll sell enough of those next week when everyone comes for the parade."
+        "Not just thinking about it, I HAVE to get that.":
+            $dc_yggy_1_bought_aphrodisiac_potion = True
+            mc "Not just thinking about it, I HAVE to get that."
+            mc "Let me guess: No refunds?"
+            y "Only repeat sales."
+            mc "Big words, Mister."
+            y "I always leave my customers satisfied."
+            mc "I'm sure you do."
+            y "Listen, if you want to dive into the depth of what this town has to offer, you should consider coming to Ragnar's concert."
+            #todo unlock variable for day choices menu
+            mc "Oh, and when is that?"
+            y "Always, and never, but sooner rather than later."
+            mc "How very mysterious."
+            y "You will like it, trust me."
+            mc "And if I do, I won't tell you about it."
+            y "But you will buy more."
+            mc "Hah, that's probably true."
     scene 196 at topleft with dis
     mc "Anyway, thanks for the batteries."
     y "For your... flashlight."
