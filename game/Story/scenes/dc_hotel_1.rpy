@@ -29,7 +29,7 @@ label dc_hotel_1:
     mc "No? Great, I love to hear that."
     if not completed_dc_diner_1:
         mc "Well, I better visit the Diner now, before I die of coffee starvation."
-        jump dc_hotel_1
+        jump dc_diner_1
     mc "Well, let's see, how should I spend my first evening out here?"
     mc "No need to stress yourself, Ellen, vacations don't have to be PRODUCTIVE."
     mc "God, stupid me..."
