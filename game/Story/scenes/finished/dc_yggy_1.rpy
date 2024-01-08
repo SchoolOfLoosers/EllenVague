@@ -49,7 +49,7 @@ label dc_yggy_1:
     mc "Big words, Mister."
     y "I always leave my customers satisfied."
     mc "I'm sure you do."
-    y "Listen, if you want to dive into the depth of what this town has to offer, you should consider coming to Ragnar's concert."
+    y "Listen, if you want to dive into the depth of what this town has to offer, you should consider coming to Ragnar's home concert on his farm."
     #todo unlock variable for day choices menu
     mc "Oh, and when is that?"
     y "Always, and never, but sooner rather than later."
