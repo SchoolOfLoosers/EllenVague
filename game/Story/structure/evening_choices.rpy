@@ -24,4 +24,8 @@ label evening_choices:
         "Go to Ragnar's home concert" if not completed_ec_concert_1 and unlocked_ec_concert_1:
             $completed_ec_concert_1 = True
             jump ec_concert_1
+        "Actually, I could just stay inside and use this \"secret potion\" that Yggy sold me..." if not completed_ec_potion_masturbation_1 and inventory_has_aphrodisiac_potion:
+            $completed_ec_potion_masturbation_1 = True
+            $inventory_has_aphrodisiac_potion = False
+            jump ec_potion_masturbation_1
     return
