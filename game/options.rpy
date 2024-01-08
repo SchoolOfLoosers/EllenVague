@@ -186,6 +186,7 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('**.py', None)
+    build.classify('**.md', None)
     build.classify('**.bat', None)
     build.classify('**.duf', None)
     build.classify('**/elevenlabs_api_key.txt', None)
