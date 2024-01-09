@@ -55,18 +55,26 @@ label ec_patty_2:
             menu:
                 "Oh, you know, I just enjoyed spending some time with my own thoughts":
                     $ec_patty_2_talked_about_spending_time_wiht_yourself_on_lovers_peak = True
-
-                    pass #todo fill choice
+                    mc "Oh, you know, I just enjoyed spending some time with my own thoughts."
+                    p "Working on a new book, huh?"
+                    mc "Always, yes. At least a little."
+                    p "Hah, I get that."
+                    p "I always think of something for the show in the middle of the day, then I immediately have to stop what I'm doing and write that down."
+                    mc "Yep, that sounds familiar." #todo maybe a bit more text here later?
                 "Oh, you know, I just enjoyed spending some time with my own thoughts (point at your crotch)" if dc_karen_1_masturbated_on_lovers_peak:
                     $ec_patty_2_pointed_at_crotch = True
+                    mc "Oh, you know, I just enjoyed spending some time with my own thoughts"
                     scene black at topleft with dis #todo
                     p "Oh, is that so?"
                     p "Well, I can understand that, I sometimes do the same..."
                     menu:
                         "Go on with the interview like normal":
                             $ec_patty_2_naked = False
-
-                            pass #todo fill choice
+                            p "So, I bet you were working on a new book, huh?"
+                            mc "Always, yes. At least a little."
+                            p "Hah, I get that."
+                            p "I always think of something for the show in the middle of the day, then I immediately have to stop what I'm doing and write that down."
+                            mc "Yep, that sounds familiar." #todo maybe a bit more text here later?
                         "Take your pants off quietly":
                             $ec_patty_2_naked = True
                             scene black at topleft with dis #todo finger shush lips
@@ -116,17 +124,20 @@ label ec_patty_2:
                             mc "I'll try to keep my raunchy language in check from now on."
                             p "Oh yes, please, it's better to keep that stuffed where it belongs."
                             mc "That's a good idea, I will do that right away."
-
                             scene black at topleft with dis #todo
-
-
-                            pass #todo fill choice
-                    pass #todo fill choice
-            pass #todo fill choice
         "I spent a day fishing down by the pier": #todo condition
             $ec_patty_2_talked_about_fishing_at_pier = True
-            pass #todo fill choice
-        "I explored the old lumberyard": #todo condition
+            mc "I spent a day fishing down by the pier."
+            p "Oh, that sounds relaxing."
+            p "You guys caught anything?"
+            scene black at topleft with dis #todo
+            mc "Yes, a shark, it was about this long"
+            scene black at topleft with dis #todo
+            mc "Not really, no."
+            mc "It was still fun, though."
+            p "Yep, I get that."
+            p "I haven't been out for a long time now, really need to get back into it myself."
+        "I explored the old lumberyard" if completed_ec_jay_2:
             $ec_patty_2_talked_about_exploring_lumberyard = True
             scene black at topleft with dis #todo
             p "Oh, I haven't been there in ages."
