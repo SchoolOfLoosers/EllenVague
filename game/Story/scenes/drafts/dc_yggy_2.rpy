@@ -27,9 +27,11 @@ label dc_yggy_2:
     mc "Don't ask, don't tell, huh?"
     mc "Don't worry, I won't pry."
     mc "As long as you sell me another one of those."
-    y ""
-
-
+    y "I had a feeling you might come back."
+    mc "How could I not, that was an amazing night."
+    mc "I don't think I have ever felt anything close to that."
+    y "You know what would be even better?"
+    mc "I'm sure you're about to tell me."
     scene black at topleft with dis #todo
     y "I have another potion here that will allow you to remember everything that happens between losing control and gaining it back again in the morning."
     mc "You do, huh?"
@@ -49,11 +51,41 @@ label dc_yggy_2:
         "So, let's say we do this...":
             $dc_yggy_2_lets_say_we_do_this = True
             mc "So, let's say we do this..."
-
-            pass #todo fill choice
+            mc "And I'm not saying we will..."
+            mc "How do you see this happening?"
+            y "Well, since you said you came here looking for inspiration..."
+            y "I say we lock ourselves up in your room, where it's nice and cozy and comfortable..."
+            y "And then you start writing."
+            y "You'll see, your focus will allow you to write pages over pages, all in one night."
+            y "And anytime you need some inspiration, I'll be there to help you out."
+            mc "You make that sound so easy."
+            y "Trust me, I can always make it hard for you."
+            mc "Woah, that was bad."
+            y "I'll make good on the offer, though."
+            menu:
+                "Yeah, no way we are doing that, I don't know how you can think that would work.":
+                    $dc_yggy_2_yeah_no_way_we_are_doing_that_i_dont_know_how_you_can_think_that_would_work = True
+                    $unlocked_ec_yggy_1 = True
+                    mc "Yeah, no way we are doing that, I don't know how you can think that would work."
+                    y "Of course, nobody expects you to say yes."
+                    y "But if that changes, you can always give me a call."
+                    jump evening_choices
+                "I might give you a call sometime.":
+                    $dc_yggy_2_i_might_give_you_a_call_sometime = True
+                    $unlocked_ec_yggy_1 = True
+                    mc "Okay, I can't believe I'm saying this, but..."
+                    mc "I might give you a call sometime."
+                    y "I look forward to that."
+                    mc "I look forward to seeing how messy we can get together."
+                    y "And how many pages you'll write, yes?"
+                    y "At least I thought that was your main goal here."
+                    mc "I feel like we can mix business and pleasure here."
+                    y "I'll bring everything we need for that."
+                    y "If you ever end up giving me that call."
+                    jump evening_choices
         "I'm gonna take a hard pass, but thanks for the effort":
             $dc_yggy_2_hard_pass = True
             mc "I'm gonna take a hard pass, but thanks for the effort"
-            pass #todo fill choice
-
-    jump evening_choices
+            y "Of course, nobody expects you to say yes."
+            y "But if that changes, you can always give me a call."
+            jump evening_choices
