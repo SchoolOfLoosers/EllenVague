@@ -65,9 +65,9 @@ def main():
                     audio.hex
                     save(audio, savepath)
     #remove old voice files that are superseded by new IDs
-    # for soundfile in os.listdir(os.path.join(os.getcwd(), "game","audio","voice")):
-    #     if soundfile.split('.')[0] not in all_dialog_ids:
-    #         os.remove(os.path.join(os.getcwd(), "game","audio","voice",soundfile))
+    for soundfile in os.listdir(os.path.join(os.getcwd(), "game","audio","voice")):
+        if soundfile.split('.')[0] not in all_dialog_ids:
+            os.remove(os.path.join(os.getcwd(), "game","audio","voice",soundfile))
 
 if __name__ == '__main__':
     main()
