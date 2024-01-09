@@ -15,7 +15,6 @@ def main():
         all_input_lines.pop(0)
 
 
-    files = []
     for line in all_input_lines:
         dialog_line = line.split("\t")
         all_dialog_lines.append(dialog_line)
@@ -31,7 +30,6 @@ def main():
                 if os.path.exists(savepath.replace(digit+".mp3", ".mp3")):
                     shutil.copy(savepath.replace(digit+".mp3", ".mp3"),savepath)
                 else:
-                    files.append(savepath)
                     print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
                     speaker = dialog_line[1]
                     if speaker == "mc" or speaker == "na" or speaker == "":
