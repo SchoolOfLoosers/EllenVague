@@ -46,9 +46,60 @@ label ec_jay_2:
                 "Well, of course, but...":
                     $ec_jay_2_well_of_course_but_ = True
                     mc "Well, of course, but..."
-
-                    pass #todo fill choice
-                    jump next_morning
+                    mc "So far, I'm not getting to see any of them."
+                    mc "And in the city, you never have to look far or search for long before you find someone you would have rather not found."
+                    scene black at topleft with dis #todo
+                    j "True, and I don't want to come off like I don't enjoy living here, compared to pretty much anywhere else."
+                    j "Plus, there are all kinds of places like this, where you are unlikely to meet any people at all, good or bad."
+                    mc "That's true."
+                    menu:
+                        "So, uh, what exactly was your plan, once you have me out here?":
+                            $ec_jay_2_so_uh_what_exactly_was_your_plan_once_you_have_me_out_here = True
+                            mc "So, uh, what exactly was your plan, once you have me out here?"
+                            j "I made a point of not expecting any particular outcome."
+                            menu:
+                                "Why so shy?":
+                                    $ec_jay_2_why_so_shy = True
+                                    mc "Why so shy?"
+                                    j "Because I like to offer the opportunities, then leave the decisions with you."
+                                    mc "Like I said, pretty damn shy."
+                                    j "I am always able to adapt to the situation, if I get the feeling that my expertise is needed."
+                                    j "Which clearly, it seems to be the case to night."
+                                    mc "So, you're an expert, huh?"
+                                    j "I mean, I don't have any written references..."
+                                    j "But I am willing to work pro bono on this, for an equal share of any potential proceeds."
+                                    mc "Wow, that's the first time anyone has called my pussy a pro bono case."
+                                    j "No offense."
+                                    mc "None taken."
+                                    j "Then let me take over instead."
+                                    mc "As long as that means you'll take my hips in your hands."
+                                    j "That can be arranged."
+                                    jump ec_jay_2_sex_with_jay
+                                "Good, because I won't stand for any shenanigans, just because I followed you out here.":
+                                    $ec_jay_2_good_because_i_wont_stand_for_any_shenanigans_just_because_i_followed_you_out_here = True
+                                    mc "Good, because I won't stand for any shenanigans, just because I followed you out here."
+                                    j "I would expect nothing less from a lady of class."
+                                    j "And I beg your pardon if there was ever an impression that I would."
+                                    mc "Oh no, it's fine, I just wanted to make sure we understand each other."
+                                    j "Absolutely."
+                                    j "What do you say, should we head home, now?"
+                                    j "Or do you want to listen to the forest for a while longer?"
+                                    mc "No, I think I've had enough, let's go."
+                                    j "Very well, let's."
+                                    jump ec_jay_2_say_goodbye
+                        "Why don't we cut to the chase, Jay? We both know why we are here.":
+                            $ec_jay_2_why_dont_we_cut_to_the_chase_jay_we_both_know_why_we_are_here = True
+                            mc "Why don't we cut to the chase, Jay? We both know why we are here."
+                            j "It does feel like we have reached an impasse."
+                            mc "I see only one way out of this stalemate."
+                            j "The only one I see requires you to tan your skin in the light of the moon."
+                            mc "Say no more, Mister."
+                            jump ec_jay_2_sex_with_jay
+                        "I think we should head home now":
+                            $ec_jay_2_i_think_we_should_head_home_now = True
+                            mc "I think we should head home now"
+                            j "Then that's what we'll do."
+                            jump ec_jay_2_say_goodbye
                 "How dark are we talking, here?":
                     $ec_jay_2_how_dark_are_we_talking_here = True
                     mc "How dark are we talking, here?"
@@ -110,28 +161,7 @@ label ec_jay_2:
                                                     mc "I feel like we should get going, now, before I fall asleep standing."
                                                     j "Then that's what we'll do."
                                                     j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
-                                                    scene black at topleft with dis #todo
-                                                    j "There we go, that's the main road again."
-                                                    j "Congratulations, you made it back out of the woods safe and healthy."
-                                                    mc "Thank you, this was fun."
-                                                    j "I'm glad you enjoyed this little adventure."
-                                                    menu:
-                                                        "I wouldn't mind doing this again sometime.":
-                                                            $ec_jay_2_i_wouldnt_mind_doing_this_again_sometime = True
-                                                            $unlocked_ec_jay_3 = True
-                                                            mc "I wouldn't mind doing this again sometime."
-                                                            j "In that case, I will let you know the next time I come up with a trip worth taking."
-                                                            mc "I look forward to that."
-                                                            mc "And now, have a good night."
-                                                            j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                                            mc "Hah, I'm sure I will."
-                                                            jump next_morning
-                                                        "Thanks, have a good night.":
-                                                            $ec_jay_2_thanks_have_a_good_night = True
-                                                            mc "Thanks, have a good night."
-                                                            j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                                            mc "Hah, I'm sure I will."
-                                                            jump next_morning
+                                                    jump ec_jay_2_say_goodbye
 
                                         "Well, thanks for showing me this place.":
                                             $ec_jay_2_well_thanks_for_showing_me_this_place = True
@@ -139,28 +169,7 @@ label ec_jay_2:
                                             mc "I feel like we should get going, now, before I fall asleep standing."
                                             j "Then that's what we'll do."
                                             j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
-                                            scene black at topleft with dis #todo
-                                            j "There we go, that's the main road again."
-                                            j "Congratulations, you made it back out of the woods safe and healthy."
-                                            mc "Thank you, this was fun."
-                                            j "I'm glad you enjoyed this little adventure."
-                                            menu:
-                                                "I wouldn't mind doing this again sometime.":
-                                                    $ec_jay_2_i_wouldnt_mind_doing_this_again_sometime = True
-                                                    $unlocked_ec_jay_3 = True
-                                                    mc "I wouldn't mind doing this again sometime."
-                                                    j "In that case, I will let you know the next time I come up with a trip worth taking."
-                                                    mc "I look forward to that."
-                                                    mc "And now, have a good night."
-                                                    j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                                    mc "Hah, I'm sure I will."
-                                                    jump next_morning
-                                                "Thanks, have a good night.":
-                                                    $ec_jay_2_thanks_have_a_good_night = True
-                                                    mc "Thanks, have a good night."
-                                                    j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                                    mc "Hah, I'm sure I will."
-                                                    jump next_morning
+                                            jump ec_jay_2_say_goodbye
                                 "And what did you do to your girlfriend when you were out here all alone?":
                                     $ec_jay_2_and_what_did_you_do_to_your_girlfriend_when_you_were_out_here_all_alone = True
                                     scene black at topleft with dis #todo
@@ -307,28 +316,7 @@ label ec_jay_2:
                             mc "As long as I get home safe, I'd call this a win."
                             j "Then that's what we'll do."
                             j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
-                            scene black at topleft with dis #todo
-                            j "There we go, that's the main road again."
-                            j "Congratulations, you made it back out of the woods safe and healthy."
-                            mc "Thank you, this was fun."
-                            j "I'm glad you enjoyed this little adventure."
-                            menu:
-                                "I wouldn't mind doing this again sometime.":
-                                    $ec_jay_2_i_wouldnt_mind_doing_this_again_sometime = True
-                                    $unlocked_ec_jay_3 = True
-                                    mc "I wouldn't mind doing this again sometime."
-                                    j "In that case, I will let you know the next time I come up with a trip worth taking."
-                                    mc "I look forward to that."
-                                    mc "And now, have a good night."
-                                    j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                    mc "Hah, I'm sure I will."
-                                    jump next_morning
-                                "Thanks, have a good night.":
-                                    $ec_jay_2_thanks_have_a_good_night = True
-                                    mc "Thanks, have a good night."
-                                    j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
-                                    mc "Hah, I'm sure I will."
-                                    jump next_morning
+                            jump ec_jay_2_say_goodbye
     jump next_morning
 
 
@@ -365,3 +353,27 @@ label ec_jay_2_sex_with_jay:
     mc "Get out of my sight."
     j "Right away, Ma'am."
     jump next_morning
+
+label ec_jay_2_say_goodbye:
+    scene black at topleft with dis #todo
+    j "There we go, that's the main road again."
+    j "Congratulations, you made it back out of the woods safe and healthy."
+    mc "Thank you, this was fun."
+    j "I'm glad you enjoyed this little adventure."
+    menu:
+        "I wouldn't mind doing this again sometime.":
+            $ec_jay_2_i_wouldnt_mind_doing_this_again_sometime = True
+            $unlocked_ec_jay_3 = True
+            mc "I wouldn't mind doing this again sometime."
+            j "In that case, I will let you know the next time I come up with a trip worth taking."
+            mc "I look forward to that."
+            mc "And now, have a good night."
+            j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
+            mc "Hah, I'm sure I will."
+            jump next_morning
+        "Thanks, have a good night.":
+            $ec_jay_2_thanks_have_a_good_night = True
+            mc "Thanks, have a good night."
+            j "In my role as the owner of the hotel you'll be sleeping in, I doubly hope you will have a good night."
+            mc "Hah, I'm sure I will."
+            jump next_morning
