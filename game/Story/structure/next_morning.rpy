@@ -74,7 +74,8 @@ label next_morning:
         mc "That's fan service's finest hour, isn't it? Writing for an audience of one?"
         mc "Come on, Ellen, time to get up, get dressed, get kicking."
 
-    if completed_ec_potion_masturbation_1:
+    if completed_ec_potion_masturbation_1 and not played_completed_ec_potion_masturbation_1_reaction:
+        $played_completed_ec_potion_masturbation_1_reaction = True
         scene black at topleft with hpunch #todo bright day, make this the same pose as in masturbation scene final render
         mc "Woah, that was intense."
         mc "Wait what?"
@@ -89,4 +90,59 @@ label next_morning:
         mc "Holy moly, I can't believe that happened."
         scene black at topleft with dis #todo sit up
         mc "What on earth is in that stuff?"
+
+    if ec_jay_1_can_share_bed_tonight and not played_ec_jay_1_can_share_bed_tonight_reaction:
+        $played_ec_jay_1_can_share_bed_tonight_reaction = True
+        scene 35 at topleft with dis
+        mc "Oh my god, that was SO embarrassing!"
+        mc "I can't believe he said no."
+        mc "What kind of asshole does that?!"
+        menu:
+            "Fine, I'll just do it myself...":
+                $next_morning_fine_ill_just_do_it_myself = True
+                mc "Fine, I'll just do it myself..."
+                scene 94 at topleft with dis
+                mc "You see this, Mister Fancy Hotel Owner Fucktard?"
+                mc "This is what you're missing out on, you idiot."
+                mc "God, I hope he at least has cameras installed in here"
+                scene 93 at topleft with dis
+                mc "He probably has, hasn't he?"
+                mc "That asshole is probably sitting somewhere, watching me here..."
+                mc "\"I am inclined to remember this conversation at a later date\"..."
+                scene 93 at topleft with hpunch
+                mc "My ass you'll remember this, you sucker."
+            "I guess I'll just cringe my way to sleep...":
+                $i_guess_ill_just_cringe_my_way_to_sleep_ = True
+                mc "I guess I'll just cringe my way to sleep..."
+        scene black at topleft with dis #todo
+        mc "Well, another day, another me, I guess."
+        mc "The new me that can totally handle being rejected, without losing her mind."
+        scene black at topleft with dis #todo
+        mc "Time to get dressed, and have breakfast downstairs."
+        scene black at topleft with dis #todo
+        mc "And try not to stare him down, Ellen, you are better than that."
+        mc "No need to add insult to injury."
+
+
+    if ec_jay_2_had_sex_with_jay and not played_ec_jay_2_had_sex_with_jay_reaction:
+        $played_ec_jay_2_had_sex_with_jay_reaction = True
+        scene black at topleft with dis #todo naked in bed
+        mc "Oh my god, what have I done?"
+        mc "Now I can't even go and have breakfast without seeing him..."
+        scene black at topleft with dis #todo
+        mc "I mean, not that I regret it or anything..."
+        mc "That was actually pretty special."
+        scene black at topleft with dis #todo
+        mc "The way he looked at me, when he stopped caring about me..."
+        scene black at topleft with dis #todo
+        mc "And started caring only about himself..."
+        scene black at topleft with dis #todo
+        mc "That was so good..."
+        scene black at topleft with hpunch #todo
+        mc "Come on, Ellen, get a grip!"
+        scene black at topleft with dis #todo sit up on bed, angry look
+        mc "Time to get ready for breakfast."
+        scene black at topleft with dis #todo stand up
+        mc "And wipe that stupid smile off your face!"
+
     jump day_choices
