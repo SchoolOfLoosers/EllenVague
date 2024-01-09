@@ -1,8 +1,6 @@
 label ec_jay_2:
-    "This scene is not yet ready to play, I will work on it as soon as I find the time. Thanks for your understanding."
-    return #todo remove this and line above
     #todo asset: https://www.daz3d.com/sawmill-props https://www.daz3d.com/picnic-area-exterior https://www.daz3d.com/backwoods-shooting-range-for-genesis-3-and-8-male-s-and-female-s
-    scene black at topleft with dis #todo
+    scene 215 at topleft with dis
     j "Welcome, Miss Vague."
     j "Are you prepared for our little hike?"
     mc "I am, but I feel like you can call me Ellen now, considering I allow you to literally drag me into the woods at night."
@@ -14,7 +12,7 @@ label ec_jay_2:
     j "It will be fully dark by the time we get there, so I hope your flashlight batteries are topped up."
     mc "Yep."
     j "Good, then let's go."
-    scene black at topleft with dis #todo
+    scene 213 at topleft with dis
     mc "Woah, this place is pretty cool!"
     mc "How old is this?"
     j "This building, almost hundred years."
@@ -35,13 +33,13 @@ label ec_jay_2:
     j "I bet."
     j "What do you say, shall we go on to the actual lumberyard, then?"
     mc "Let's go."
-    scene black at topleft with dis #todo
+    scene 214 at topleft with dis
     mc "What's so special about that lumberyard, by the way?"
     j "Nothing, and everything."
     j "It has some personal meaning to me, because it was still active when I was young - and I worked my first summer job there."
     j "Apart from that, it really isn't anything special."
     j "Still a good hike, though."
-    scene black at topleft with dis #todo show shadow watching them.
+    scene 216 at topleft with dis
     menu:
         "Say nothing":
             $ec_jay_2_said_nothing_about_presence = True
@@ -60,6 +58,7 @@ label ec_jay_2:
     mc "I mean, it's all so...different."
     mc "Calmer, and friendly."
     mc "Makes me wonder why people in the city can't be like that."
+    scene 217 at topleft with dis
     j "Well, let's not pretend that people out here can't have their darker sides."
     menu ec_jay_2_menu_dark:
         "Well, of course, but...":

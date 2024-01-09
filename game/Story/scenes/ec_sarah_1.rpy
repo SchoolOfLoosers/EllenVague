@@ -132,7 +132,7 @@ label ec_sarah_1:
             s "Honestly, thank you for sharing that story with me."
             scene 135 at topleft with dis
             mc "Thanks for listening"
-        "Tell her about that day you slept with your boss (not yet implemented)":#todo change this
+        "Tell her about that day you slept with your boss":
             $ec_sarah_1_told_her_about_affair_with_your_boss = True
             call boss_flashback_1
             scene 136 at topleft with dis
@@ -148,7 +148,6 @@ label ec_sarah_1:
             s "Honestly, thank you for sharing that story with me."
             scene 135 at topleft with dis
             mc "Thanks for listening"
-            pass #todo fill choice
         "Can we just...change the subject?":
             $ec_sarah_1_changed_subject = True
             s "Oh yes, of course, I didn't mean to pry."

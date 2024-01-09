@@ -20,7 +20,9 @@ label dc_yggy_2:
     mc "Oh, I can imagine."
     mc "So what, you test these on yourself before you peddle them to unsuspecting customers?"
     y "Yes, but this particular example has no effect on the male brain."
+    scene black at topleft with dis #todo
     mc "Oh really?"
+    scene black at topleft with dis #todo
     y "That's how it is sometimes, I could drink a gallon of this stuff and all that would happen is me getting drunk off the alcohol."
     mc "So, who was the lucky first customer, then?"
     y "A woman long lost to my quickly fading memory."
