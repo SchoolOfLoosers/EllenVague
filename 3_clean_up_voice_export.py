@@ -29,43 +29,43 @@ def main():
             if digit:
                 if os.path.exists(savepath.replace(digit+".mp3", ".mp3")):
                     shutil.copy(savepath.replace(digit+".mp3", ".mp3"),savepath)
-                else:
-                    print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
-                    speaker = dialog_line[1]
-                    if speaker == "mc" or speaker == "na" or speaker == "":
-                        speaker = "Kimber"
-                    elif speaker == "s":
-                        speaker = "Stacey"
-                    elif speaker == "b":
-                        speaker = "Jessie"
-                    elif speaker == "j":
-                        speaker = "Michael"
-                    elif speaker == "p":
-                        speaker = "Stacey"
-                    elif speaker == "y":
-                        speaker = "Bill"
-                    elif speaker == "r":
-                        speaker = "Fin"
-                    elif speaker == "m":
-                        speaker = "Rachel"
-                    elif speaker == "man":
-                        speaker = "Clyde"
-                    elif speaker == "k":
-                        speaker = "Grace"
-                    elif speaker == "shadow":
-                        speaker = "DaveGruff"
-                    elif speaker == "e":
-                        speaker = "Brian"
-                    elif speaker == "c":
-                        speaker = "Nora"
+            else:
+                print("Generating file ID: "+ dialog_line[0] + ", Speaker: "+dialog_line[1]+ ", text: " + dialog_line[2])
+                speaker = dialog_line[1]
+                if speaker == "mc" or speaker == "na" or speaker == "":
+                    speaker = "Kimber"
+                elif speaker == "s":
+                    speaker = "Stacey"
+                elif speaker == "b":
+                    speaker = "Jessie"
+                elif speaker == "j":
+                    speaker = "Michael"
+                elif speaker == "p":
+                    speaker = "Stacey"
+                elif speaker == "y":
+                    speaker = "Bill"
+                elif speaker == "r":
+                    speaker = "Fin"
+                elif speaker == "m":
+                    speaker = "Rachel"
+                elif speaker == "man":
+                    speaker = "Clyde"
+                elif speaker == "k":
+                    speaker = "Grace"
+                elif speaker == "shadow":
+                    speaker = "DaveGruff"
+                elif speaker == "e":
+                    speaker = "Brian"
+                elif speaker == "c":
+                    speaker = "Nora"
 
-                    audio = generate(
-                        text=dialog_line[2],
-                        voice=speaker,
-                        model="eleven_multilingual_v2"
-                    )
-                    audio.hex
-                    save(audio, savepath)
+                audio = generate(
+                    text=dialog_line[2],
+                    voice=speaker,
+                    model="eleven_multilingual_v2"
+                )
+                audio.hex
+                save(audio, savepath)
     #remove old voice files that are superseded by new IDs
     # for soundfile in os.listdir(os.path.join(os.getcwd(), "game","audio","voice")):
     #     if soundfile.split('.')[0] not in all_dialog_ids:
