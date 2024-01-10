@@ -22,4 +22,10 @@ label day_choices:
         "Ask Yggy what the fuck that potion thingy was." if not completed_dc_yggy_2 and unlocked_dc_yggy_2:
             $completed_dc_yggy_2 = True
             jump dc_yggy_2
+        "Visit Dr. Hardong" if not completed_dc_hardong_1 and unlocked_dc_hardong_1:
+            $completed_dc_hardong_1 = True
+            jump dc_hardong_1
+        "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
+            $completed_dc_cock_lady_2 = True
+            jump dc_cock_lady_2
     jump evening_choices

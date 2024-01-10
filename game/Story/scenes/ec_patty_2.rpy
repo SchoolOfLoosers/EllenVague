@@ -1,7 +1,4 @@
 label ec_patty_2:
-    "This scene is not yet ready to play, I will work on it as soon as I find the time. Thanks for your understanding."
-    return #todo remove this and line above
-    #todo another interview, and we have the chance to take our pants off and secretly mutually masturbate with Patty. Intro:
     scene black at topleft with dis #todo
     p "Well, folks, looks like our vacationing author is back on the show, eager and willing to chat the day away."
     p "Welcome back, Miss Vague."

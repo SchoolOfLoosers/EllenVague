@@ -349,7 +349,7 @@ label ec_jay_2_sex_with_jay:
     j "So, this counts as research for you?"
     mc "Yes, I am engaging with the locals, really taking the atmosphere of the town in."
     j "Well, I have some more atmosphere for you in a moment."
-    menu:
+    menu ec_jay_1_menu_sex_with_jay:
         "Just tell me when, I want to taste you.":
             $ec_jay_2_just_tell_me_when_i_want_to_taste_you = True
             mc "Just tell me when, I want to taste you."
@@ -376,6 +376,16 @@ label ec_jay_2_sex_with_jay:
             scene black at topleft with hpunch #todo cum in air
             pause 3.0
             scene black at topleft with dis #todo still shot without jay in picture
+        "Don't you dare stop now!":
+            $ec_jay_2__roll_over_on_your_back_ = True
+            mc "Don't you dare stop now!"
+            j "Your wish is my command."
+            mc "It fucking better be!"
+            "From that moment on, we both got lost in time, in space..."
+            "Lost in each other's eyes..."
+            "Just lost in each other, in general, really..."
+            "And before I knew it, I was grasping on the table as much as on reality itself..."
+            jump ec_jay_1_menu_sex_with_jay
     mc "So, was I everything you thought I would be?"
     j "I'll have to try this again to really make sure."
     mc "Hah, nice try. Keep your hands off of me, you creep."
