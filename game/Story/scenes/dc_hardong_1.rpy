@@ -186,8 +186,29 @@ label dc_hardong_1:
                         "Honestly, this is quite fun.":
                             $dc_hardong_1_honestly_this_is_quite_fun = True
                             mc "Honestly, this is quite fun."
-
-                            pass #todo fill choice
+                            if dc_hardong_1_i_am_interested_in_why_we_consider_some_sex_acts_as_taboo_or_dirty:
+                                e "Which tells me that you fall more in the category of enjoying the potential embarrassment of your own actions."
+                                menu:
+                                    "Who says I don't also enjoy having my agency taken away from me?":
+                                        $dc_hardong_1_who_says_i_dont_also_enjoy_having_my_agency_taken_away_from_me = True
+                                        mc "Who says I don't also enjoy having my agency taken away from me?"
+                                        e "If that was a thinly veiled attempt to get me to cross every single professional line in the book, then I have to disappoint you."
+                                        mc "What a pity, to think you could have taken control here, but are too shy for it."
+                                        e "Well, my patient's trust in me is the most important tool I have at my disposal, and I am not willing to dull it over some fleeting form of entertainment."
+                                        e "Besides, it wouldn't really work, since you all but encouraged me, and thereby acted out of your own free will."
+                                        e "This wouldn't quite test the actual experience of having your agency taken away from you."
+                                        mc "Ugh, I guess you're right."
+                                        e "I'm glad we agree on this matter."
+                                        mc "Do we, though?"
+                                    "That seems to be a fair assessment, doctor.":
+                                        $dc_hardong_1_that_seems_to_be_a_fair_assessment_doctor = True
+                                        mc "That seems to be a fair assessment, doctor."
+                                        e "Well, I am sorry that I can't quite deliver you any laughter or sneering looks, I am too fascinated by this opportunity to study you."
+                                        mc "Oh, believe me, you sitting there to take notes is plenty embarrassing already."
+                                        e "I am glad to hear that."
+                                        e "Please, carry on."
+                            else:
+                                pass #todo fill choice
                         "It makes me pretty uncomfortable, actually...":
                             $dc_hardong_1_it_makes_me_pretty_uncomfortable_actually_ = True
                             mc "It makes me pretty uncomfortable, actually..."
@@ -195,9 +216,22 @@ label dc_hardong_1:
                         "You know you could do more than just watch, right?":
                             $dc_hardong_1_you_know_you_could_do_more_than_just_watch_right = True
                             mc "You know you could do more than just watch, right?"
+                            e "And is that what you want?"
+                            e "Let me rephrase: Is that what you are thinking about as you are touching yourself?"
+                            mc "How could I not?"
+                            e "Well, you could be afraid of me getting ideas here, for one thing."
+                            e "But it does appear to me that my presence here is more of a net positive in your eyes."
+                            menu:
+                                "Please tell me you aren't going to keep just sitting there...":
+                                    $dc_hardong_1_please_tell_me_you_arent_going_to_keep_just_sitting_there_ = True
+                                    mc "Please tell me you aren't going to keep just sitting there..."
+                                    jump dc_hardong_1_sex_with_doctor
+                                "Well, watch this part extra closely now, Doctor...":
+                                    $dc_hardong_1_well_watch_this_part_extra_closely_now_doctor_ = True
+                                    mc "Well, watch this next part extra closely now, Doctor..."
+                                    scene black at topleft with hpunch #todo
+                                    pass #todo fill choice
                             pass #todo fill choice
-                    pass #todo fill choice
-
             e "Well, were there any other questions you wanted to ask me?"
             jump dc_hardong_1_menu_ask_questions
         "That's all the questions I had.":
@@ -210,4 +244,48 @@ label dc_hardong_1:
             else:
                 e "I look forward to seeing you again in the future, Ellen."
 
+    jump evening_choices
+
+label dc_hardong_1_sex_with_doctor:
+    $dc_hardong_1_had_sex_with_doctor = True
+    scene black at topleft with dis #todo
+    e "I have always prided myself on being more of a hands-on doctor than most with my specialization."
+    mc "You know where you can stuff that pride of yours?"
+    e "No need to say it out loud."
+    mc "Good, you had me worried for a second..."
+    mc "Professional concerns and bullshit like that..."
+    e "Oh, I wouldn't do this if you were my patient."
+    mc "Not even if I ask you?"
+    e "I can see that you aren't in a dire, exploitable situation."
+    mc "And that's supposed to make this okay?"
+    e "It makes me think I can make an exception in your case."
+    mc "Not gonna lie, this does feel pretty exceptional."
+    scene black at topleft with hpunch #todo cumshot
+    mc "This new therapy is working, doctor."
+    e "I can see that."
+    mc "What do your notes say about all this?"
+    e "A detailed description of your natural beauty, with a weirdly detailed subsection describing your gender specific body parts."
+    mc "Hah, that's what I thought."
+    e "If you stay still like that for a while, I'll add a quick sketch as well."
+    mc "Should I strike some kind of pose?"
+    e "Yes, please. Any you like, and keep it there for a bit."
+    e "I'll try to hurry."
+    scene black at topleft with dis #todo
+    e "There we go."
+    mc "That's not the worst drawing I have ever seen, where'd you learn that?"
+    e "I took two semesters of biology classes before I found my passion in behavioral sciences."
+    mc "Well, you can always start a career as a sketch artist with a folding chair next to the shopping mall."
+    e "I would hope that someone like you comes by, and that she needs illustrations for her books."
+    mc "Oh, you can be my own starving artist, who depends on my continued goodwill so that he doesn't lose his mattress in the tiny room in my house."
+    e "Is that something you would want?"
+    mc "Please don't try to analyze my brain, doctor."
+    mc "You might not like what you find."
+    e "In that case, I will be more than happy to explore...other parts of you."
+    e "Feel free to stop by in the future, and we can have fruitful discussions like this again."
+    mc "I'll let you know if I ever end up low on my morals like this again."
+    e "That's all I ask of you."
+    e "And now, I wish you a splendid evening, Ellen - and don't forget what we talked about."
+    mc "Same to you, doctor Hardong."
+    e "Please, call me Emil."
+    mc "I like your last name better, it has that certain kind of ring to it."
     jump evening_choices
