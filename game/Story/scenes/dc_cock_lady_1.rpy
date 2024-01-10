@@ -51,7 +51,7 @@ label dc_cock_lady_1:
         "Until I did, and I recalled reading about him in the Sheriff's files."
         "He had written a letter asking her to be kept up to date on a case..."
         "And now I realized that it must have been about the dead man in the road..."
-    menu dc_cock_lady_1_menu_name:
+    menu:
         "Thank you for the warning, Miss...":
             $dc_cock_lady_1_thank_you_for_the_warning_miss_ = True
             mc "Thank you for the warning, Miss..."
@@ -59,7 +59,7 @@ label dc_cock_lady_1:
             "Yes, that was a good question..."
             c "My name is Cecilia Beaver."
             mc "Nice to meet you, Miss Beaver."
-            menu dc_cock_lady_1_menu_name:
+            menu:
                 "Have a nice day.":
                     $dc_cock_lady_1_have_a_nice_day = True
                     mc "Have a nice day."
