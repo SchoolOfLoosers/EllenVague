@@ -370,28 +370,28 @@ label ec_jay_2_sex_with_jay:
             $ec_jay_2_just_tell_me_when_i_want_to_taste_you = True
             mc "Just tell me when, I want to taste you."
             hide ec_jay_2_sex_1
-            scene black at topleft with hpunch #todo cum in air
+            scene 232 at topleft with hpunch #todo cum in air
             pause 3.0
-            scene black at topleft with dis #todo still shot without jay in picture
+            scene 236 at topleft with dis #todo still shot without jay in picture
         "Please don't pull out.":
             $ec_jay_2_please_dont_pull_out = True
             mc "Please don't pull out."
             hide ec_jay_2_sex_1
-            scene black at topleft with hpunch #todo cum in her
+            scene anim_jay_2_table at topleft with hpunch #todo cum in her
             pause 3.0
-            scene black at topleft with dis #todo still shot without jay in picture
+            scene 231 at topleft with dis #todo still shot without jay in picture
         "(Let him come on your back)":
             $ec_jay_2__let_him_come_on_your_back_ = True
             hide ec_jay_2_sex_1
-            scene black at topleft with hpunch #todo cum in air
+            scene 234 at topleft with hpunch #todo cum in air
             pause 3.0
-            scene black at topleft with dis #todo still shot without jay in picture
-        "(Roll over on your back)":
+            scene 237 at topleft with dis #todo still shot without jay in picture
+        "(Let him come on your stomach)":
             $ec_jay_2__roll_over_on_your_back_ = True
             hide ec_jay_2_sex_1
-            scene black at topleft with hpunch #todo cum in air
+            scene 233 at topleft with hpunch #todo cum in air
             pause 3.0
-            scene black at topleft with dis #todo still shot without jay in picture
+            scene 235 at topleft with dis #todo still shot without jay in picture
         "Don't you dare stop now!":
             $ec_jay_2__roll_over_on_your_back_ = True
             mc "Don't you dare stop now!"
@@ -414,13 +414,15 @@ label ec_jay_2_sex_with_jay:
     j "Please accept my apologies, that was not a way to treat a lady of class."
     mc "No, it really wasn't."
     mc "Thank you, in case it needs to be said out loud."
+    scene 226 at topleft with dis #todo
     j "What do you say, shall we embark on the laborious trip back to our cars?"
+    scene 220 at topleft with dis #todo
     mc "Yes please, I really need a soft and comfy mattress under my butt, not this hard wood."
     j "Well, I hope you will find the sleeping arrangements at my hotel to your liking."
     mc "Hah, damn right I do."
     mc "If I may be serious here for a moment, that's easily the best mattress I have ever slept on."
     j "I'm glad to hear they were worth the money."
-    scene black at topleft with dis #todo
+    scene 230 at topleft with dis #todo
     j "Well, here we are, it appears the time has come to say good night."
     mc "Good night."
     j "And like I said when we first met: I am always just a call away in case you need anything."
