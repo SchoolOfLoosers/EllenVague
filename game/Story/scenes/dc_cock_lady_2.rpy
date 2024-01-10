@@ -90,7 +90,12 @@ label dc_cock_lady_2:
                             scene black at topleft with dis #todo
                             "And before long, I realized what Cecilia had meant when she had talked about that delicate balance..."
                             scene black at topleft with dis #todo
-                            "I moved my fingers, took a breath, thought about the questions that moved me at the time."
+                            "I moved my fingers, and it pushed me so close to the brink that I became afraid of losing my balance."
+                            "I breathed in, and the brink seemed to step away from me."
+                            "Another touch, barely noticeable under normal circumstances, and there I was again, staring into the abyss of my own composure."
+                            "I took a breath, thought about the questions that moved me at the time."
+                            "And suddenly, without knowing how or why, and even if it was really happening..."
+                            "I found myself alone, gone from the place I had just been at."
                             scene black at topleft with dis #todo location change to misty world or something
                             mc "Where am I?"
                             mc "No, wait, I do not care."
@@ -98,6 +103,31 @@ label dc_cock_lady_2:
                             mc "What do I have to do to regain my creativity, and the ability to unleash it at my own leisure?"
                             mc "Will I ever finish another book?"
                             mc "Will I ever write another bestseller?"
+                            mc "Do I have to change my life again, put myself back into harms way to get that inspiration?"
+                            mc "Have I become too cozy, too comfortable with myself, and my position in life?"
+                            scene black at topleft with hpunch #todo
+                            c "Welcome back, Miss Vague."
+                            mc "Ugh, I can't believe that just happened."
+                            c "What did you see?"
+                            c "Did you see anything?"
+                            mc "Uh, I saw..."
+                            menu:
+                                "There was mist, and I tried to ask my questions...":
+                                    $dc_cock_lady_2_there_was_mist_and_i_tried_to_ask_my_questions_ = True
+                                    mc "There was mist, and I tried to ask my questions..."
+
+                                    pass #todo fill choice
+                                "Just a normal orgasm, really.":
+                                    $just_a_normal_orgasm_really = True
+                                    mc "Just a normal orgasm, really."
+                                    pass #todo fill choice
+                                "I think I felt the same kind of presence like in my dreams sometimes...":
+                                    $dc_cock_lady_2_i_think_i_felt_the_same_kind_of_presence_like_in_my_dreams_sometimes_ = True
+                                    mc "I think I felt the same kind of presence like in my dreams sometimes..."
+                                    pass #todo fill choice
+                            c "Most impressive, I have to say."
+                            c "It took me many months before I could "
+
 
 
                             pass #todo fill choice

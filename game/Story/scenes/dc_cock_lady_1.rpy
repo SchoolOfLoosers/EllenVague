@@ -18,23 +18,32 @@ label dc_cock_lady_1:
     m "Just let it wash over you, there is nothing we can do."
     scene 13 at topleft with dis
     mc "Uh, okay?"
-    scene black at topleft with dis #todo
+    scene 238 at topleft with dis
     c "Good morning, you heathens."
     c "What a fine morning."
+    scene 239 at topleft with dis
     m "Uh, yeah, totally."
+    scene 240 at topleft with dis
     m "How's your cock feeling today, Cecilia?"
+    scene 242 at topleft with dis
     c "Very well, thank you for asking."
+    scene 241 at topleft with dis
     "Yep, Mary hadn't exaggerated when she said to prepare."
     "Whatever this woman's reasoning might have been, everyone seemed so used to her walking around, carrying a massive dildo..."
     "One that apparently had...feelings, and an opinion that mattered."
     "Definitely out there, even as far as out-there people went."
+    scene 243 at topleft with dis
     c "And you, young lady, you must be this Ellen Vague I've been hearing about."
+    scene 244 at topleft with dis
     mc "That is correct, yes."
+    scene 243 at topleft with dis
     c "Well, in that case, I hope you enjoy your stay."
+    scene 245 at topleft with dis
     mc "I'm sure I will, it's a beautiful town."
+    scene 246 at topleft with dis
     c "Well, don't let the friendly people fool ya, this town is as dangerous as any during the night."
     c "Maybe more so than the city you come from."
-    scene 17 at topleft with dis
+    scene 241 at topleft with dis
     m "Cecilia, stop scaring our guests."
     c "Oh silly, Miss Vague knows better than to be scared by an old hag like me."
     c "But she does need to be warned, doesn't she?"
@@ -42,16 +51,21 @@ label dc_cock_lady_1:
     scene 17 at topleft with dis
     m "But Cecilia, after that, you have to leave, I have to run a business around here."
     c "Very well, then I shall deliver my warnings, and then be on my way."
+    scene 246 at topleft with dis
     c "Listen, Miss Vague, my cock has been telling me a lot of things about you."
+    scene 247 at topleft with dis
     mc "Oh it has?"
     c "Yes, I talk to it every night, and it's telling me things about the world around me."
     mc "I'm sure it does."
+    scene 245 at topleft with dis
     mc "So, uh, what does your cock tell you about me?"
     c "Ah, a young lady who is willing to listen!"
     c "You should know that a man is coming after you, from outside of this world."
+    scene 247 at topleft with dis
     mc "A man, huh?"
     c "His name may be Mockingbird, but he doesn't fly here, he is coming by car."
     if dc_sarah_1_snooped_through_file:
+        scene 245 at topleft with dis
         "A shiver ran through my spine, and at first I couldn't quite place the name."
         "I didn't know anyone by the name of Mockingbird, which was such a silly name that I would have remembered..."
         "Until I did, and I recalled reading about him in the Sheriff's files."
@@ -96,7 +110,7 @@ label dc_cock_lady_1:
             c "Enjoy your coffee, and know that it could always be the last coffee if you aren't careful."
             scene 17 at topleft with dis
             m "Jesus, Cecilia, leave her alone."
-            scene black at topleft with dis #todo
+            scene 248 at topleft with dis
             c "I'm going, I'm going."
     scene 25 at topleft with dis
     m "Well, you handled that one better than most."
