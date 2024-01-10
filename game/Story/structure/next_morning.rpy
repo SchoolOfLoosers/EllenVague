@@ -126,19 +126,16 @@ label next_morning:
 
     if ec_jay_2_had_sex_with_jay and not played_ec_jay_2_had_sex_with_jay_reaction:
         $played_ec_jay_2_had_sex_with_jay_reaction = True
-        scene black at topleft with dis #todo naked in bed
+        scene 93 at topleft with dis
         mc "Oh my god, what have I done?"
         mc "Now I can't even go and have breakfast without seeing him..."
-        scene black at topleft with dis #todo
         mc "I mean, not that I regret it or anything..."
         mc "That was actually pretty special."
-        scene black at topleft with dis #todo
+        scene 94 at topleft with dis #todo
         mc "The way he looked at me, when he stopped caring about me..."
-        scene black at topleft with dis #todo
         mc "And started caring only about himself..."
-        scene black at topleft with dis #todo
         mc "That was so good..."
-        scene black at topleft with hpunch #todo
+        scene 94 at topleft with hpunch #todo own render
         mc "Come on, Ellen, get a grip!"
         scene black at topleft with dis #todo sit up on bed, angry look
         mc "Time to get ready for breakfast."

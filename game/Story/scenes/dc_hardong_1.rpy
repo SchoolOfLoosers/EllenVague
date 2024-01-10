@@ -1,6 +1,5 @@
 label dc_hardong_1:
     scene black at topleft with dis #todo
-    #todo meet him at his clinic, talk about your books, and he begins to analyze your "problems" and we can either cut him off, or agree to stay at his resort for a few days and start a new questline where we can use machinery and the tied-up-chair etc.
     e "Good morning, Miss Vague."
     mc "Good morning, doctor Hardong."
     mc "Thank you for agreeing to meet with me, especially on such short notice."
@@ -47,8 +46,33 @@ label dc_hardong_1:
             e "Which means that we always have room to spare."
         "I have done worse for a few days of free cost and stay":
             $dc_hardong_1_i_have_done_worse_for_a_few_days_of_free_cost_and_stay = True
-            mc "I have done worse for a few days of free cost and stay"
-            pass #todo fill choice
+            $unlocked_dc_hardong_2 = True
+            mc "I have done worse for a few days of free cost and stay."
+            e "Well, I am thrilled you would consider my offer."
+            mc "I'll need some more details first, of course."
+            mc "I really don't want to be treated like a mental patient, and you better not lock me away."
+            e "Oh, I can assure you, that's not how we do things around here."
+            e "I very much believe in leaving everyone a choice to...leave, if they so choose."
+            mc "Oh, so that's why Miss Beaver was at the diner the other day."
+            e "Ah yes, a peculiar lady, isn't she?"
+            mc "That's one way of putting it."
+            e "I wondered how you even got my name, and thought to seek my out in the first place."
+            e "Out of interest: Did you converse with her cock?"
+            mc "Hah, I sure did."
+            if dc_cock_lady_1_does_your_cock_have_any_other_warnings_for_me:
+                mc "We actually had quite an interesting conversation."
+                mc "She warned me about a man, then told me I should not take people at face value, and to rather judge them by their long-term actions."
+                mc "Both pretty sound advice, if you ask me."
+                e "See, I knew someone like you would not wave her off immediately."
+                e "I could already tell when we spoke on the phone that you have the capability to listen to someone, no matter where they might be standing or coming from."
+                e "Most people could use a pinch of that salt."
+                mc "Hah, I know, right?"
+            scene black at topleft with dis #todo
+            e "Well, the doors of my resort are always open for you, whenever you decide to honor us with your stay."
+            mc "Your resort, huh? Is that what you call it?"
+            e "What else would you prefer?"
+            e "We have good food, motivated staff, and lodgings that appeal to the discerning hotel critic."
+            mc "Hah, point taken."
     scene black at topleft with dis #todo
     e "With that out of the way..."
     e "Like I said, you have come to ask questions, and I am prepared to answer them."
@@ -138,16 +162,29 @@ label dc_hardong_1:
                 "In this unfamiliar location, probably something long like a day or so.":
                     $dc_hardong_1_in_this_unfamiliar_location_probably_something_long_like_a_day_or_so = True
                     mc "In this unfamiliar location, probably something long like a day or so."
-
-                    pass #todo fill choice
+                    e "Interesting."
+                    e "So, familiarity with the place plays a role for you."
+                    mc "Oh, absolutely."
+                    e "That tells me that you are looking for both mental and physical comfort, more than you are looking for the excitement and thrill."
+                    mc "Are you calling me boring?"
+                    e "Very much not so, Miss Vague."
+                    e "You are an exciting woman in your own right, but it does appear you are looking for it in other places, in the outside world."
+                    e "While your own home is the comfort zone you retreat to for peace and quiet."
                 "Probably an hour or so.":
                     $dc_hardong_1_probably_an_hour_or_so = True
                     mc "Probably an hour or so."
-                    pass #todo fill choice
+                    e "Interesting."
+                    mc "How so?"
+                    e "Because it tells me that you have the rare ability to be yourself, and to make your own choices."
+                    e "I would say it isn't so much boredom that would steer you, as rather an interesting ability to adapt to the situation, and doing so in reasonably timely fashion."
+                    e "You wouldn't be unable to control yourself, and yet unwilling to adhere to rules in the absence of a judge."
                 "Honestly, there is enough in here to make me snoop through everything first.":
                     $dc_hardong_1_honestly_there_is_enough_in_here_to_make_me_snoop_through_everything_first = True
                     mc "Honestly, there is enough in here to make me snoop through everything first."
-                    pass #todo fill choice
+                    e "See, I find that a highly fascinating answer, Miss Vague."
+                    mc "How so?"
+                    e "Because it tells me that you are, in fact, reacting to boredom and the lack of more interesting choices, as opposed to seeking the thrill through an incredibly monotonous task."
+                    e "Your first instinct was to explore this place, not yourself, having long explored yourself sufficiently to make it an option in the absence of better options, rather than a necessity."
             scene black at topleft with dis #todo
             e "Well, thank you for your honest answer, Miss Vague."
             mc "Please, if we are discussing my masturbation habits, you are free to call me Ellen."
@@ -208,11 +245,71 @@ label dc_hardong_1:
                                         e "I am glad to hear that."
                                         e "Please, carry on."
                             else:
-                                pass #todo fill choice
+                                e "Interesting."
+                                mc "Are you judging me?"
+                                e "This is a judgement free zone, Ellen."
+                                mc "Jesus christ, leave me alone with your psycho nonsense."
+                                e "In that case, yes I am judging you quite heavily right now."
+                                mc "I knew it!"
+                                e "And I am starting to think that you are a dirty little slut."
+                                mc "Should you be talking to me like that, doctor?"
+                                mc "What happened to being so incessantly forthcoming and helpful and willing to listen?"
+                                e "That's reserved for my patients."
+                                e "Sluts get talked to like they deserve."
+                                mc "Mhm, keep talking."
+                                e "You like being called a slut?"
+                                mc "Only when I behave like one."
+                                e "Which you are doing right now."
+                                mc "Mhm-hm."
+                                mc "You like what you're seeing?"
+                                e "Any man would."
+                                mc "Then why don't you do what any man would?"
+                                e "Because I am here as an observer, not to get my hands dirty."
+                                mc "First a slut, now you're also calling me dirty?"
+                                e "God knows I wouldn't want to stick my dick into that unprotected."
+                                mc "Ugh, you are so mean."
+                                e "Want me to stop?"
+                                mc "I want you to get over yourself."
+                                e "Maybe next time, I'm busy here."
+                                mc "Oh for fuck's sake..."
+                                scene black at topleft with hpunch #todo
+                                mc "You are such an ass."
+                                e "And you are such a mess."
+                                mc "What kind of mess?"
+                                e "A dirty little mess."
+                                mc "Ugh, I would fight you on that, if..."
+                                e "If it wasn't the truth, you mean?"
+                                mc "Such a dirty little mess."
+                                e "I'm glad you enjoyed yourself."
+                                mc "You know, I actually did."
+                                mc "Thank you for being there when I needed you."
+                                e "You know, a true lady of class wouldn't thank me for the things I've said, and the names I've called you."
+                                mc "Feels like you made a scientific breakthrough there, you should write that down."
+                                e "Subject is receptive to its own touches, and reacts favorably when called derogatory and demeaning terms."
+                                mc "Ugh, tell me about it."
+                                e "Well, was there something else you wanted to ask?"
+                                jump dc_hardong_1_menu_ask_questions
                         "It makes me pretty uncomfortable, actually...":
                             $dc_hardong_1_it_makes_me_pretty_uncomfortable_actually_ = True
                             mc "It makes me pretty uncomfortable, actually..."
-                            pass #todo fill choice
+                            e "Good, I want you to hold on to that feeling."
+                            e "Now imagine yourself in a cold room, bright neon lights that hurt your eyes even when closed."
+                            e "Cameras in every corner, so you know that someone is watching you..."
+                            e "But you don't know who, or how many, and what they are doing with the information gained from studying you."
+                            scene black at topleft with hpunch #todo
+                            e "All you know is that the louder you yell, the more the silence you get for an answer is weighing on you."
+                            scene black at topleft with hpunch #todo
+                            "I didn't know what it was, but him sitting there..."
+                            "Judging me, and saying those horrible things to me..."
+                            "I don't know, it just did the trick..."
+                            scene black at topleft with dis #todo
+                            mc "Ugh, that was really mean."
+                            e "I'm glad to see that you enjoyed yourself."
+                            mc "You know, I actually did."
+                            e "I can tell, that's quite the messy state you're in."
+                            mc "You expect me to say sorry?"
+                            e "No, I expect you to tell me if there are any other questions you want me to answer."
+                            jump dc_hardong_1_menu_ask_questions
                         "You know you could do more than just watch, right?":
                             $dc_hardong_1_you_know_you_could_do_more_than_just_watch_right = True
                             mc "You know you could do more than just watch, right?"
@@ -230,8 +327,20 @@ label dc_hardong_1:
                                     $dc_hardong_1_well_watch_this_part_extra_closely_now_doctor_ = True
                                     mc "Well, watch this next part extra closely now, Doctor..."
                                     scene black at topleft with hpunch #todo
-                                    pass #todo fill choice
-                            pass #todo fill choice
+                                    "I didn't know what it was, but him sitting there, watching me..."
+                                    "It just did the trick."
+                                    scene black at topleft with dis #todo
+                                    mc "You enjoyed that?"
+                                    e "Looks like you did, too."
+                                    mc "I'm not going to lie, I've done worse, and had less fun doing it."
+                                    e "I'm glad to hear that."
+                                    mc "Are you not going to write this down in your little notebook there?"
+                                    mc "Before I get the impression that this wasn't actually about a new scientific discovery?"
+                                    e "Good idea, let me write this down."
+                                    e "Test subject receptive to own touches, clear signs of an intelligent life form."
+                                    mc "You just had to get that little compliment in there, didn't you?"
+                                    e "Subject able to detect subtle remarks, clear sign of intelligence."
+                                    mc "Oh come on now."
             e "Well, were there any other questions you wanted to ask me?"
             jump dc_hardong_1_menu_ask_questions
         "That's all the questions I had.":
@@ -243,7 +352,6 @@ label dc_hardong_1:
                 e "I look forward to seeing you again in the future, Miss Vague."
             else:
                 e "I look forward to seeing you again in the future, Ellen."
-
     jump evening_choices
 
 label dc_hardong_1_sex_with_doctor:

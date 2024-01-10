@@ -28,4 +28,7 @@ label day_choices:
         "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
             $completed_dc_cock_lady_2 = True
             jump dc_cock_lady_2
+        "Check yourself into Dr. Hardong's clinic" if not completed_dc_hardong_2 and unlocked_dc_hardong_2:
+            $completed_dc_hardong_2 = True
+            jump dc_hardong_2
     jump evening_choices
