@@ -342,7 +342,8 @@ label ec_jay_2:
 label ec_jay_2_sex_with_jay:
     $ec_jay_2_had_sex_with_jay = True
     $unlocked_ec_jay_3 = True
-    scene black at topleft with dis #todo picnic table location in the dark
+    image ec_jay_2_sex_1 = Movie(channel="movie_dp", play="images/anim_jay_2_sex_1.webm", size = (1920,1080))
+    show ec_jay_2_sex_1
     j "I must admit, I didn't expect you to make it this easy for me."
     mc "What can I say, if you had read my books, you would be less surprised."
     j "So, this counts as research for you?"
@@ -352,22 +353,26 @@ label ec_jay_2_sex_with_jay:
         "Just tell me when, I want to taste you.":
             $ec_jay_2_just_tell_me_when_i_want_to_taste_you = True
             mc "Just tell me when, I want to taste you."
+            hide ec_jay_2_sex_1
             scene black at topleft with hpunch #todo cum in air
             pause 3.0
             scene black at topleft with dis #todo still shot without jay in picture
         "Please don't pull out.":
             $ec_jay_2_please_dont_pull_out = True
             mc "Please don't pull out."
+            hide ec_jay_2_sex_1
             scene black at topleft with hpunch #todo cum in her
             pause 3.0
             scene black at topleft with dis #todo still shot without jay in picture
         "(Let him come on your back)":
             $ec_jay_2__let_him_come_on_your_back_ = True
+            hide ec_jay_2_sex_1
             scene black at topleft with hpunch #todo cum in air
             pause 3.0
             scene black at topleft with dis #todo still shot without jay in picture
         "(Roll over on your back)":
             $ec_jay_2__roll_over_on_your_back_ = True
+            hide ec_jay_2_sex_1
             scene black at topleft with hpunch #todo cum in air
             pause 3.0
             scene black at topleft with dis #todo still shot without jay in picture
