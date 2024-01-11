@@ -163,8 +163,7 @@ label ec_patty_2:
                             mc "I'll try to keep my raunchy language in check from now on."
                             p "Oh yes, please, it's better to keep that stuffed where it belongs."
                             mc "That's a good idea, I will do that right away."
-                            scene black at topleft with dis #todo
-        "I spent a day fishing down by the pier": #todo condition
+        "I spent a day fishing down by the pier" if not 1==1: #todo condition
             $ec_patty_2_talked_about_fishing_at_pier = True
             scene 66 at topleft with dis
             mc "I spent a day fishing down by the pier."
@@ -206,12 +205,12 @@ label ec_patty_2:
             scene 69 at topleft with dis
             p "Exactly."
     if ec_patty_2_naked:
-        scene black at topleft with dis #todo
+        scene black at topleft with dis
     else:
         scene 65 at topleft with dis
     s "Well, Ellen, it was great having you over again, thank you for coming."
     if ec_patty_2_naked:
-        scene 272 at topleft with dis #todo
+        scene 272 at topleft with dis
     else:
         scene 63 at topleft with dis
     mc "Oh, I am such a sucker for this view here, there was no way I would decline your invitation."
@@ -225,27 +224,27 @@ label ec_patty_2:
     # pause 30 #todo change this
     # stop music fadeout 1.0
     if ec_patty_2_naked:
-        scene black at topleft with dis #todo
+        scene 275 at topleft with dis
         p "Okay...microphones off, all systems shut off - done."
-        scene black at topleft with dis #todo
+        scene 276 at topleft with dis
         p "Jesus Christ, Ellen, that was the HOTTEST thing ever!"
         p "I barely managed to talk anymore!"
-        scene black at topleft with dis #todo
+        scene 277 at topleft with dis
         mc "Still better than I faired, with my mumbling and drifting thoughts."
         mc "I'm sorry, I don't know what's gotten into me."
-        scene black at topleft with dis #todo
+        scene 278 at topleft with dis
         p "Yeah, I don't know about you, but there is no way I'll make it home tonight."
-        scene black at topleft with dis #todo
         p "And I REALLY need you to stay here with me."
+        scene 279 at topleft with dis
         p "We have a lot of things left to...discuss."
-        scene black at topleft with dis #todo
+        scene 280 at topleft with dis
         p "And you are still wearing your sweater."
-        scene black at topleft with dis #todo
+        scene 281 at topleft with dis
         mc "I really like yours, by the way."
-        scene black at topleft with dis #todo
+        scene 280 at topleft with dis
         p "I know, right?"
         p "I bought it last year, and I don't think I've really left it out of my sight for a day since."
         p "So what, you here to trade compliments?"
-        scene black at topleft with dis #todo
+        scene 281 at topleft with dis
         mc "I'm here to make sure you're taking that sweater off, and leaving it out of sight for the first time in years."
     jump next_morning

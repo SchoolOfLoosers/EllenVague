@@ -23,10 +23,9 @@ label day_choices:
         "Visit Dr. Hardong" if not completed_dc_hardong_1 and unlocked_dc_hardong_1:
             $completed_dc_hardong_1 = True
             jump dc_hardong_1
-        #todo uncomment once ready
-        # "Get a coffee at the diner" if not completed_dc_cock_lady_1 and unlocked_dc_cock_lady_1:
-        #     $completed_dc_cock_lady_1 = True
-        #     jump dc_cock_lady_1
+        "Get a coffee at the diner" if not completed_dc_cock_lady_1 and unlocked_dc_cock_lady_1:
+            $completed_dc_cock_lady_1 = True
+            jump dc_cock_lady_1
         #todo uncomment once ready
         # "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
         #     $completed_dc_cock_lady_2 = True

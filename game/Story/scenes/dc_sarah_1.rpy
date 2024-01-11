@@ -11,6 +11,7 @@ label dc_sarah_1:
         mc "Seems like a trend, huh?"
         s "Feel free to drop by sometime in case you need a refresher on that subject."
         $unlocked_ec_sarah_2 = True
+        $unlocked_dc_cock_lady_1 = True
         mc "I might stumble against your front door sometime soonish."
         s "Anytime, girl."
     s "Well, sit down, I have already prepared the statement for you, so you can just check if I got everything right, then sign it."

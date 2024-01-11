@@ -1,4 +1,5 @@
 label dc_yggy_1:
+    $unlocked_dc_cock_lady_1 = True
     scene 189 at topleft with dis
     mc "Hi, I want to buy..."
     scene 190 at topleft with dis

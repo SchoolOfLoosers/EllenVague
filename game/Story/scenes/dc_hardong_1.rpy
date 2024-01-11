@@ -1,5 +1,5 @@
 label dc_hardong_1:
-    scene black at topleft with dis #todo
+    scene 302 at topleft with dis
     e "Good morning, Miss Vague."
     mc "Good morning, doctor Hardong."
     mc "Thank you for agreeing to meet with me, especially on such short notice."
@@ -8,6 +8,7 @@ label dc_hardong_1:
     mc "Hah, I know what you're talking about."
     e "I must admit, your call made me curious."
     mc "I know our respective occupations put us at a bit of professional odds..."
+    scene 303 at topleft with dis
     e "Oh, not at all, Miss Vague, not at all."
     e "Part of my work here is to allow people to come to terms with themselves, their own unique desires and problems."
     e "I would argue that your work achieves the same, in that it allows your readers to come to terms with their own sexuality."
@@ -15,11 +16,18 @@ label dc_hardong_1:
     e "And how to hammer a nail into the wood without also hammering their own thumbs."
     mc "Hah, that is a good analogy."
     e "Trust me, you have to expect no judgement from me for the work you do."
+    scene 304 at topleft with dis
+    e "But please, Miss Vague, sit down"
+    scene 305 at topleft with dis #todo
     e "I will say, however, that I would be VERY interested in talking to you about yourself."
+    scene 306 at topleft with dis #todo
     mc "What do you want to know?"
+    scene 305 at topleft with dis #todo
     e "Everything you are willing to share with me."
     e "I will answer any questions you have come here to ask today, but I would like to offer you a stay at my resort if you can be convinced of that."
+    scene 307 at topleft with dis #todo
     mc "You want to take me in as a patient?"
+    scene 305 at topleft with dis #todo
     e "Yes, and no."
     e "Like I said, I would be very interested in speaking to you, professionally."
     e "I think my own work here could profit from your insights, as well as my own interpretations."
@@ -27,19 +35,23 @@ label dc_hardong_1:
     e "But, the older I get, the more I realize that growing in a vacuum can only bring you that far, and growth happens that much quicker when any action is met with an equal and opposite reaction."
     e "Forgive the limping analogy, but as they say: no battle plan ever survives contact with the enemy."
     e "Not that you, or any other patient, would ever come close to being considered an enemy."
+    scene 308 at topleft with dis #todo
     mc "No, I get it."
     mc "That is actually quite interesting, most people in your position would not go out of their way to ask for any kind of feedback."
+    scene 309 at topleft with dis #todo
     e "And we both know what happens to these people."
     e "They stall their own progress in life, in love, in...every aspect of their lives."
     e "And wasting your own potential like that is just a pity."
     e "Something I would like to avoid."
     mc "Interesting."
+    scene 305 at topleft with dis #todo
     e "So, what do you say, is there a chance I could convince you?"
+    scene 309 at topleft with dis #todo
     menu:
         "Honestly, I am not here to check myself into a clinic":
             $dc_hardong_1_honestly_i_am_not_here_to_check_myself_into_a_clinic = True
             mc "Honestly, I am not here to check myself into a clinic"
-
+            scene 305 at topleft with dis #todo
             e "A pity, but I understand."
             e "And if that ever changes, you are welcome to reconsider."
             e "We always operate below maximum capacity here, to keep our staff away from needing a clinic stay of their own."
@@ -47,33 +59,47 @@ label dc_hardong_1:
         "I have done worse for a few days of free cost and stay":
             $dc_hardong_1_i_have_done_worse_for_a_few_days_of_free_cost_and_stay = True
             $unlocked_dc_hardong_2 = True
+            scene 308 at topleft with dis #todo
             mc "I have done worse for a few days of free cost and stay."
+            scene 305 at topleft with dis #todo
             e "Well, I am thrilled you would consider my offer."
+            scene 308 at topleft with dis #todo
             mc "I'll need some more details first, of course."
             mc "I really don't want to be treated like a mental patient, and you better not lock me away."
+            scene 309 at topleft with dis #todo
             e "Oh, I can assure you, that's not how we do things around here."
             e "I very much believe in leaving everyone a choice to...leave, if they so choose."
+            scene 308 at topleft with dis #todo
             mc "Oh, so that's why Miss Beaver was at the diner the other day."
+            scene 305 at topleft with dis #todo
             e "Ah yes, a peculiar lady, isn't she?"
+            scene 308 at topleft with dis #todo
             mc "That's one way of putting it."
+            scene 309 at topleft with dis #todo
             e "I wondered how you even got my name, and thought to seek my out in the first place."
             e "Out of interest: Did you converse with her cock?"
+            scene 308 at topleft with dis #todo
             mc "Hah, I sure did."
             if dc_cock_lady_1_does_your_cock_have_any_other_warnings_for_me:
                 mc "We actually had quite an interesting conversation."
                 mc "She warned me about a man, then told me I should not take people at face value, and to rather judge them by their long-term actions."
                 mc "Both pretty sound advice, if you ask me."
+                scene 305 at topleft with dis #todo
                 e "See, I knew someone like you would not wave her off immediately."
                 e "I could already tell when we spoke on the phone that you have the capability to listen to someone, no matter where they might be standing or coming from."
                 e "Most people could use a pinch of that salt."
+                scene 308 at topleft with dis #todo
                 mc "Hah, I know, right?"
-            scene black at topleft with dis #todo
+            scene 309 at topleft with dis #todo
             e "Well, the doors of my resort are always open for you, whenever you decide to honor us with your stay."
+            scene 308 at topleft with dis #todo
             mc "Your resort, huh? Is that what you call it?"
+            scene 305 at topleft with dis #todo
             e "What else would you prefer?"
             e "We have good food, motivated staff, and lodgings that appeal to the discerning hotel critic."
+            scene 309 at topleft with dis #todo
             mc "Hah, point taken."
-    scene black at topleft with dis #todo
+    scene 309 at topleft with dis #todo
     e "With that out of the way..."
     e "Like I said, you have come to ask questions, and I am prepared to answer them."
     mc "Thank you, then let me get started."
@@ -130,7 +156,7 @@ label dc_hardong_1:
             e "And the ones that pass on our self control to others, in hopes that they can handle the responsibility."
             e "One person might walk down an empty street at night, seeing the lack of proper street lanterns as an opportunity to quietly pee their own pants."
             e "They mull it over, decide for and against it - and pretty much whatever outcome they choose, the excitement is in the choice, in their own resistance against established norms."
-            scene black at topleft with dis #todo
+            scene 310 at topleft with dis #todo
             e "While another person, walking down that same unlit street, might find themselves thinking about how someone could be waiting around that next corner, ready to take their agency of choice from them."
             e "And even though we have all been taught to respect this agency, as well as to always protect it for ourselves..."
             e "There is a fascination to be found in the inability to escape."
@@ -185,16 +211,22 @@ label dc_hardong_1:
                     mc "How so?"
                     e "Because it tells me that you are, in fact, reacting to boredom and the lack of more interesting choices, as opposed to seeking the thrill through an incredibly monotonous task."
                     e "Your first instinct was to explore this place, not yourself, having long explored yourself sufficiently to make it an option in the absence of better options, rather than a necessity."
-            scene black at topleft with dis #todo
+            scene 310 at topleft with dis #todo
             e "Well, thank you for your honest answer, Miss Vague."
+            scene 308 at topleft with dis #todo
             mc "Please, if we are discussing my masturbation habits, you are free to call me Ellen."
+            scene 310 at topleft with dis #todo
             e "Alright, thank you Ellen."
             e "Say, since you are open enough to discuss your own habits in this regard..."
             e "Would you mind demonstrating them?"
+            scene 307 at topleft with dis #todo
             mc "What?"
             mc "You mean here and now?"
+            scene 310 at topleft with dis #todo
             e "I know it is, with societal concerns in mind, an unusual request."
+            scene 307 at topleft with dis #todo
             mc "No kidding."
+            scene 310 at topleft with dis #todo
             e "But it would bring both of us quite a large step closer to answering your very own question."
             e "Since you are, by definition, not alone in this room, you could see for yourself how that changes your experience."
             e "And since you are quite engaged in our little conversation here, you are also not bored, so your mind does not default to this conclusion, like you said it would."
@@ -202,17 +234,23 @@ label dc_hardong_1:
             menu:
                 "Yeah, sorry but no way.":
                     $dc_hardong_1_yeah_sorry_but_no_way = True
+                    scene 307 at topleft with dis #todo
                     mc "Yeah, sorry but no way."
                     mc "I mean, nothing against you, but..."
+                    scene 310 at topleft with dis #todo
                     e "No, I get it, that was the most likely response."
                     e "I hope you don't mind the attempt, it was purely out of scientific interest."
+                    scene 308 at topleft with dis #todo
                     mc "I get it, don't worry."
                 "I can't believe I am doing this...":
                     $dc_hardong_1_i_cant_believe_i_am_doing_this_ = True
                     mc "I can't believe I am doing this..."
+                    scene 310 at topleft with dis #todo
                     e "I must say, I am fascinated that you are rested in yourself enough to consider this option."
                     e "Would it throw you off if I took some notes here?"
+                    scene 308 at topleft with dis #todo
                     mc "By all means, doctor, study my every movement if you will"
+                    scene 311 at topleft with dis #todo
                     e "Then that's what I shall do."
                     e "Please, carry on, Ellen."
                     mc "Okay, so...do you want me to talk about what I feel?"

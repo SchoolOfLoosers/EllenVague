@@ -59,4 +59,5 @@ label ec_potion_masturbation_1:
     mc "Ugh, stop it."
     mc "Holy shit..."
     mc "Yggy did not lie, this really does..."
+    $unlocked_dc_yggy_2 = True
     jump next_morning

@@ -117,4 +117,5 @@ label dc_karen_1:
     mc "Oh please, as great as this view is..."
     k "It has nothing on the view over a decent plate of hotel dinner?"
     mc "Ugh, your words, my thoughts."
+    $unlocked_dc_cock_lady_1 = True
     jump evening_choices

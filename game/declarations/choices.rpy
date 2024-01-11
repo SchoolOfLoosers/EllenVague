@@ -1,5 +1,6 @@
 
 default care_to_share_your_darker_side_with_me = False
+default completed_dc_cock_lady_1 = False
 default completed_dc_cock_lady_2 = False
 default completed_dc_diner_1 = False
 default completed_dc_hardong_1 = False
@@ -142,6 +143,7 @@ default played_ec_jay_2_had_sex_with_jay_reaction = False
 default played_ec_patty_1_masturbated_at_home_reaction = False
 default played_ec_sarah_1_had_sex_with_sarah_reaction = False
 default rng = False
+default unlocked_dc_cock_lady_1 = False
 default unlocked_dc_cock_lady_2 = False
 default unlocked_dc_hardong_1 = False
 default unlocked_dc_hardong_2 = False
