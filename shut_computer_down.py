@@ -9,8 +9,7 @@ number_of_images = 0
 def main():
     number_of_images = sum(len(files) for _, _, files in os.walk(path_to_images_folder))
     while True:
-        time.sleep(10)
-        #time.sleep(20*60)
+        time.sleep(20*60)
         current_number_of_images = sum(len(files) for _, _, files in os.walk(path_to_images_folder))
         if number_of_images == current_number_of_images:
             print("Shutting down render machine")
