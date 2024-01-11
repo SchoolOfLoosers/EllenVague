@@ -50,8 +50,10 @@ label dc_cock_lady_2:
                 "Uh, thanks, but I'm good.":
                     $dc_cock_lady_2_uh_thanks_but_im_good = True
                     mc "Uh, thanks, but I'm good."
-
-                    pass #todo fill choice
+                    c "Very well, then I wish you safe travels."
+                    c "I will find you in case I find any further answers for you."
+                    mc "Uh, you too, safe...travels."
+                    jump evening_choices
                 "Uh, you mean use it myself?":
                     $dc_cock_lady_2_uh_you_mean_use_it_myself = True
                     mc "Uh, you mean use it myself?"
@@ -115,32 +117,122 @@ label dc_cock_lady_2:
                                 "There was mist, and I tried to ask my questions...":
                                     $dc_cock_lady_2_there_was_mist_and_i_tried_to_ask_my_questions_ = True
                                     mc "There was mist, and I tried to ask my questions..."
-
-                                    pass #todo fill choice
+                                    mc "But I came back to before I could see if anyone would answer."
+                                    c "Still, that is fascinating that you could get into that mind space."
                                 "Just a normal orgasm, really.":
                                     $just_a_normal_orgasm_really = True
                                     mc "Just a normal orgasm, really."
-                                    pass #todo fill choice
+                                    c "I see."
+                                    c "You don't have to trust me with what you have learned."
                                 "I think I felt the same kind of presence like in my dreams sometimes...":
                                     $dc_cock_lady_2_i_think_i_felt_the_same_kind_of_presence_like_in_my_dreams_sometimes_ = True
                                     mc "I think I felt the same kind of presence like in my dreams sometimes..."
+                                    c "You can feel that?"
+                                    mc "It's...hard to explain, but yes."
+                                    mc "It feels like...someone is there with me sometimes, watching me from behind."
+                                    mc "But if I turn around, there is nobody there, and I feel the same kind of presence behind me."
+                                    mc "And I could just feel that again, I have never felt that when I was awake."
+                                    c "That is the queen of the forest."
+                                    mc "Oh come on."
+                                    c "Do not disregard my words, young lady."
+                                    c "You are smarter than to disregard something which you can not see"
+                                    c "That doesn't mean it isn't there."
+                                    mc "Okay, sorry. Tell me about the queen of the forest."
+                                    c "All I know is that she is not one to be trifled with, as many poor souls have found out over the years."
+                                    c "The queen, it is said, has neither good nor evil in mind, but she will echo whatever intentions you have when you walk into her forest."
+                                    c "It is also said that she calls out to anyone who has done evil, offering them refuge from prosecution."
+                                    c "But it is those who adhere to that call who become one with the forest, and who then spend the rest of their sorry lives as lurking shadows."
+                                    if played_dream_nightmare_interview_1_sequence:
+                                        mc "You mean the shadows are real?"
+                                        c "You mean you can see them, too?"
+                                        mc "Uh, in my dreams, sometimes, there are these shadowy figures that become a part of it."
+                                        c "I knew you were special the moment I laid eyes on you."
+                                        c "That means you have to be twice as careful out here."
+                                        c "The queen will try to call out to you, and she will do so in ways you may find enticing."
+                                        mc "Thank you for the warning."
+                                    else:
+                                        mc "Now, that doesn't sound particularly nice."
+                                        c "Ah, but it is."
+                                        c "She protects the town by giving those who wish it harm a place to call home, and to then never leave."
+                                        mc "Oh, that makes a surprising amount of sense."
+                                        c "Yes, but that is also why most people think all talk about her is nonsense, because they don't even know what they are protected from."
+                                        mc "So, are all these shadows evil, then?"
+                                        c "No, she does not turn away anyone who comes to her, no matter their motivations."
+                                        c "They say that the queen has spent hundreds of years building out an army of shadows, and everyone can pledge allegiance to her."
+                                        c "However, those who seek her out have to prove themselves worthy."
+                                        menu:
+                                            "That is fascinating.":
+                                                $dc_cock_lady_2_that_is_fascinating = True
+                                                mc "That is fascinating."
+                                                mc "Or, terrifying, I guess is the better word."
+                                                pass #todo fill choice
+                                            "And how does someone prove themselves to the Queen of the Forest?":
+                                                $dc_cock_lady_2_and_how_does_someone_prove_themselves_to_the_queen_of_the_forest = True
+                                                mc "And how does someone prove themselves to the Queen of the Forest?"
+                                                pass #todo fill choice
                                     pass #todo fill choice
-                            c "Most impressive, I have to say."
-                            c "It took me many months before I could "
-
-
-
-                            pass #todo fill choice
+                            if not just_a_normal_orgasm_really:
+                                c "Most impressive, I have to say."
+                                c "It took me many months before I could keep my balance enough to see anything."
+                                scene black at topleft with dis #todo grin and pointing at self
+                                mc "What can I say, I got a lot of practice."
+                                c "Well, I hope you will find the answers you are looking for soon."
+                                c "You are always welcome to come here and spend time at my circle."
+                                jump evening_choices
+                            else:
+                                c "well, I hope you got something out of our time together today, and now I wish you a good journey, wherever your path may lead you."
+                                mc "Thank you."
+                                jump evening_choices
+                            jump dc_cock_lady_2_talk_about_mockingbird
                         "Why don't you get started and I'll wait if you find any answers?":
                             $dc_cock_lady_2_why_dont_you_get_started_and_ill_wait_if_you_find_any_answers = True
                             mc "Why don't you get started and I'll wait if you find any answers?"
-                            pass #todo fill choice
+                            "Don't ask me why, but I just didn't feel comfortable undressing in front of this woman."
+                            c "She, however, had no such mental constraints to hold her back."
+                            c "Very well, let me get started, then."
+                            c "Watch and observe."
+                            scene black at topleft with dis #todo
+                            "Within a minute, she seemed fully engulfed in her...meditation, rocking back and forth, eyes closed and occasionally mumbling something indistinguishable."
+                            "Watching her, it seemed as if she controlled her breathing as much as her fingers..."
+                            "And I could tell whenever she was slowing down, or quickening her pace."
+                            scene black at topleft with hpunch #todo
+                            "Until eventually, she opened her eyes again, staring at me like she had just come from deep within her own mind."
+                            scene black at topleft with dis #todo
+                            c "Well, that was certainly interesting."
+                            jump dc_cock_lady_2_talk_about_mockingbird
                         "Uh, I really should leave, now...":
                             $dc_cock_lady_2_uh_i_really_should_leave_now_ = True
                             mc "Uh, I really should leave, now..."
-                            pass #todo fill choice
-                    pass #todo fill choice
-            pass #todo fill choice
-    #todo meet her at the clinic, mutual masturbation session and more premonitions (unlock achievement "sweatly premonition")
+                            c "Very well, then I wish you safe travels."
+                            mc "Uh, you too, safe...travels."
+                            jump evening_choices
+    jump evening_choices
 
+label dc_cock_lady_2_talk_about_mockingbird:
+    mc "Did you learn anything?"
+    c "Straight to the point, huh?"
+    c "Well, young lady, give me a moment to get dressed, and to order my thoughts."
+    mc "Of course."
+    scene black at topleft with dis #todo
+    c "Well, here we are."
+    c "I saw the man again."
+    mc "Mockingbird?"
+    c "I couldn't tell if that is his name, or just something his...colleagues call him."
+    if dc_sarah_1_snooped_through_file:
+        mc "I know who he is, he works for the FBI."
+        c "Oh, is that so?"
+        c "What does an FBI agent want from you, Miss Vague?"
+        mc "I have zero clue, but I think it has more to do with the dead man that I found when I came into town."
+        c "Ah, yes, I have heard of that."
+        c "He will probably want to speak to you."
+        c "Do not let him know that you have been expecting him."
+    c "I can't tell what it is about him, but a good man he is not."
+    c "He has a permanent presence in the mist, not a fading one like most memories do."
+    c "I could seek him out, like following a road on a map with your finger."
+    c "That is never a good sign."
+    mc "Thank you, I will be careful around him."
+    scene black at topleft with dis #todo
+    c "You should leave now, Miss Vague, before the mist rises from the ground in our world, too."
+    mc "Right, I'll be on my way."
+    mc "Thank you for your insights, Miss Beaver."
     jump evening_choices
