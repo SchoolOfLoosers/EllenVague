@@ -1,5 +1,5 @@
 label ec_jay_2:
-    #todo asset: https://www.daz3d.com/sawmill-props https://www.daz3d.com/picnic-area-exterior https://www.daz3d.com/backwoods-shooting-range-for-genesis-3-and-8-male-s-and-female-s
+
     scene 215 at topleft with dis
     j "Welcome, Miss Vague."
     j "Are you prepared for our little hike?"
@@ -158,28 +158,28 @@ label ec_jay_2:
                     mc "I can't quite explain it, but..."
                     mc "It's almost like...I remember things here, even though it's my first time around."
                     j "Really, you can feel that, too?"
-            scene 226 at topleft with dis #todo
+            scene 226 at topleft with dis
             j "There is something about this place that makes me feel like it was frozen in time."
             j "You see that little hut over there?"
             j "It was there just like that, more than thirty years ago."
             j "Us workers used to take our break there, and my girlfriend and I used to meet here, where nobody could see us."
-            scene 225 at topleft with dis #todo
+            scene 225 at topleft with dis
             j "I know it's probably stupid and nostalgic, but...you know."
             menu:
                 "Oh, I can totally understand that, it's rare for a place to not change at all.":
                     $ec_jay_2_oh_i_can_totally_understand_that_its_rare_for_a_place_to_not_change_at_all = True
-                    scene 224 at topleft with dis #todo
+                    scene 224 at topleft with dis
                     mc "Oh, I can totally understand that, it's rare for a place to not change at all."
                     j "Yes, a lot of water has gone downstream since then."
                     menu:
                         "And how much have you changed in all that time?":
                             $ec_jay_2_and_much_how_have_you_changed_in_all_that_time = True
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "And how much have you changed in all that time?"
-                            scene 221 at topleft with dis #todo
+                            scene 221 at topleft with dis
                             j "A lot, and very little."
                             j "How's that for a non-answer?"
-                            scene 224 at topleft with dis #todo
+                            scene 224 at topleft with dis
                             mc "Hah, but it's not like I don't get it."
                             j "I would say my main beliefs haven't really changed much, but everything around that has turned around."
                             j "Or even turned over, coming out where I started, with a few stops in between."
@@ -188,85 +188,85 @@ label ec_jay_2:
                             menu:
                                 "How grown are we talking here, exactly?":
                                     $ec_jay_2_how_grown_are_we_talking_here_exactly = True
-                                    scene 220 at topleft with dis #todo
+                                    scene 220 at topleft with dis
                                     mc "How grown are we talking here, exactly?"
-                                    scene 221 at topleft with dis #todo
+                                    scene 221 at topleft with dis
                                     j "I can tell you one thing:"
                                     j "I am older and wiser now, able to pick up on those subtle clues."
-                                    scene 220 at topleft with dis #todo
+                                    scene 220 at topleft with dis
                                     mc "I wouldn't exactly call myself subtle right now."
-                                    scene 224 at topleft with dis #todo
+                                    scene 224 at topleft with dis
                                     j "Then I won't do, either."
                                     j "Do you want to undress yourself, or should I do it for you?"
                                     jump ec_jay_2_sex_with_jay
                                 "Well, thanks for showing me this place":
                                     $ec_jay_2_well_thanks_for_showing_me_this_place = True
-                                    scene 220 at topleft with dis #todo
+                                    scene 220 at topleft with dis
                                     mc "Well, thanks for showing me this place."
                                     mc "I feel like we should get going, now, before I fall asleep standing."
-                                    scene 224 at topleft with dis #todo
+                                    scene 224 at topleft with dis
                                     j "Then that's what we'll do."
                                     j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
                                     jump ec_jay_2_say_goodbye
 
                         "Well, thanks for showing me this place.":
                             $ec_jay_2_well_thanks_for_showing_me_this_place = True
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "Well, thanks for showing me this place."
                             mc "I feel like we should get going, now, before I fall asleep standing."
-                            scene 224 at topleft with dis #todo
+                            scene 224 at topleft with dis
                             j "Then that's what we'll do."
                             j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
                             jump ec_jay_2_say_goodbye
                 "And what did you do to your girlfriend when you were out here all alone?":
                     $ec_jay_2_and_what_did_you_do_to_your_girlfriend_when_you_were_out_here_all_alone = True
-                    scene 220 at topleft with dis #todo
+                    scene 220 at topleft with dis
                     mc "And what did you do to your girlfriend when you were out here all alone?"
-                    scene 221 at topleft with dis #todo
+                    scene 221 at topleft with dis
                     j "You want me to tell you?"
                     menu:
                         "As long as you don't get any ideas...":
                             $ec_jay_2_as_long_as_you_dont_get_any_ideas_ = True
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "As long as you don't get any ideas..."
-                            scene 221 at topleft with dis #todo
+                            scene 221 at topleft with dis
                             j "Oh, don't worry, I know how to behave around a lady of class, who trusts me enough to even walk out here with me."
                             j "I wouldn't betray that trust."
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "Charming."
-                            scene 221 at topleft with dis #todo
+                            scene 221 at topleft with dis
                             j "That about describes my attempts with the aforementioned lady, as well."
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "And did it work?"
-                            scene 221 at topleft with dis #todo
+                            scene 221 at topleft with dis
                             j "More often than not."
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "I have no trouble believing that, it's a very romantic place."
-                            scene 226 at topleft with dis #todo
+                            scene 226 at topleft with dis
                             j "You will understand if I shroud the rest of this story in the cloak of secrecy."
                             menu:
                                 "Don't you dare, I want the gritty details!":
                                     $ec_jay_2_don_t_you_dare_i_want_the_gritty_details = True
-                                    scene 227 at topleft with dis #todo
+                                    scene 227 at topleft with dis
                                     mc "Don't you dare, I want the gritty details!"
                                     j "Do you, now?"
                                     mc "Yes."
                                     j "But I'm sure you wouldn't want me to talk about you, if you were in her spot, right?"
                                     mc "I really don't care if you tell the next girl you bring out here about what you did to me tonight."
-                                    scene 226 at topleft with dis #todo
+                                    scene 226 at topleft with dis
                                     j "I wasn't aware I would be doing anything to you at all."
                                     menu:
                                         "Oh come on, we both know where tonight would lead...":
                                             $ec_jay_2_oh_come_on_we_both_know_where_tonight_would_lead_ = True
-                                            scene 228 at topleft with dis #todo
+                                            scene 228 at topleft with dis
                                             mc "Oh come on, we both know where tonight would lead..."
-                                            scene 229 at topleft with dis #todo
+                                            scene 229 at topleft with dis
                                             j "To be honest, I gave us about a thirty percent chance for one of us to uphold our morals."
-                                            scene 228 at topleft with dis #todo
+                                            scene 228 at topleft with dis
                                             mc "That's sweet, but I really don't want you to hold anything other than my hips."
-                                            scene 229 at topleft with dis #todo
+                                            scene 229 at topleft with dis
                                             j "A chore that I quite look forward to."
-                                            scene 228 at topleft with dis #todo
+                                            scene 228 at topleft with dis
                                             mc "I'm sure you do."
                                             jump ec_jay_2_sex_with_jay
                                         "You are really too classy for your own good, Mister High Morals.":
@@ -274,10 +274,10 @@ label ec_jay_2:
                                             mc "You are really too classy for your own good, Mister High Morals."
                                             mc "But fine, suit yourself."
                                             mc "I hope you are aware that you're purposefully missing out here."
-                                            scene 229 at topleft with dis #todo
+                                            scene 229 at topleft with dis
                                             j "I am, and that may just be for the best."
                                             j "Thank you for trusting me enough for this conversation to deviate from it's path like that."
-                                            scene 227 at topleft with dis #todo
+                                            scene 227 at topleft with dis
                                             mc "Don't thank me, just walk me home now."
                                             j "Follow me, then."
                                             jump ec_jay_2_say_goodbye
@@ -289,12 +289,12 @@ label ec_jay_2:
                                     jump ec_jay_2_say_goodbye
                         "It's better if you show me...":
                             $ec_jay_2_it_s_better_if_you_show_me_ = True
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "It's pretty hard to see or hear in this darkness."
                             mc "I think it's better if you just show me..."
-                            scene 221 at topleft with dis #todo
+                            scene 221 at topleft with dis
                             j "I have to warn you, though..."
-                            scene 220 at topleft with dis #todo
+                            scene 220 at topleft with dis
                             mc "Spare me the act, Jay."
                             mc "Don't spare me the touches."
                             mc "The kisses."
@@ -302,52 +302,52 @@ label ec_jay_2:
                             jump ec_jay_2_sex_with_jay
         "And what's your dark side?":
             $care_to_share_your_darker_side_with_me = True
-            scene 220 at topleft with dis #todo
+            scene 220 at topleft with dis
             mc "And what's your dark side?"
-            scene 221 at topleft with dis #todo
+            scene 221 at topleft with dis
             j "Oh, that's easy."
             j "I like to find out how far someone's trust will carry them."
-            scene 220 at topleft with dis #todo
+            scene 220 at topleft with dis
             mc "That does sound dangerous."
-            scene 226 at topleft with dis #todo
+            scene 226 at topleft with dis
             j "I like to think that I am worth any trust that's placed in me, but yes, it's a gamble, of course."
             menu:
                 "I don't know about my trust, but my feet have carried me enough now. So go on, do your thing with me.":
-                    scene 220 at topleft with dis #todo
-                    $ec_jay_2_i_dont_know_about_my_trust_but_my_feet_have_carried_me_enough_now_so_go_on_do_your_thing_with_me = True
+                    scene 220 at topleft with dis
                     mc "I don't know about my trust, but my feet have carried me enough now. So go on, do your thing with me."
-                    scene 226 at topleft with dis #todo
+                    $ec_jay_2_i_dont_know_about_my_trust_but_my_feet_have_carried_me_enough_now_so_go_on_do_your_thing_with_me = True
+                    scene 226 at topleft with dis
                     if ec_jay_1_can_share_bed_tonight:
                         j "That is now the second time you have offered yourself to me."
-                        scene 220 at topleft with dis #todo
+                        scene 220 at topleft with dis
                         mc "And has your answer changed?"
-                        scene 221 at topleft with dis #todo
+                        scene 221 at topleft with dis
                         j "Like I said before, you make me curious."
-                        scene 220 at topleft with dis #todo
+                        scene 220 at topleft with dis
                         mc "Curious enough to take advantage of my helpless situation here?"
-                        scene 226 at topleft with dis #todo
+                        scene 226 at topleft with dis
                         j "If that's what you want."
-                        scene 220 at topleft with dis #todo
+                        scene 220 at topleft with dis
                         mc "I want to stop having to beg."
-                        scene 221 at topleft with dis #todo
+                        scene 221 at topleft with dis
                         j "In that case, let's see if we can't make our desires align."
                         jump ec_jay_2_sex_with_jay
-                    scene 226 at topleft with dis #todo
+                    scene 226 at topleft with dis
                     j "I find it worth mentioning that coming out of this forest again does not require you to do anything you are uncomfortable with."
-                    scene 220 at topleft with dis #todo
+                    scene 220 at topleft with dis
                     mc "I am glad to hear that, now stop being polite."
-                    scene 221 at topleft with dis #todo
+                    scene 221 at topleft with dis
                     j "I will adjust my set of manners accordingly."
-                    scene 220 at topleft with dis #todo
+                    scene 220 at topleft with dis
                     mc "And stop talking to me like I'm any sort of lady tonight."
-                    scene 226 at topleft with dis #todo
+                    scene 226 at topleft with dis
                     j "Agreed, you look more like a slut in this light."
-                    scene 220 at topleft with dis #todo
+                    scene 220 at topleft with dis
                     mc "Now that's what I'm talking about."
                     jump ec_jay_2_sex_with_jay
                 "As long as I get home safe, I'd call this a win.":
                     $ec_jay_2_as_long_as_i_get_home_safe_id_call_this_a_win = True
-                    scene 226 at topleft with dis #todo
+                    scene 226 at topleft with dis
                     mc "As long as I get home safe, I'd call this a win."
                     j "Then that's what we'll do."
                     j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
@@ -370,28 +370,28 @@ label ec_jay_2_sex_with_jay:
             $ec_jay_2_just_tell_me_when_i_want_to_taste_you = True
             mc "Just tell me when, I want to taste you."
             hide ec_jay_2_sex_1
-            scene 232 at topleft with hpunch #todo cum in air
+            scene 232 at topleft with hpunch
             pause 3.0
-            scene 236 at topleft with dis #todo still shot without jay in picture
+            scene 236 at topleft with dis
         "Please don't pull out.":
             $ec_jay_2_please_dont_pull_out = True
             mc "Please don't pull out."
             hide ec_jay_2_sex_1
-            scene anim_jay_2_table at topleft with hpunch #todo cum in her
+            scene anim_jay_2_table at topleft with hpunch
             pause 3.0
-            scene 231 at topleft with dis #todo still shot without jay in picture
+            scene 231 at topleft with dis
         "(Let him come on your back)":
             $ec_jay_2__let_him_come_on_your_back_ = True
             hide ec_jay_2_sex_1
-            scene 234 at topleft with hpunch #todo cum in air
+            scene 234 at topleft with hpunch
             pause 3.0
-            scene 237 at topleft with dis #todo still shot without jay in picture
+            scene 237 at topleft with dis
         "(Let him come on your stomach)":
             $ec_jay_2__roll_over_on_your_back_ = True
             hide ec_jay_2_sex_1
-            scene 233 at topleft with hpunch #todo cum in air
+            scene 233 at topleft with hpunch
             pause 3.0
-            scene 235 at topleft with dis #todo still shot without jay in picture
+            scene 235 at topleft with dis
         "Don't you dare stop now!":
             $ec_jay_2__roll_over_on_your_back_ = True
             mc "Don't you dare stop now!"
@@ -414,15 +414,15 @@ label ec_jay_2_sex_with_jay:
     j "Please accept my apologies, that was not a way to treat a lady of class."
     mc "No, it really wasn't."
     mc "Thank you, in case it needs to be said out loud."
-    scene 226 at topleft with dis #todo
+    scene 226 at topleft with dis
     j "What do you say, shall we embark on the laborious trip back to our cars?"
-    scene 220 at topleft with dis #todo
+    scene 220 at topleft with dis
     mc "Yes please, I really need a soft and comfy mattress under my butt, not this hard wood."
     j "Well, I hope you will find the sleeping arrangements at my hotel to your liking."
     mc "Hah, damn right I do."
     mc "If I may be serious here for a moment, that's easily the best mattress I have ever slept on."
     j "I'm glad to hear they were worth the money."
-    scene 230 at topleft with dis #todo
+    scene 230 at topleft with dis
     j "Well, here we are, it appears the time has come to say good night."
     mc "Good night."
     j "And like I said when we first met: I am always just a call away in case you need anything."
@@ -433,7 +433,7 @@ label ec_jay_2_sex_with_jay:
     jump next_morning
 
 label ec_jay_2_say_goodbye:
-    scene 230 at topleft with dis #todo
+    scene 230 at topleft with dis
     j "There we go, that's the main road again."
     j "Congratulations, you made it back out of the woods safe and healthy."
     mc "Thank you, this was fun."
