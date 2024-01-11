@@ -104,11 +104,12 @@ label dc_cock_lady_2:
                             mc "I guess nobody has to know, right?"
                             c "That's right."
                             c "Do come and join me, then."
-                            scene 332 at topleft with dis #todo
+                            scene 332 at topleft with dis
                             c "There we go, the candles are lit, the ritual may begin."
+                            scene 333 at topleft with dis
                             c "Take your pants off, Miss Vague, and let us see if we can't get you some answers."
-                            scene black at topleft with dis #todo
                             mc "So, uh, is there anything special I need to do?"
+                            scene 334 at topleft with dis
                             c "Just kneel down, and relax."
                             c "Relax your body, and your mind will follow."
                             c "And when you feel yourself getting close, you need to hold on to that feeling for as long as you can."
@@ -116,36 +117,40 @@ label dc_cock_lady_2:
                             c "And do not worry if your body tenses up too soon, it took me years of practice before I could balance my body and mind enough to get anything useful out of it."
                             c "And the most important thing: Do not be ashamed, or it will impact the delicate balance before it has any chance to develop."
                             c "And now, let us fall silent, and see if we can't get some answers."
-                            scene black at topleft with dis #todo
+                            scene 335 at topleft with dis
                             "I didn't know what it was, maybe the scent of the candles..."
-                            scene black at topleft with dis #todo
+                            scene 336 at topleft with dis
                             "But I barely struggled with this most unusual event that seemed to defy all logic, societal norms, and what even I myself would have considered good taste."
                             "But there and then..."
+                            scene 337 at topleft with dis
                             "It just seemed logical, to me, that I was slowly moving my fingers, following my curves..."
                             "Exploring my folds as if they were somehow new to me."
-                            scene black at topleft with dis #todo
                             "And before long, I realized what Cecilia had meant when she had talked about that delicate balance..."
-                            scene black at topleft with dis #todo
+                            scene 338 at topleft with dis
                             "I moved my fingers, and it pushed me so close to the brink that I became afraid of losing my balance."
                             "I breathed in, and the brink seemed to step away from me."
                             "Another touch, barely noticeable under normal circumstances, and there I was again, staring into the abyss of my own composure."
                             "I took a breath, thought about the questions that moved me at the time."
                             "And suddenly, without knowing how or why, and even if it was really happening..."
                             "I found myself alone, gone from the place I had just been at."
-                            scene black at topleft with dis #todo location change to misty world or something
+                            scene 339 at topleft with dis
                             mc "Where am I?"
                             mc "No, wait, I do not care."
+                            scene 340 at topleft with dis
                             mc "Am I ever gonna find back to my old self, who could write anytime I sat down to write?"
                             mc "What do I have to do to regain my creativity, and the ability to unleash it at my own leisure?"
+                            scene 341 at topleft with dis
                             mc "Will I ever finish another book?"
                             mc "Will I ever write another bestseller?"
+                            scene 342 at topleft with dis
                             mc "Do I have to change my life again, put myself back into harms way to get that inspiration?"
                             mc "Have I become too cozy, too comfortable with myself, and my position in life?"
-                            scene black at topleft with hpunch #todo
+                            scene 343 at topleft with hpunch
                             c "Welcome back, Miss Vague."
                             mc "Ugh, I can't believe that just happened."
                             c "What did you see?"
                             c "Did you see anything?"
+                            scene 344 at topleft with dis
                             mc "Uh, I saw..."
                             menu:
                                 "There was mist, and I tried to ask my questions...":
@@ -155,6 +160,7 @@ label dc_cock_lady_2:
                                     c "Still, that is fascinating that you could get into that mind space."
                                 "Just a normal orgasm, really.":
                                     $just_a_normal_orgasm_really = True
+                                    scene 343 at topleft with dis
                                     mc "Just a normal orgasm, really."
                                     c "I see."
                                     c "You don't have to trust me with what you have learned."
@@ -162,16 +168,22 @@ label dc_cock_lady_2:
                                     $dc_cock_lady_2_i_think_i_felt_the_same_kind_of_presence_like_in_my_dreams_sometimes_ = True
                                     mc "I think I felt the same kind of presence like in my dreams sometimes..."
                                     c "You can feel that?"
+                                    scene 345 at topleft with dis
                                     mc "It's...hard to explain, but yes."
                                     mc "It feels like...someone is there with me sometimes, watching me from behind."
                                     mc "But if I turn around, there is nobody there, and I feel the same kind of presence behind me."
                                     mc "And I could just feel that again, I have never felt that when I was awake."
+                                    scene 343 at topleft with dis
                                     c "That is the queen of the forest."
+                                    scene 345 at topleft with dis
                                     mc "Oh come on."
+                                    scene 343 at topleft with dis
                                     c "Do not disregard my words, young lady."
                                     c "You are smarter than to disregard something which you can not see"
                                     c "That doesn't mean it isn't there."
+                                    scene 346 at topleft with dis
                                     mc "Okay, sorry. Tell me about the queen of the forest."
+                                    scene 347 at topleft with dis
                                     c "All I know is that she is not one to be trifled with, as many poor souls have found out over the years."
                                     c "The queen, it is said, has neither good nor evil in mind, but she will echo whatever intentions you have when you walk into her forest."
                                     c "It is also said that she calls out to anyone who has done evil, offering them refuge from prosecution."
@@ -190,41 +202,52 @@ label dc_cock_lady_2:
                                         c "She protects the town by giving those who wish it harm a place to call home, and to then never leave."
                                         mc "Oh, that makes a surprising amount of sense."
                                         c "Yes, but that is also why most people think all talk about her is nonsense, because they don't even know what they are protected from."
+                                    scene 344 at topleft with dis
                                     mc "So, are all these shadows evil, then?"
+                                    scene 347 at topleft with dis
                                     c "No, she does not turn away anyone who comes to her, no matter their motivations."
                                     c "They say that the queen has spent hundreds of years building out an army of shadows, and everyone can pledge allegiance to her."
                                     c "However, those who seek her out have to prove themselves worthy."
                                     menu:
                                         "That is fascinating.":
                                             $dc_cock_lady_2_that_is_fascinating = True
+                                            scene 344 at topleft with dis
                                             mc "That is fascinating."
                                             mc "Or, terrifying, I guess is the better word."
                                             mc "What happens if she decides to wage war on the world around her?"
+                                            scene 347 at topleft with dis
                                             c "Well, I wouldn't dare to put words in the Queen's mouth, but..."
                                             c "I believe she is content with protecting the forest, and consuming anyone who threatens it."
                                             mc "Thank the heavens."
-                                            scene black at topleft with dis #todo
+                                            scene 347 at topleft with dis
                                             c "well, I hope you got something out of our time together today, and now I wish you a good journey, wherever your path may lead you."
                                             mc "Thank you."
                                             jump evening_choices
                                         "And how does someone prove themselves to the Queen of the Forest?":
                                             $dc_cock_lady_2_and_how_does_someone_prove_themselves_to_the_queen_of_the_forest = True
+                                            scene 348 at topleft with dis
                                             mc "And how does someone prove themselves to the Queen of the Forest?"
                                             mc "Not that I plan to, mind you."
+                                            scene 347 at topleft with dis
                                             c "That, I can not answer you, and I would not if I could."
                                             c "When I was young, my best friend got it in her head that she wanted to become a witch, and she found out how to prove herself."
                                             c "She wanted to bring me along, and I said no, and I wish that I could have stopped her."
                                             c "Because that was the last time anyone ever heard from her."
+                                            scene 349 at topleft with dis
                                             mc "I'm sorry to hear that."
+                                            scene 347 at topleft with dis
                                             c "Everyone makes their own mistakes in life, Miss Vague."
                                             c "well, I hope you got something out of our time together today, and now I wish you a good journey, wherever your path may lead you."
+                                            scene 348 at topleft with dis
                                             mc "Thank you."
                                             jump evening_choices
                             if not just_a_normal_orgasm_really:
+                                scene 347 at topleft with dis
                                 c "I have to say, it is most impressive what you see and feel, Miss Vague."
                                 c "It took me many months before I could keep my balance enough to see anything."
-                                scene black at topleft with dis #todo grin and pointing at self
+                                scene 350 at topleft with dis
                                 mc "What can I say, I got a lot of practice."
+                                scene 351 at topleft with dis
                                 c "Well, I hope you will find the answers you are looking for soon."
                                 c "You are always welcome to come here and spend time at my circle."
                                 jump evening_choices
@@ -240,29 +263,37 @@ label dc_cock_lady_2:
                             c "She, however, had no such mental constraints to hold her back."
                             c "Very well, let me get started, then."
                             c "Watch and observe."
-                            scene black at topleft with dis #todo
+                            scene 352 at topleft with dis
                             "Within a minute, she seemed fully engulfed in her...meditation, rocking back and forth, eyes closed and occasionally mumbling something indistinguishable."
                             "Watching her, it seemed as if she controlled her breathing as much as her fingers..."
+                            scene 353 at topleft with dis
                             "And I could tell whenever she was slowing down, or quickening her pace."
-                            scene black at topleft with hpunch #todo
+                            scene 354 at topleft with hpunch
                             "Until eventually, she opened her eyes again, staring at me like she had just come from deep within her own mind."
-                            scene black at topleft with dis #todo
+                            scene 355 at topleft with dis
                             c "Well, that was certainly interesting."
                             jump dc_cock_lady_2_talk_about_mockingbird
                         "Uh, I really should leave, now...":
                             $dc_cock_lady_2_uh_i_really_should_leave_now_ = True
+                            scene 329 at topleft with dis
                             mc "Uh, I really should leave, now..."
+                            scene 326 at topleft with dis
                             c "Very well, then I wish you safe travels."
+                            scene 329 at topleft with dis
                             mc "Uh, you too, safe...travels."
                             jump evening_choices
     jump evening_choices
 
 label dc_cock_lady_2_talk_about_mockingbird:
+    if dc_cock_lady_2_why_dont_you_get_started_and_ill_wait_if_you_find_any_answers:
+        scene 355 at topleft with dis
+    else:
+        scene 347 at topleft with dis
     mc "Did you learn anything?"
     c "Straight to the point, huh?"
     c "Well, young lady, give me a moment to get dressed, and to order my thoughts."
     mc "Of course."
-    scene black at topleft with dis #todo
+    scene 326 at topleft with dis
     c "Well, here we are."
     c "I saw the man again."
     mc "Mockingbird?"
@@ -279,9 +310,11 @@ label dc_cock_lady_2_talk_about_mockingbird:
     c "He has a permanent presence in the mist, not a fading one like most memories do."
     c "I could seek him out, like following a road on a map with your finger."
     c "That is never a good sign."
+    scene 329 at topleft with dis
     mc "Thank you, I will be careful around him."
-    scene black at topleft with dis #todo
+    scene 326 at topleft with dis
     c "You should leave now, Miss Vague, before the mist rises from the ground in our world, too."
+    scene 324 at topleft with dis
     mc "Right, I'll be on my way."
     mc "Thank you for your insights, Miss Beaver."
     jump evening_choices
