@@ -87,6 +87,7 @@ label ec_patty_2:
                     mc "Yep, that sounds familiar." #todo maybe a bit more text here later?
                 "Oh, you know, I just enjoyed spending some time with my own thoughts (point at your crotch)" if dc_karen_1_masturbated_on_lovers_peak:
                     $ec_patty_2_pointed_at_crotch = True
+                    scene 266 at topleft with dis #todo
                     mc "Oh, you know, I just enjoyed spending some time with my own thoughts"
                     scene 69 at topleft with dis #todo
                     p "Oh, is that so?"
@@ -106,32 +107,41 @@ label ec_patty_2:
                             mc "Yep, that sounds familiar." #todo maybe a bit more text here later?
                         "Take your pants off quietly":
                             $ec_patty_2_naked = True
-                            scene black at topleft with dis #todo finger shush lips
+                            scene 267 at topleft with dis #todo finger shush lips
+                            mc "It's a lot of fun, isn't it?"
+                            scene 268 at topleft with dis #todo
+                            p "That is true, it's pretty hard to beat."
+                            scene 269 at topleft with dis #todo
                             p "Why don't you tell us a bit more about your...explorations, Ellen?"
-                            scene black at topleft with dis #todo
+                            scene 272 at topleft with dis #todo
                             mc "I'm not sure how interesting it is to listen to that, it is a lot of walking alone down empty paths."
-                            scene black at topleft with dis #todo patty takes her own pants off
+                            scene 273 at topleft with dis #todo patty takes her own pants off
                             p "Yep, that's hiking for you, isn't it?"
-                            scene black at topleft with dis #todo 69 as base
+                            scene 270 at topleft with dis #todo 69 as base
                             mc "Hiking, sure."
-                            scene black at topleft with dis #todo
+                            scene 271 at topleft with dis #todo
                             mc "Listen, uh, what was the question again?"
-                            scene black at topleft with dis #todo
+                            scene 274 at topleft with dis #todo
                             p "Hah, I kinda forgot myself, let us try this again."
                             p "So, uh, why don't you tell us a little about your life in the city?"
                             p "I know I always come home completely exhausted whenever I spend a day out there."
+                            scene 270 at topleft with dis #todo
                             mc "Oh yes, that can be...quite exhausting, for sure."
                             mc "But then again, so can this here, right?"
+                            scene 274 at topleft with dis #todo
                             p "What do you mean?"
+                            scene 271 at topleft with dis #todo
                             mc "I mean, all this calm, and quiet, it can really get to you sometimes."
+                            scene 274 at topleft with dis #todo
                             p "Oh, now I get what you mean."
                             p "I thought you meant something else there for a second."
+                            scene 271 at topleft with dis #todo
                             mc "But, and that's a big...but."
                             mc "Out here, you have a choice, am I right?"
                             mc "You can always go out, have a coffee, talk to someone..."
                             mc "You can't quite stick to yourself in the city, life always finds a way to get to you."
                             mc "I'm pretty sure life would start a fire in my apartment complex or something if I dared to stay inside for a week."
-                            scene black at topleft with dis #todo
+                            scene 274 at topleft with dis #todo
                             p "Hah, that's probably true."
                             p "So, what you're saying is, you go out at least once per week?"
                             mc "That sounds about right, yes."
