@@ -6,10 +6,9 @@ label dc_yggy_2:
     mc "Yggy, what the fuck was that?"
     scene 283 at topleft with dis
     y "I see you had your fun."
-    scene 284 at topleft with dis
+    scene 285 at topleft with dis
     mc "I'm having the fucking worst leg cramps of my life, or else I would kick your ass so hard you'd finally explain to me what this stuff is and how it works."
     y "Hah, alright."
-    scene 285 at topleft with dis
     y "So, the crucial ingredient are the leaves of a very specific herb that only grows in a very select few places."
     y "I found out about it in a downright ancient tome of a book, handwritten recipes in something that barely resembles modern English."
     scene 286 at topleft with dis
