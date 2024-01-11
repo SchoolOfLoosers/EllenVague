@@ -75,6 +75,30 @@ label ec_yggy_1:
     scene black at topleft with dis #todo
     "There was just something inexplicably good about the slow, methodic way he was working me."
     "It was, like...not at all unexpected, his thrusts never catching me by surprise."
+    "But instead, we both settled into a rhythm that allowed me to actually hold on to my pen and paper, and to write lines that where squiggly for sure, but not unreadable."
+    scene black at topleft with dis #todo
+    "And sure enough, just like Yggy had promised me, it was like my brain was moving faster than my body, each line and paragraph forming in my head before I had finished writing the previous one down."
+    scene black at topleft with hpunch #todo
+    y "Sorry about the mess."
+    scene black at topleft with dis #todo
+    mc "Thank you for the mess."
+    y "I see you are making progress."
+    mc "This is good stuff, Yggy, I really don't mind what you're doing to me tonight."
+    y "Glad to hear that."
+    scene black at topleft with dis #todo
+    "With barely a moment of break, he slipped back into me, as if the once warm and now quickly cooling mess on my belly was just a side concern on his mind."
+    scene black at topleft with dis #todo
+    "For what seemed like an hour afterward, we didn't talk, and barely locked eyes whenever I was pulled out of my story for a second."
+    "At first, I thought that he might take offense at that, but it seemed like the opposite was true."
+    "It had been years since I had last felt so...comfortable being naked with someone."
+    "And obviously, I had never come even close to a night like this, that just didn't seem to end - for either of us."
+    scene black at topleft with hpunch #todo
+    mc "Are you gonna keep doing that to me?"
+    y "That's the plan, yes."
+    y "Are you done with your bestseller yet?"
+    mc "Not quite, but getting closer."
+    y "You wanna read it to me?"
+    mc ""
 
 
 
