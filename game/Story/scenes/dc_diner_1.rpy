@@ -1,4 +1,5 @@
 label dc_diner_1:
+    $completed_dc_diner_1 = True
     scene 4 at topleft with dis
     "The diner looked like a proper small town diner is supposed to look like."
     "Dimly lit, a few tired faces, and a waitress walking around with free refills."
@@ -15,9 +16,10 @@ label dc_diner_1:
             jump menu_dc_diner_1
         "Talk to Ragnar and Iggy" if not dc_diner_1_talked_to_ragnar_and_iggy and dc_diner_1_talked_to_mary:
             $dc_diner_1_talked_to_ragnar_and_iggy = True
+            $unlocked_dc_yggy_1 = True
             call dc_diner_1_talk_to_ragnar_and_iggy
             jump menu_dc_diner_1
-        "Leave":
+        "Leave" if dc_diner_1_talked_to_mary:
             pass
     if not completed_dc_hotel_1:
         mc "Well, I better check into the hotel, before they close up for the night."

@@ -1,6 +1,6 @@
 label next_morning:
     $rng = renpy.random.randint (1, 3)
-    if rng == 2:
+    if rng == 2 and not ec_jay_1_can_share_bed_tonight:
         call dream_sequence
 
     scene black at topleft with dis

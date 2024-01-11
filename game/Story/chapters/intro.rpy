@@ -8,7 +8,6 @@ label start:
     scene main_menu at topleft with dis
     mc "My name is Ellen Vague, and I'm a writer."
     scene black at topleft with hpunch
-    #todo play swerving sound
     mc "Fuck!"
     scene 36 at topleft with dis
     mc "Hey, are you okay? Oh my god, please tell me I didn't hit you!"
@@ -65,6 +64,7 @@ label start:
     menu:
         "Thank you, I really need a coffee now.":
             $intro_said_need_coffee = True
+            $unlocked_dc_sarah_1 = True
             s "Hah, I can imagine."
             s "Well, Mary at the Odin's Diner serves a mean coffee that will pick you right back up."
             s "You can't miss it when you drive into town."

@@ -1,8 +1,8 @@
 label dc_yggy_2:
-    scene 189 at topleft with dis
+    scene 188 at topleft with dis
     y "Oh hey, you are back!"
     y "Let me guess, you need some more batteries for your flashlight, because you used it all night long?"
-    scene black at topleft with dis #todo
+    scene black at topleft with dis #todo 91 base
     mc "Yggy, what the fuck was that?"
     scene black at topleft with dis #todo
     y "I see you had your fun."

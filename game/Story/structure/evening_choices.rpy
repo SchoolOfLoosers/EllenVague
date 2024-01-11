@@ -35,6 +35,17 @@ label evening_choices:
             $completed_ec_potion_masturbation_1 = True
             $inventory_has_aphrodisiac_potion = False
             jump ec_potion_masturbation_1
+        #todo
+        # "I wonder if Jay has time to violate my privacy..." if not completed_ec_sex_with_jay_2:
+        #     $completed_ec_sex_with_jay_2 = True
+        #     jump ec_sex_with_jay_2
+        #todo
+        # "I wonder if Jay has gotten bored of me yet..." if completed_ec_sex_with_jay_2 and not completed_ec_sex_with_jay_3:
+        #     $completed_ec_sex_with_jay_3 = True
+        #     jump ec_sex_with_jay_3
+        #todo put this choice back in as soon as I figure out how to properly check for remaining choices
+        # "I think I'll just go to sleep early today...":
+        #     jump next_morning
 
     "Thank you for playing!"
     "This is how far the story goes at the moment, I hope you enjoyed it so far!"

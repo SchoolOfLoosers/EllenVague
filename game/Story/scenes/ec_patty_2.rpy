@@ -136,7 +136,7 @@ label ec_patty_2:
                             p "Oh, now I get what you mean."
                             p "I thought you meant something else there for a second."
                             scene 271 at topleft with dis
-                            mc "But, and that's a big...but."
+                            mc "But... and that's a big...but."
                             mc "Out here, you have a choice, am I right?"
                             mc "You can always go out, have a coffee, talk to someone..."
                             mc "You can't quite stick to yourself in the city, life always finds a way to get to you."
@@ -205,19 +205,25 @@ label ec_patty_2:
             mc "But me mentioning the place brought some memories back, huh?"
             scene 69 at topleft with dis
             p "Exactly."
-    scene 65 at topleft with dis
+    if ec_patty_2_naked:
+        scene black at topleft with dis #todo
+    else:
+        scene 65 at topleft with dis
     s "Well, Ellen, it was great having you over again, thank you for coming."
-    scene 63 at topleft with dis
+    if ec_patty_2_naked:
+        scene 272 at topleft with dis #todo
+    else:
+        scene 63 at topleft with dis
     mc "Oh, I am such a sucker for this view here, there was no way I would decline your invitation."
     s "I know, right?"
     s "Okay, folks, that is it for tonight, thank you all for tuning in."
     scene 69 at topleft with dis
-    s "And now, I will let you off into the evening with another of my songs that I create up in my little studio in the skies."
-    s "It's called \"Trunk Music\" - and if you think you know what that means, then think again."
-    scene black at topleft with dis
-    play music trunkmusic.mp3
-    pause 30 #todo change this
-    stop music fadeout 1.0
+    # s "And now, I will let you off into the evening with another of my songs that I create up in my little studio in the skies."
+    # s "It's called \"Trunk Music\" - and if you think you know what that means, then think again."
+    # scene black at topleft with dis
+    # play music trunkmusic.mp3
+    # pause 30 #todo change this
+    # stop music fadeout 1.0
     if ec_patty_2_naked:
         scene black at topleft with dis #todo
         p "Okay...microphones off, all systems shut off - done."

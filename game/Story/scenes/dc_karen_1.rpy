@@ -5,7 +5,7 @@ label dc_karen_1:
     k "And who are you?"
     scene 163 at topleft with dis
     mc "I'm Ellen, Yggy told me to find you."
-    scene 164 at topleft with dis
+    scene 162 at topleft with dis
     k "Yggy, huh?"
     k "He give you one of his coins?"
     scene 162 at topleft with dis
