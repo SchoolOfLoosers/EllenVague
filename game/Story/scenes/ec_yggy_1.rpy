@@ -98,9 +98,18 @@ label ec_yggy_1:
     y "Are you done with your bestseller yet?"
     mc "Not quite, but getting closer."
     y "You wanna read it to me?"
-    mc ""
-
-
+    mc "Are you actually interested?"
+    mc "Because I really don't mind if you just wanna have your way with me."
+    y "That's cute, but I actually care."
+    y "Makes me all warm and fuzzy inside to know I could make myself useful here."
+    mc "Hah, alright then."
+    mc "So, uh, this is a rough draft, keep that in mind."
+    y "Not as rough as you'll feel in the morning."
+    mc "Hah, you may be right about that."
+    mc "So, here goes."
+    scene black at topleft with dis #todo
+    mc "\"\""
+    #todo
 
 
     jump next_morning
