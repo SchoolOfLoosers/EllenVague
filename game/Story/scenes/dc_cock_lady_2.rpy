@@ -1,76 +1,110 @@
 label dc_cock_lady_2:
-    scene black at topleft with dis #todo
+    scene 322 at topleft with dis
     c "Oh hello, Miss Vague, wasn't it?"
+    scene 323 at topleft with dis
     mc "That's right, hi Miss Beaver."
+    scene 324 at topleft with dis
     c "I didn't expect you to actually come around."
     c "Most people would say that to get me to leave."
+    scene 323 at topleft with dis
     mc "Which is a pity, I really enjoyed our little conversation."
+    scene 324 at topleft with dis
     c "Did you, now?"
     c "Say, have you met this man I warned you about?"
+    scene 325 at topleft with dis
     mc "I have not, no." #todo make this conditional once Mockingbird scenes are in the game.
+    scene 326 at topleft with dis
     c "Well, you will soon enough, mark my words."
+    scene 322 at topleft with dis
     c "So, I assume you have come to learn more about this town, haven't you?"
+    scene 323 at topleft with dis
     mc "How come you know so much, if you don't mind me asking?"
+    scene 322 at topleft with dis
     c "Not at all, young lady, not at all."
     c "I have lived here all my life, and protected this town for most of my years on this planet."
     c "There are things I see myself, and other things that my friends tell me..."
     c "And in between all that, I know a thing or two about a thing or two."
+    scene 325 at topleft with dis
     mc "You protect this town? From what, exactly?"
+    scene 326 at topleft with dis
     c "The shadows, young lady, the shadows."
     c "You are perceptive enough yourself, aren't you?"
     c "To feel when you are being watched?"
+    scene 325 at topleft with dis
     mc "Uh, yes, but that is completely normal. Just our minds playing tricks on us when we are alone."
+    scene 326 at topleft with dis
     c "Do not let the daft people fool you, Ellen."
     c "Just because they can't see it, they deny any possibility of it being there."
     c "And let me tell you, I have seen them myself, the shadows."
     c "And that is why I do not care what people say or think of me - this town needs protection."
+    scene 323 at topleft with dis
     mc "That is amicable of you, Cecilia."
+    scene 322 at topleft with dis
     c "I am glad that you think so."
     c "Well, but you have not come here just to hear me waxing about Bryatt Fowls, have you?"
     c "You want to hear if there is anything else my cock has to say to you, right?"
     menu:
         "Actually, I just wanted to say hello.":
             $dc_cock_lady_2_actually_i_just_wanted_to_say_hello = True
+            scene 323 at topleft with dis
             mc "Actually, I just wanted to say hello."
             mc "I'll have to go soon, too."
+            scene 322 at topleft with dis
             c "Ah yes, lots to do with what limited vacation time you have, right?"
+            scene 325 at topleft with dis
             mc "Exactly."
+            scene 326 at topleft with dis
             c "Well, in that case, don't let me keep you."
             c "Have a good day, Miss Vague."
+            scene 324 at topleft with dis
             mc "Thank you, Cecilia, you too."
             jump evening_choices
         "Yes, I would love to hear more.":
             $dc_cock_lady_2_yes_i_would_love_to_hear_more = True
+            scene 324 at topleft with dis
             mc "Yes, I would love to hear more."
+            scene 325 at topleft with dis
             mc "So, uh, what exactly do you do to make your cock \"talk to you\"?"
+            scene 326 at topleft with dis
             c "Young lady, I'm sure I don't have to explain to you how these things work, do I?"
+            scene 327 at topleft with dis
             mc "Uh, I just wanted to make sure I don't misunderstand anything."
+            scene 328 at topleft with dis
             c "You can try it, if you like, see for yourself if you get the answers you have come for."
             menu:
                 "Uh, thanks, but I'm good.":
                     $dc_cock_lady_2_uh_thanks_but_im_good = True
+                    scene 329 at topleft with dis
                     mc "Uh, thanks, but I'm good."
+                    scene 326 at topleft with dis
                     c "Very well, then I wish you safe travels."
                     c "I will find you in case I find any further answers for you."
+                    scene 329 at topleft with dis
                     mc "Uh, you too, safe...travels."
                     jump evening_choices
                 "Uh, you mean use it myself?":
                     $dc_cock_lady_2_uh_you_mean_use_it_myself = True
+                    scene 327 at topleft with dis
                     mc "Uh, you mean use it myself?"
-                    c "I mean, young lady, that you should join me, and we both kneel in that circle over there."
+                    scene 326 at topleft with dis
+                    c "I mean, young lady, that you should join me, and we both kneel on that carpet over there."
                     c "That is my meditation area, and I do not invite everyone into it."
                     c "Very few, actually."
+                    scene 330 at topleft with dis
                     mc "Yeah, I can imagine."
+                    scene 328 at topleft with dis
                     c "So, then we will light some scented candles, and then bring our bodies and minds in tune with the twilight."
+                    scene 329 at topleft with dis
                     mc "Oh, okay I understand."
                     menu:
                         "Why the heck not?":
                             $dc_cock_lady_2_why_the_heck_not = True
+                            scene 331 at topleft with dis
                             mc "Why the heck not?"
                             mc "I guess nobody has to know, right?"
                             c "That's right."
                             c "Do come and join me, then."
-                            scene black at topleft with dis #todo
+                            scene 332 at topleft with dis #todo
                             c "There we go, the candles are lit, the ritual may begin."
                             c "Take your pants off, Miss Vague, and let us see if we can't get you some answers."
                             scene black at topleft with dis #todo

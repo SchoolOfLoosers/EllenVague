@@ -428,30 +428,40 @@ label dc_hardong_1_sex_with_doctor:
     mc "And that's supposed to make this okay?"
     e "It makes me think I can make an exception in your case."
     mc "Not gonna lie, this does feel pretty exceptional."
-    scene black at topleft with hpunch #todo cumshot
+    scene 316 at topleft with hpunch
     mc "This new therapy is working, doctor."
+    scene 317 at topleft with hpunch
     e "I can see that."
+    scene 316 at topleft with hpunch
     mc "What do your notes say about all this?"
+    scene 318 at topleft with hpunch
     e "A detailed description of your natural beauty, with a weirdly detailed subsection describing your gender specific body parts."
     mc "Hah, that's what I thought."
     e "If you stay still like that for a while, I'll add a quick sketch as well."
     mc "Should I strike some kind of pose?"
     e "Yes, please. Any you like, and keep it there for a bit."
     e "I'll try to hurry."
-    scene black at topleft with dis #todo
+    scene 319 at topleft with dis
     e "There we go."
     mc "That's not the worst drawing I have ever seen, where'd you learn that?"
     e "I took two semesters of biology classes before I found my passion in behavioral sciences."
     mc "Well, you can always start a career as a sketch artist with a folding chair next to the shopping mall."
+    scene 318 at topleft with dis
     e "I would hope that someone like you comes by, and that she needs illustrations for her books."
     mc "Oh, you can be my own starving artist, who depends on my continued goodwill so that he doesn't lose his mattress in the tiny room in my house."
+    scene 320 at topleft with dis
     e "Is that something you would want?"
     mc "Please don't try to analyze my brain, doctor."
+    scene 321 at topleft with dis
     mc "You might not like what you find."
+    scene 320 at topleft with dis
     e "In that case, I will be more than happy to explore...other parts of you."
     e "Feel free to stop by in the future, and we can have fruitful discussions like this again."
+    scene 321 at topleft with dis
     mc "I'll let you know if I ever end up low on my morals like this again."
+    scene 320 at topleft with dis
     e "That's all I ask of you."
+    scene 302 at topleft with dis
     e "And now, I wish you a splendid evening, Ellen - and don't forget what we talked about."
     mc "Same to you, doctor Hardong."
     e "Please, call me Emil."
