@@ -165,14 +165,30 @@ label dc_cock_lady_2:
                                                 $dc_cock_lady_2_that_is_fascinating = True
                                                 mc "That is fascinating."
                                                 mc "Or, terrifying, I guess is the better word."
-                                                pass #todo fill choice
+                                                mc "What happens if she decides to wage war on the world around her?"
+                                                c "Well, I wouldn't dare to put words in the Queen's mouth, but..."
+                                                c "I believe she is content with protecting the forest, and consuming anyone who threatens it."
+                                                mc "Thank the heavens."
+                                                scene black at topleft with dis #todo
+                                                c "well, I hope you got something out of our time together today, and now I wish you a good journey, wherever your path may lead you."
+                                                mc "Thank you."
+                                                jump evening_choices
                                             "And how does someone prove themselves to the Queen of the Forest?":
                                                 $dc_cock_lady_2_and_how_does_someone_prove_themselves_to_the_queen_of_the_forest = True
                                                 mc "And how does someone prove themselves to the Queen of the Forest?"
-                                                pass #todo fill choice
+                                                mc "Not that I plan to, mind you."
+                                                c "That, I can not answer you, and I would not if I could."
+                                                c "When I was young, my best friend got it in her head that she wanted to become a witch, and she found out how to prove herself."
+                                                c "She wanted to bring me along, and I said no, and I wish that I could have stopped her."
+                                                c "Because that was the last time anyone ever heard from her."
+                                                mc "I'm sorry to hear that."
+                                                c "Everyone makes their own mistakes in life, Miss Vague."
+                                                c "well, I hope you got something out of our time together today, and now I wish you a good journey, wherever your path may lead you."
+                                                mc "Thank you."
+                                                jump evening_choices
                                     pass #todo fill choice
                             if not just_a_normal_orgasm_really:
-                                c "Most impressive, I have to say."
+                                c "I have to say, it is most impressive what you see and feel, Miss Vague."
                                 c "It took me many months before I could keep my balance enough to see anything."
                                 scene black at topleft with dis #todo grin and pointing at self
                                 mc "What can I say, I got a lot of practice."
