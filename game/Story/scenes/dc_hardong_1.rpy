@@ -253,6 +253,7 @@ label dc_hardong_1:
                     scene 311 at topleft with dis #todo
                     e "Then that's what I shall do."
                     e "Please, carry on, Ellen."
+                    scene 312 at topleft with dis #todo
                     mc "Okay, so...do you want me to talk about what I feel?"
                     e "Since I am just here as an observer, you can say anything you want, or don't."
                     e "Yell it, if you like, or tell it to me with clenched teeth."
@@ -260,11 +261,13 @@ label dc_hardong_1:
                     menu:
                         "Honestly, this is quite fun.":
                             $dc_hardong_1_honestly_this_is_quite_fun = True
+                            scene 313 at topleft with dis #todo
                             mc "Honestly, this is quite fun."
                             if dc_hardong_1_i_am_interested_in_why_we_consider_some_sex_acts_as_taboo_or_dirty:
                                 e "Which tells me that you fall more in the category of enjoying the potential embarrassment of your own actions."
                                 menu:
                                     "Who says I don't also enjoy having my agency taken away from me?":
+                                        scene 314 at topleft with dis #todo
                                         $dc_hardong_1_who_says_i_dont_also_enjoy_having_my_agency_taken_away_from_me = True
                                         mc "Who says I don't also enjoy having my agency taken away from me?"
                                         e "If that was a thinly veiled attempt to get me to cross every single professional line in the book, then I have to disappoint you."
@@ -272,75 +275,90 @@ label dc_hardong_1:
                                         e "Well, my patient's trust in me is the most important tool I have at my disposal, and I am not willing to dull it over some fleeting form of entertainment."
                                         e "Besides, it wouldn't really work, since you all but encouraged me, and thereby acted out of your own free will."
                                         e "This wouldn't quite test the actual experience of having your agency taken away from you."
+                                        scene 313 at topleft with dis #todo
                                         mc "Ugh, I guess you're right."
                                         e "I'm glad we agree on this matter."
                                         mc "Do we, though?"
                                     "That seems to be a fair assessment, doctor.":
                                         $dc_hardong_1_that_seems_to_be_a_fair_assessment_doctor = True
+                                        scene 314 at topleft with dis #todo
                                         mc "That seems to be a fair assessment, doctor."
                                         e "Well, I am sorry that I can't quite deliver you any laughter or sneering looks, I am too fascinated by this opportunity to study you."
+                                        scene 313 at topleft with dis #todo
                                         mc "Oh, believe me, you sitting there to take notes is plenty embarrassing already."
                                         e "I am glad to hear that."
                                         e "Please, carry on."
                             else:
+                                scene 313 at topleft with dis #todo
                                 e "Interesting."
+                                scene 314 at topleft with dis #todo
                                 mc "Are you judging me?"
                                 e "This is a judgement free zone, Ellen."
+                                scene 313 at topleft with dis #todo
                                 mc "Jesus christ, leave me alone with your psycho nonsense."
                                 e "In that case, yes I am judging you quite heavily right now."
                                 mc "I knew it!"
                                 e "And I am starting to think that you are a dirty little slut."
+                                scene 314 at topleft with dis #todo
                                 mc "Should you be talking to me like that, doctor?"
                                 mc "What happened to being so incessantly forthcoming and helpful and willing to listen?"
                                 e "That's reserved for my patients."
                                 e "Sluts get talked to like they deserve."
+                                scene 313 at topleft with dis #todo
                                 mc "Mhm, keep talking."
                                 e "You like being called a slut?"
                                 mc "Only when I behave like one."
                                 e "Which you are doing right now."
                                 mc "Mhm-hm."
+                                scene 314 at topleft with dis #todo
                                 mc "You like what you're seeing?"
                                 e "Any man would."
                                 mc "Then why don't you do what any man would?"
                                 e "Because I am here as an observer, not to get my hands dirty."
                                 mc "First a slut, now you're also calling me dirty?"
                                 e "God knows I wouldn't want to stick my dick into that unprotected."
+                                scene 313 at topleft with dis #todo
                                 mc "Ugh, you are so mean."
                                 e "Want me to stop?"
                                 mc "I want you to get over yourself."
                                 e "Maybe next time, I'm busy here."
                                 mc "Oh for fuck's sake..."
-                                scene black at topleft with hpunch #todo
+                                scene 313 at topleft with hpunch #todo
                                 mc "You are such an ass."
+                                scene 314 at topleft with dis #todo
                                 e "And you are such a mess."
                                 mc "What kind of mess?"
                                 e "A dirty little mess."
+                                scene 313 at topleft with dis #todo
                                 mc "Ugh, I would fight you on that, if..."
                                 e "If it wasn't the truth, you mean?"
                                 mc "Such a dirty little mess."
+                                scene 315 at topleft with dis #todo
                                 e "I'm glad you enjoyed yourself."
                                 mc "You know, I actually did."
                                 mc "Thank you for being there when I needed you."
                                 e "You know, a true lady of class wouldn't thank me for the things I've said, and the names I've called you."
                                 mc "Feels like you made a scientific breakthrough there, you should write that down."
+                                scene 311 at topleft with dis #todo
                                 e "Subject is receptive to its own touches, and reacts favorably when called derogatory and demeaning terms."
                                 mc "Ugh, tell me about it."
                                 e "Well, was there something else you wanted to ask?"
                                 jump dc_hardong_1_menu_ask_questions
                         "It makes me pretty uncomfortable, actually...":
                             $dc_hardong_1_it_makes_me_pretty_uncomfortable_actually_ = True
+                            scene 314 at topleft with dis #todo
                             mc "It makes me pretty uncomfortable, actually..."
                             e "Good, I want you to hold on to that feeling."
                             e "Now imagine yourself in a cold room, bright neon lights that hurt your eyes even when closed."
+                            scene 313 at topleft with dis #todo
                             e "Cameras in every corner, so you know that someone is watching you..."
                             e "But you don't know who, or how many, and what they are doing with the information gained from studying you."
-                            scene black at topleft with hpunch #todo
                             e "All you know is that the louder you yell, the more the silence you get for an answer is weighing on you."
-                            scene black at topleft with hpunch #todo
+                            scene 313 at topleft with hpunch #todo
                             "I didn't know what it was, but him sitting there..."
                             "Judging me, and saying those horrible things to me..."
                             "I don't know, it just did the trick..."
-                            scene black at topleft with dis #todo
+                            scene 315 at topleft with dis #todo
                             mc "Ugh, that was really mean."
                             e "I'm glad to see that you enjoyed yourself."
                             mc "You know, I actually did."
@@ -350,6 +368,7 @@ label dc_hardong_1:
                             jump dc_hardong_1_menu_ask_questions
                         "You know you could do more than just watch, right?":
                             $dc_hardong_1_you_know_you_could_do_more_than_just_watch_right = True
+                            scene 314 at topleft with dis #todo
                             mc "You know you could do more than just watch, right?"
                             e "And is that what you want?"
                             e "Let me rephrase: Is that what you are thinking about as you are touching yourself?"
@@ -359,15 +378,17 @@ label dc_hardong_1:
                             menu:
                                 "Please tell me you aren't going to keep just sitting there...":
                                     $dc_hardong_1_please_tell_me_you_arent_going_to_keep_just_sitting_there_ = True
+                                    scene 313 at topleft with dis #todo
                                     mc "Please tell me you aren't going to keep just sitting there..."
                                     jump dc_hardong_1_sex_with_doctor
                                 "Well, watch this part extra closely now, Doctor...":
                                     $dc_hardong_1_well_watch_this_part_extra_closely_now_doctor_ = True
+                                    scene 314 at topleft with dis #todo
                                     mc "Well, watch this next part extra closely now, Doctor..."
-                                    scene black at topleft with hpunch #todo
+                                    scene 313 at topleft with hpunch #todo
                                     "I didn't know what it was, but him sitting there, watching me..."
                                     "It just did the trick."
-                                    scene black at topleft with dis #todo
+                                    scene 315 at topleft with dis #todo
                                     mc "You enjoyed that?"
                                     e "Looks like you did, too."
                                     mc "I'm not going to lie, I've done worse, and had less fun doing it."
@@ -382,7 +403,7 @@ label dc_hardong_1:
             e "Well, were there any other questions you wanted to ask me?"
             jump dc_hardong_1_menu_ask_questions
         "That's all the questions I had.":
-            scene black at topleft with dis #todo
+            scene 309 at topleft with dis #todo
             e "Well, in that case, let me thank you for this interesting conversation."
             e "It is quite rare to find anyone around these parts who doesn't think I'm either a god or the devil incarnate."
             mc "Hah, and I thank you for your answers, regular man without any personality quirks."
