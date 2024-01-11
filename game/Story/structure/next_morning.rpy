@@ -114,12 +114,13 @@ label next_morning:
             "I guess I'll just cringe my way to sleep...":
                 $i_guess_ill_just_cringe_my_way_to_sleep_ = True
                 mc "I guess I'll just cringe my way to sleep..."
-        scene black at topleft with dis #todo
+        scene 264 at topleft with dis
         mc "Well, another day, another me, I guess."
+        scene 255 at topleft with dis
         mc "The new me that can totally handle being rejected, without losing her mind."
-        scene black at topleft with dis #todo
+        scene 254 at topleft with dis
         mc "Time to get dressed, and have breakfast downstairs."
-        scene black at topleft with dis #todo
+        scene 72 at topleft with dis
         mc "And try not to stare him down, Ellen, you are better than that."
         mc "No need to add insult to injury."
 
@@ -131,15 +132,16 @@ label next_morning:
         mc "Now I can't even go and have breakfast without seeing him..."
         mc "I mean, not that I regret it or anything..."
         mc "That was actually pretty special."
-        scene 94 at topleft with dis #todo
+        scene 257 at topleft with dis
         mc "The way he looked at me, when he stopped caring about me..."
         mc "And started caring only about himself..."
+        scene 257 at topleft with hpunch
         mc "That was so good..."
-        scene 94 at topleft with hpunch #todo own render
+        scene 258 at topleft with dis
         mc "Come on, Ellen, get a grip!"
-        scene black at topleft with dis #todo sit up on bed, angry look
+        scene 264 at topleft with dis
         mc "Time to get ready for breakfast."
-        scene black at topleft with dis #todo stand up
+        scene 255 at topleft with dis
         mc "And wipe that stupid smile off your face!"
 
     jump day_choices
