@@ -131,7 +131,6 @@ default i_guess_ill_just_cringe_my_way_to_sleep_ = False
 default intro_said_need_coffee = False
 default intro_stayed_with_sarah = False
 default inventory_has_aphrodisiac_potion = False
-default it_s_better_if_you_show_me_ = False
 default just_a_normal_orgasm_really = False
 default next_morning_fine_ill_just_do_it_myself = False
 default next_morning_nah_laziness_is_for_the_weak_ = False
