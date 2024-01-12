@@ -51,20 +51,21 @@ def check_for_image_reference(line):
 
 def check_for_variable_reference(line):
     global all_referenced_variables
-    if re.match(r'[\s\t]*?\$(.*?)=',line["content"]):
-        templine = line
-        templine["content"] = re.search(r'[\s\t]*?\$(.*?)=',line["content"]).group(1).strip()
-        all_referenced_variables.append(templine)
-    #Below: Checks for inline reference like '"Menu choice" if not variable_name:' etc.
-    if re.match(r'"\s(if not|if)\s(\w*?)[\s$:]',line["content"]):
-        templine = line
-        templine["content"] = re.search(r'"\s(if not|if)\s(\w*?)[\s$:]',line["content"]).group(2).strip()
-        all_referenced_variables.append(templine)
-    #Below: Checks for inline reference but starting with and/or
-    if re.match(r'[\s\t]*?".*?".*?\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["content"]):
-        templine = line
-        templine["content"] = re.search(r'[\s\t]*?".*?".*?\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["content"]).group(2).strip()
-        all_referenced_variables.append(templine)
+    if not "renpy." in line["content"]:
+        if re.match(r'[\s\t]*?\$(.*?)[\s\+\-=]',line["content"]):
+            templine = line
+            templine["content"] = re.search(r'[\s\t]*?\$(.*?)[\s\+\-=]',line["content"]).group(1).strip()
+            all_referenced_variables.append(templine)
+        #Below: Checks for inline reference like '"Menu choice" if not variable_name:' etc.
+        if re.match(r'"\s(if not|if)\s(\w*?)[\s$:]',line["content"]):
+            templine = line
+            templine["content"] = re.search(r'"\s(if not|if)\s(\w*?)[\s$:]',line["content"]).group(2).strip()
+            all_referenced_variables.append(templine)
+        #Below: Checks for inline reference but starting with and/or
+        if re.match(r'[\s\t]*?".*?".*?\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["content"]):
+            templine = line
+            templine["content"] = re.search(r'[\s\t]*?".*?".*?\s(and not|and|or not|or)\s(\w*?)[\s$:]',line["content"]).group(2).strip()
+            all_referenced_variables.append(templine)
 
 def check_for_character_reference(line):
     global all_referenced_characters
@@ -269,8 +270,9 @@ def check_unreachable_labels():
             if defined_label["content"] == referenced_jump["content"]:
                 break
         else:
-            all_unreachable_labels.append(defined_label)
-            append_messages_to_log(f'label  {defined_label["content"]} that was referenced in {defined_label["filename"]} (Line: {defined_label["number"]}) exists, but no jump statements are leading to it (unreachable code)')
+            if not defined_label["content"] == "start":
+                all_unreachable_labels.append(defined_label)
+                append_messages_to_log(f'label  {defined_label["content"]} that was referenced in {defined_label["filename"]} (Line: {defined_label["number"]}) exists, but no jump statements are leading to it (unreachable code)')
 
 def check_unused_variables():
     global all_defined_variables

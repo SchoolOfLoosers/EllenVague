@@ -1,4 +1,3 @@
-
 default care_to_share_your_darker_side_with_me = False
 default completed_dc_cock_lady_1 = False
 default completed_dc_cock_lady_2 = False
@@ -20,6 +19,8 @@ default completed_ec_patty_2 = False
 default completed_ec_potion_masturbation_1 = False
 default completed_ec_sarah_1 = False
 default completed_ec_yggy_1 = False
+default current_day = 0
+default day_of_last_day_activity = 0
 default dc_cock_lady_1_does_your_cock_have_any_other_warnings_for_me = False
 default dc_cock_lady_1_have_a_nice_day = False
 default dc_cock_lady_1_thank_you_for_the_warning_miss_ = False

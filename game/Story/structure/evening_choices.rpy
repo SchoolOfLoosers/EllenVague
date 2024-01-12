@@ -43,8 +43,14 @@ label evening_choices:
         #     $completed_ec_sex_with_jay_3 = True
         #     jump ec_sex_with_jay_3
         #todo put this choice back in as soon as I figure out how to properly check for remaining choices
-        # "I think I'll just go to sleep early today...":
-        #     jump next_morning
+        "I think I'll just go to sleep early today...":
+            if day_of_last_day_activity >= current_day - 1:
+                scene 71 at topleft with dis
+                "It had been a long day, and I was just...tired."
+                scene 72 at topleft with dis
+                "Telling myself that I was on vacation, and that nobody had a thing to say about a thing I did, or didn't..."
+                "I was just free to jump into my bed, call it a day - and heck, I didn't even have to call the day, or anyone else for that matter."
+                jump next_morning
 
     "Thank you for playing!"
     "This is how far the story goes at the moment, I hope you enjoyed it so far!"

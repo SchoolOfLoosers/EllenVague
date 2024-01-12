@@ -105,7 +105,7 @@ label ec_yggy_1:
     "It had been years since I had last felt so...comfortable being naked with someone."
     "And obviously, I had never come even close to a night like this, that just didn't seem to end - for either of us."
     hide ec_jay_2_sex_1
-    scene 377_c1 at topleft with hpunch
+    scene 377 at topleft with hpunch
     "When we finally ran out of steam, it became clear that neither of us would be getting any sleep that night."
     scene 379 at topleft with dis
     "So we just cuddled up, and started daydreaming in the middle of the night."

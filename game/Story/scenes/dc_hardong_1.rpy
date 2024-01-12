@@ -56,11 +56,11 @@ label dc_hardong_1:
             e "And if that ever changes, you are welcome to reconsider."
             e "We always operate below maximum capacity here, to keep our staff away from needing a clinic stay of their own."
             e "Which means that we always have room to spare."
-        "I have done worse for a few days of free cost and stay":
+        "I have done worse for a few days of free food and stay":
             $dc_hardong_1_i_have_done_worse_for_a_few_days_of_free_cost_and_stay = True
             $unlocked_dc_hardong_2 = True
             scene 308 at topleft with dis
-            mc "I have done worse for a few days of free cost and stay."
+            mc "I have done worse for a few days of free food and stay."
             scene 305 at topleft with dis
             e "Well, I am thrilled you would consider my offer."
             scene 308 at topleft with dis

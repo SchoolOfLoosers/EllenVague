@@ -90,4 +90,4 @@ label dc_sarah_1:
         s "Anyway, see you around, and no rush!"
         s "I am never hard to find."
 
-    jump evening_choices
+    jump day_choices
