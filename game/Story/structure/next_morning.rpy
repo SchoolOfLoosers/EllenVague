@@ -146,9 +146,11 @@ label next_morning:
 
     if completed_ec_yggy_1 and not played_completed_ec_yggy_1_reaction:
         $played_completed_ec_yggy_1_reaction = True
-        scene black at topleft with dis #todo
+        scene 257 at topleft with dis
         mc "Ugh, it's way too late to fall asleep..."
+        scene 258 at topleft with dis
         mc "I am going to pay for this, aren't I?"
+        scene 258 at topleft with dis
         mc "Yep, all this fucking is gonna mess with my sleep schedule."
         mc "But then again, it's not like I have to get up to work, do I?"
         mc "I can just stay in bed..."
@@ -156,18 +158,23 @@ label next_morning:
         menu next_morning_menu_stay_in_bed_after_ec_yggy_1:
             "Stay in bed":
                 $next_morning_stay_in_bed = True
+                scene 257 at topleft with dis
                 mc "I mean, I was productive all night, wasn't I?"
                 mc "I don't even know when I've last written this many pages"
                 mc "Yep, girl deserves her beauty sleep, that's god damn right."
+                scene 258 at topleft with dis
                 mc "Ugh, what time is it?"
-                scene black at topleft with dis #todo
+                scene 264 at topleft with dis
                 mc "Time to get up and act like a functional human being..."
                 mc "Yep, I think it is high time that I go out and do something."
                 mc "After I take a shower, that is."
                 jump evening_choices
             "Nah, laziness is for the weak...":
                 $next_morning_nah_laziness_is_for_the_weak_ = True
+                scene 264 at topleft with dis
                 mc "Nah, laziness is for the weak..."
+                mc "Time for a shower and trying to keep my eyes open on the way to the diner."
+                mc "Ugh, I need a coffee..."
                 jump day_choices
-        #todo
+
     jump day_choices

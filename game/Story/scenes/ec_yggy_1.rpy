@@ -148,16 +148,18 @@ label ec_yggy_1:
     mc "Hah, that's an easy choice."
     y "You are supposed to berate me for having the wrong priorities."
     mc "I don't know, I really enjoyed your priorities tonight."
+    scene 381 at topleft with dis
     y "But now, I should really get back to my books."
     mc "Come on, don't leave me here like that."
     mc "You need to get your priorities straight."
     y "You are so demanding."
-    mc "It's almost morning, anyway."
+    y "It's almost morning, anyway."
+    scene 382 at topleft with dis
     mc "Go on, I want you gone by morning."
     mc "Have fun talking to your books, expecting them to talk back to you."
     y "You're talking back to me."
     mc "Until you're utterly sick of me."
-    scene black at topleft with dis #todo
+    scene 383 at topleft with dis
     y "See you around, Ellen."
     y "Try not to think too much about married men."
     y "Or, if you can't help yourself, then at least write it down."

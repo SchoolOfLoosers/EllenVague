@@ -19,9 +19,6 @@ label evening_choices:
         "Go hiking with Jay" if not completed_ec_jay_2 and unlocked_ec_jay_2:
             $completed_ec_jay_2 = True
             jump ec_jay_2
-        "Invite Yggy over to your place" if not completed_ec_yggy_1 and unlocked_ec_yggy_1:
-            $completed_ec_yggy_1 = True
-            jump ec_yggy_1
         # "Go hunting with Jay" if not completed_ec_jay_3 and unlocked_ec_jay_3:
         #     $completed_ec_jay_3 = True
         #     jump ec_jay_3
@@ -34,6 +31,9 @@ label evening_choices:
             $completed_ec_potion_masturbation_1 = True
             $inventory_has_aphrodisiac_potion = False
             jump ec_potion_masturbation_1
+        "Invite Yggy over to your place" if not completed_ec_yggy_1 and unlocked_ec_yggy_1:
+            $completed_ec_yggy_1 = True
+            jump ec_yggy_1
         #todo
         # "I wonder if Jay has time to violate my privacy..." if not completed_ec_sex_with_jay_2:
         #     $completed_ec_sex_with_jay_2 = True
