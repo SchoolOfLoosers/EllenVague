@@ -80,7 +80,6 @@ default ec_jay_2_and_what_did_you_do_to_your_girlfriend_when_you_were_out_here_a
 default ec_jay_2_as_long_as_i_get_home_safe_id_call_this_a_win = False
 default ec_jay_2_as_long_as_you_dont_get_any_ideas_ = False
 default ec_jay_2_don_t_you_dare_i_want_the_gritty_details = False
-default ec_jay_2_first_choice_text = False
 default ec_jay_2_good_because_i_wont_stand_for_any_shenanigans_just_because_i_followed_you_out_here = False
 default ec_jay_2_had_sex_with_jay = False
 default ec_jay_2_how_dark_are_we_talking_here = False
@@ -97,7 +96,6 @@ default ec_jay_2_oh_come_on_we_both_know_where_tonight_would_lead_ = False
 default ec_jay_2_oh_i_can_totally_understand_that_its_rare_for_a_place_to_not_change_at_all = False
 default ec_jay_2_please_dont_pull_out = False
 default ec_jay_2_said_nothing_about_presence = False
-default ec_jay_2_second_choice_text = False
 default ec_jay_2_so_uh_what_exactly_was_your_plan_once_you_have_me_out_here = False
 default ec_jay_2_thank_you = False
 default ec_jay_2_thanks_have_a_good_night = False

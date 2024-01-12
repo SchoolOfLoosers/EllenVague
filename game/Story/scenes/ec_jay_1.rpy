@@ -154,4 +154,3 @@ label ec_jay_1:
             scene 114 at topleft with dis
             mc "Uh, you too, have a good night."
             jump next_morning
-    jump next_morning

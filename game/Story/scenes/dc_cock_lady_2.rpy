@@ -282,7 +282,6 @@ label dc_cock_lady_2:
                             scene 329 at topleft with dis
                             mc "Uh, you too, safe...travels."
                             jump evening_choices
-    jump evening_choices
 
 label dc_cock_lady_2_talk_about_mockingbird:
     if dc_cock_lady_2_why_dont_you_get_started_and_ill_wait_if_you_find_any_answers:

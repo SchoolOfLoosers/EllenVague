@@ -19,10 +19,9 @@ label evening_choices:
         "Go hiking with Jay" if not completed_ec_jay_2 and unlocked_ec_jay_2:
             $completed_ec_jay_2 = True
             jump ec_jay_2
-        #todo remove
-        # "Invite Yggy over to your place" if not completed_ec_yggy_1 and unlocked_ec_yggy_1:
-        #     $completed_ec_yggy_1 = True
-        #     jump ec_yggy_1
+        "Invite Yggy over to your place" if not completed_ec_yggy_1 and unlocked_ec_yggy_1:
+            $completed_ec_yggy_1 = True
+            jump ec_yggy_1
         # "Go hunting with Jay" if not completed_ec_jay_3 and unlocked_ec_jay_3:
         #     $completed_ec_jay_3 = True
         #     jump ec_jay_3

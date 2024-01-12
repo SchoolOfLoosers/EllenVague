@@ -88,7 +88,8 @@ label ec_yggy_1:
     scene 376 at topleft with dis
     mc "I'd prefer if you shut up and put your money where your mouth is."
     y "Good idea."
-    scene black at topleft with dis #todo animation
+    image anim_ec_yggy_1_sex = Movie(channel="movie_dp", play="images/anim_ec_yggy_1_sex.webm", size = (1920,1080))
+    show anim_ec_yggy_1_sex
     "There was just something inexplicably good about the slow, methodic way he was working me."
     "It was, like...not at all unexpected, his thrusts never catching me by surprise."
     "But instead, we both settled into a rhythm that allowed me to actually hold on to my pen and paper, and to write lines that where squiggly for sure, but not unreadable."
@@ -98,14 +99,15 @@ label ec_yggy_1:
     y "I see you are making progress."
     mc "This is good stuff, Yggy, I really don't mind what you're doing to me tonight."
     y "Glad to hear that."
-    "With barely a moment of break, he slipped back into me, as if the once warm and now quickly cooling mess on my belly was just a side concern on his mind."
+    "With barely a moment of break, he slipped back into me, as if the once warm and now quickly cooling mess between my thighs was just a side concern on his mind."
     "For what seemed like an hour afterward, we didn't talk, and barely locked eyes whenever I was pulled out of my story for a second."
     "At first, I thought that he might take offense at that, but it seemed like the opposite was true."
     "It had been years since I had last felt so...comfortable being naked with someone."
     "And obviously, I had never come even close to a night like this, that just didn't seem to end - for either of us."
-    scene black at topleft with hpunch #todo
+    hide ec_jay_2_sex_1
+    scene 377_c1 at topleft with hpunch
     "When we finally ran out of steam, it became clear that neither of us would be getting any sleep that night."
-    scene 378 at topleft with dis
+    scene 379 at topleft with dis
     "So we just cuddled up, and started daydreaming in the middle of the night."
     mc "Are you gonna keep doing that to me?"
     y "That's the plan, yes."
@@ -123,8 +125,41 @@ label ec_yggy_1:
     mc "Hah, you may be right about that."
     mc "So, here goes."
     scene 380 at topleft with dis
-    mc "\"\""
-    #todo
-
-
+    mc "\"Her kitchen was tiny to begin with - but with us both in there, it became downright impossible to coexist without accidentally brushing against each other.\""
+    mc "\"Sorry\", Jason mumbled, \"but I just waved him off.\""
+    mc "\"I'm a big girl, Jason, I don't fall apart when you touch me.\""
+    mc "\"I could feel that he wanted to say something, but swallowed the joke that was so obviously on both our minds.\""
+    mc "How's that sound?"
+    y "Surprisingly cute, are they neighbors or something?"
+    mc "Yep, and he's married."
+    y "Oh I see. Married to a real bitch, I assume?"
+    mc "Mh-mh, she's really nice and friendly, and they are friends, too."
+    y "Ouch, okay. I wondered why you were writing cutesy kitchen-bumping."
+    y "So that's the kind of stuff you're thinking about while I'm wearing myself out in an effort to wear you down?"
+    mc "You know, I was thinking that I wouldn't mind accidentally bumping into you sometime."
+    y "That can be arranged."
+    mc "You aren't so bad at what you do, Yggy."
+    y "My ex wife would disagree with you there."
+    mc "I didn't know you were married once."
+    y "Ten years."
+    mc "What happened?"
+    y "Apparently, I became a failure, was spending too much time with my \"stupid books\", and was god awful at anything and everything."
+    y "So, she offered me a choice, my books or her."
+    mc "Hah, that's an easy choice."
+    y "You are supposed to berate me for having the wrong priorities."
+    mc "I don't know, I really enjoyed your priorities tonight."
+    y "But now, I should really get back to my books."
+    mc "Come on, don't leave me here like that."
+    mc "You need to get your priorities straight."
+    y "You are so demanding."
+    mc "It's almost morning, anyway."
+    mc "Go on, I want you gone by morning."
+    mc "Have fun talking to your books, expecting them to talk back to you."
+    y "You're talking back to me."
+    mc "Until you're utterly sick of me."
+    scene black at topleft with dis #todo
+    y "See you around, Ellen."
+    y "Try not to think too much about married men."
+    y "Or, if you can't help yourself, then at least write it down."
+    mc "Sounds like a plan."
     jump next_morning

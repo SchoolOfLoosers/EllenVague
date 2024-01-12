@@ -352,8 +352,6 @@ label ec_jay_2:
                     j "Then that's what we'll do."
                     j "Watch your steps, I would hate for you to come out of our little trip with visible bruises."
                     jump ec_jay_2_say_goodbye
-    jump next_morning
-
 
 label ec_jay_2_sex_with_jay:
     $ec_jay_2_had_sex_with_jay = True
@@ -377,7 +375,7 @@ label ec_jay_2_sex_with_jay:
             $ec_jay_2_please_dont_pull_out = True
             mc "Please don't pull out."
             hide ec_jay_2_sex_1
-            scene anim_jay_2_table at topleft with hpunch
+            scene 231 at topleft with hpunch
             pause 3.0
             scene 231 at topleft with dis
         "(Let him come on your back)":

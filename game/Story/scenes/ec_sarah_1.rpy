@@ -348,4 +348,3 @@ label ec_sarah_1:
                     s "Big words, but can you back them up?"
                     mc "Let me see about that."
                     jump next_morning
-    jump next_morning

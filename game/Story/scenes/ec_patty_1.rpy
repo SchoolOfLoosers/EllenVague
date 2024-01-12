@@ -217,4 +217,3 @@ label ec_patty_1:
             mc "Barely able to write a single sentence about getting touched by imaginary characters in fictitious worlds."
             mc "Screw this writer's block, you don't deserve to take the edge off, not before you learn how to write lines on paper again."
             jump next_morning
-    jump next_morning
