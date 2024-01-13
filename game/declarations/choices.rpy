@@ -162,3 +162,6 @@ default unlocked_ec_patty_2 = False
 default unlocked_ec_sarah_1 = False
 default unlocked_ec_sarah_2 = False
 default unlocked_ec_yggy_1 = False
+default unlocked_dc_cock_lady_3 = False
+default unlocked_dc_yggy_3 = False
+default completed_dc_yggy_3 = False
