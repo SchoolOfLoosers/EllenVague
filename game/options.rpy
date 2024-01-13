@@ -188,6 +188,7 @@ init python:
     build.classify('**.py', None)
     build.classify('**.md', None)
     build.classify('**.bat', None)
+    build.classify('**.keystore', None)
     build.classify('**.duf', None)
     build.classify('**/elevenlabs_api_key.txt', None)
     build.classify('**/python_debugger_export.txt', None)
