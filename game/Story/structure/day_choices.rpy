@@ -40,8 +40,6 @@ label day_choices:
             $completed_dc_cock_lady_2 = True
             $day_of_last_day_activity = current_day
             jump dc_cock_lady_2
-        "I think that's enough for one day.":
-            jump evening_choices
         #todo uncomment once ready
         # "Visit Cecilia Beaver" if not completed_dc_cock_lady_3 and unlocked_dc_cock_lady_3:
         #     $completed_dc_cock_lady_3 = True
@@ -50,4 +48,9 @@ label day_choices:
         # "Check yourself into Dr. Hardong's clinic" if not completed_dc_hardong_2 and unlocked_dc_hardong_2:
         #     $completed_dc_hardong_2 = True
         #     jump dc_hardong_2
+        "I think that's enough for one day.":
+            "I suddenly realized that I was on vacation, and that nobody could force me to do anything I didn't want."
+            "Or even force me to do anything I DID want."
+            "I was free to go, and free to stay."
+            jump evening_choices
     jump evening_choices
