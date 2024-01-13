@@ -38,7 +38,14 @@ label day_choices:
             jump dc_cock_lady_1
         "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
             $completed_dc_cock_lady_2 = True
+            $day_of_last_day_activity = current_day
             jump dc_cock_lady_2
+        "I think that's enough for one day.":
+            jump evening_choices
+        #todo uncomment once ready
+        # "Visit Cecilia Beaver" if not completed_dc_cock_lady_3 and unlocked_dc_cock_lady_3:
+        #     $completed_dc_cock_lady_3 = True
+        #     jump dc_cock_lady_3
         #todo uncomment once ready
         # "Check yourself into Dr. Hardong's clinic" if not completed_dc_hardong_2 and unlocked_dc_hardong_2:
         #     $completed_dc_hardong_2 = True

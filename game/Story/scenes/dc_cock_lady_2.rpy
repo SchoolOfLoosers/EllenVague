@@ -242,6 +242,7 @@ label dc_cock_lady_2:
                                             mc "Thank you."
                                             jump evening_choices
                             if not just_a_normal_orgasm_really:
+                                $unlocked_dc_cock_lady_3 = True
                                 scene 347 at topleft with dis
                                 c "I have to say, it is most impressive what you see and feel, Miss Vague."
                                 c "It took me many months before I could keep my balance enough to see anything."
