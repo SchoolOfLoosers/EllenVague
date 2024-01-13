@@ -1,0 +1,47 @@
+{
+    "New activity menu choice": {
+        "prefix": [
+            "activity",
+            "act",
+            "renact"
+        ],
+        "body": [
+            "\"${2:text_to_say}\" if unlocked_${1:variableName} and not completed_${1}_activity:",
+            "	\\$completed_${1}_activity = True",
+            "	jump activity_${1} #todo"
+        ],
+        "description": "Creates a new activity. Press tab to jump to the next choice / variable."
+    },
+	"dc RenPy label": {
+		"prefix": [
+			"dc_label",
+			"dc_lbl",
+			"dc_renpy",
+			"dc_ren",
+		],
+		"body": [
+		  "label $CLIPBOARD:",
+		  "	scene black at topleft with dis #todo",
+		  "	${1}",
+		  "	#todo",
+		  "	jump evening_choices",
+		],
+		"description": "Creates a renpy label."
+	},
+	"ec RenPy label": {
+		"prefix": [
+			"ec_label",
+			"ec_lbl",
+			"ec_renpy",
+			"ec_ren",
+		],
+		"body": [
+		  "label $CLIPBOARD:",
+		  "	scene black at topleft with dis #todo",
+		  "	${1}",
+		  "	#todo",
+		  "	jump next_morning",
+		],
+		"description": "Creates a renpy label."
+	}
+}
