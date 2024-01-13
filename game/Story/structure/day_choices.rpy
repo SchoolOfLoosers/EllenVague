@@ -24,6 +24,10 @@ label day_choices:
             $completed_dc_yggy_2 = True
             $day_of_last_day_activity = current_day
             jump dc_yggy_2
+        "(I could swing by Yggy's shop and ask if he has any more of that stuff)" if not completed_dc_yggy_3 and unlocked_dc_yggy_3:
+            $completed_dc_yggy_3 = True
+            $day_of_last_day_activity = current_day
+            jump dc_yggy_3
         "Visit Dr. Hardong" if not completed_dc_hardong_1 and unlocked_dc_hardong_1:
             $day_of_last_day_activity = current_day
             $completed_dc_hardong_1 = True
@@ -32,10 +36,9 @@ label day_choices:
             $day_of_last_day_activity = current_day
             $completed_dc_cock_lady_1 = True
             jump dc_cock_lady_1
-        #todo uncomment once ready
-        # "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
-        #     $completed_dc_cock_lady_2 = True
-        #     jump dc_cock_lady_2
+        "Visit Cecilia Beaver" if not completed_dc_cock_lady_2 and unlocked_dc_cock_lady_2:
+            $completed_dc_cock_lady_2 = True
+            jump dc_cock_lady_2
         #todo uncomment once ready
         # "Check yourself into Dr. Hardong's clinic" if not completed_dc_hardong_2 and unlocked_dc_hardong_2:
         #     $completed_dc_hardong_2 = True

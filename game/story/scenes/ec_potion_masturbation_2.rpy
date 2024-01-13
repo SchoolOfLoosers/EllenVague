@@ -1,0 +1,4 @@
+label ec_potion_masturbation_2:
+    #todo once we acquired another potion (and after we unlocked the concert / statue place), we can go to the place, with the assumption that physically being there helps us connect with the netherworld.
+    #todo the shadows come and surround us, and we can talk to their leader, who tells us about the next step of the ritual to prove ourselves to the queen of the forest. --> we need to sacrifice something that we hold dear, maybe the original manuscript of our first book, that we burn in the middle of the circle, then pee on the burning pages as a sign that we are leaving our old self behind.
+    jump next_morning

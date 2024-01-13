@@ -1,3 +1,3 @@
 label dc_hardong_2:
     scene black at topleft with dis #todo
-    #todo clinic day 1, see your room, have your own choice menu with things like visiting the spa, the sauna, talking to the doctor and nurse and other people there. If we talk to some of the inhabitants, it turns out they all believe in the shadows that Ellen also sees in her dreams, and that they have found the clinic to be the only place where they are reasonably safe.
+    #todo clinic day 1, s
