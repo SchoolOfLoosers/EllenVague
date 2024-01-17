@@ -14,4 +14,6 @@ define p = Character("Patty Maynard", what_color="#d95afc", color="#d95afc") # s
 define r = Character("Ragnar Oki", color="#059f00", what_color="#059f00")
 define s = Character("Sarah Fuse", what_color="#d95afc", color="#d95afc")
 define shadow = Character("Shadow", color="#e97101", what_color="#e97101")
+define v = Character("Vivian", color="#e97101", what_color="#e97101")
 define y = Character("Yggy Drasil", color="#059f00", what_color="#059f00")
+define ba = Character("Baker", color="#059f00", what_color="#059f00")
