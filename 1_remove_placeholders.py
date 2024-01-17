@@ -14,6 +14,12 @@ for root, dirs, file in os.walk(story_directory):
                 if re.search('menu .*?menu_name',s):
                     print("Removing placeholder in file: "+ script)
                     rplce = re.sub('menu .*?menu_name', "menu", s)
+                if re.search(r'^[\t\s]*?dialog[\s\t$\n]?',s, re.MULTILINE):
+                    print("Removing placeholder in file: "+ script)
+                    rplce = re.sub(r'[\t\s]*?dialog[\s\t$\n]?', "\n", s,re.MULTILINE)
+                if re.search(r'\"Text to say\"\n',s, re.MULTILINE):
+                    print("Removing placeholder in file: "+ script)
+                    rplce = re.sub(r'\"Text to say\"\n', "\"Text to say\" #todo\n", s,re.MULTILINE)
             if rplce!= "":
                 with open(filepath, "w") as wfile:
                     wfile.write(rplce)

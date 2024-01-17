@@ -58,6 +58,10 @@ def main():
                     speaker = "Brian"
                 elif speaker == "c":
                     speaker = "Nora"
+                elif speaker == "v":
+                    speaker = "Roshni"
+                elif speaker == "ba":
+                    speaker = "Adam"
 
                 audio = generate(
                     text=dialog_line[2],
