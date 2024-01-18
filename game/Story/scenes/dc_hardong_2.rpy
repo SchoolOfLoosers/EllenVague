@@ -322,7 +322,20 @@ label dc_hardong_2:
                         "The doctor said nobody is allowed to touch me.":
                             $dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = True
                             mc "The doctor said nobody is allowed to touch me."
-                            pass #todo fill choice
+                            "Even as I said that, I knew how stupid that would have sounded to a smart person."
+                            "And just as well, I immediately knew it was going to work."
+                            ba "Really?"
+                            ba "But the nurse said..."
+                            mc "I'm sure she did."
+                            mc "And now think about it, who's in charge here?"
+                            mc "Even the nurse has to answer to the doctor, doesn't she?"
+                            "It was as if any kind of heavy thinking was too much for this strong-muscled man to lift."
+                            ba "Yes, you are right of course."
+                            mc "See, and the doctor said no touching, it would impact my healing process."
+                            ba "Alright, if the doctor said that..."
+                            ba "But you have to clean yourself, that is the rule."
+                            mc "And no looking, either. You hear me? That's not very nice, give a lady some space."
+                            "It had been a long time since I last enjoyed taking a shower alone this much."
                     pass #todo fill choice
                 "Kick him":
                     $dc_hardong_2_kick_him = True
