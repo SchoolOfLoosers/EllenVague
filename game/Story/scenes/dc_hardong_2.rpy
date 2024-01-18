@@ -188,14 +188,6 @@ label dc_hardong_2:
             menu:
                 "Hold still":
                     $dc_hardong_2_hold_still = True
-                    "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
-                    "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
-                    "And sure enough, he took his time with \"getting me clean\""
-                    "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
-                    "And there was nothing I could reasonably do, that wouldn't just drag this process out."
-                    "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
-                    "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
-                    "Or maybe, I was just really dirty, and needed a lot of soap."
                 "Kick him":
                     $dc_hardong_2_kick_him = True
                     #todo he calls the nurse
@@ -216,14 +208,101 @@ label dc_hardong_2:
                     v "Don't make me come back here, I have more important things to do."
         "Say nothing":
             $dc_hardong_2_say_nothing = True
-            "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
-            "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
-            "And sure enough, he took his time with \"getting me clean\""
-            "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
-            "And there was nothing I could reasonably do, that wouldn't just drag this process out."
-            "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
-            "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
-            "Or maybe, I was just really dirty, and needed a lot of soap."
+    if dc_hardong_2_say_nothing or dc_hardong_2_hold_still:
+        scene 425 at topleft with dis #todo
+        na "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
+        na "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
+        na "And sure enough, he took his time with \"getting me clean\""
+        na "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
+        na "And there was nothing I could reasonably do, that wouldn't just drag this process out."
+        na "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
+        na "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
+        na "Or maybe, I was just really dirty, and needed a lot of soap."
+        na "Sure, it was demeaning, being naked around someone who's dressed, and knowing the whole area of the clinic was deserted."
+        scene 426 at topleft with dis #todo
+        na "I could have yelled, and nobody would have heard me..."
+        scene 427 at topleft with dis #todo
+        na "Much less come to my help."
+        scene 428 at topleft with dis #todo
+        na "On the other hand..."
+        scene 429 at topleft with dis #todo
+        na "I couldn't help but enjoy his rough, unskilled hands running over my skin like a drowning man grabbing for a rope that had been tossed to him."
+        scene 430 at topleft with dis #todo
+        na "Something about the way he was running on pure instinct, like someone who sees food, but has never been taught any table manners."
+        scene 431 at topleft with dis #todo
+        na "Physically, he could have easily overpowered me..."
+        na "But it didn't really feel like he was in charge here..."
+        scene 432 at topleft with dis #todo
+        na "I probably could have weaseled my way out of that situation..."
+        menu:
+            "Let him continue.":
+                $dc_hardong_2_let_him_continue = True
+
+                pass #todo fill choice
+            "Tell him where to touch you.":
+                $dc_hardong_2_tell_him_where_to_touch_you = True
+                scene 433 at topleft with dis #todo
+                mc "You don't do this often, do you?"
+                ba "What makes you say that?"
+                mc "Come on, nobody has ever told you how to REALLY touch a woman, have they?"
+                ba "I, uhh..."
+                scene 432 at topleft with dis #todo
+                mc "You are doing a good job, but you could be doing so much better..."
+                mc "You want me to show you?"
+                ba "I, uh..."
+                scene 433 at topleft with dis #todo
+                mc "Go on, why don't you touch me where you really want to, big guy?"
+                ba "You...you want me to touch you?"
+                scene 434 at topleft with dis #todo
+                mc "Poor soul, have you never met a woman who wanted to be touched by you?"
+                mc "And let me guess, the head nurse only ever lets you do this to people she doesn't like?"
+                mc "And who, in turn, don't like you?"
+                scene 433 at topleft with dis #todo
+                mc "Well, I don't know what to say, but I kinda like you, big guy."
+                ba "You do?"
+                scene 434 at topleft with dis #todo
+                mc "Yes, you have such strong hands."
+                mc "You should use them."
+                ba "How do you mean?"
+                scene 432 at topleft with dis #todo
+                mc "I mean, you should run them down my body, between my legs."
+                scene 435 at topleft with dis #todo
+                ba "Like so?"
+                mc "Exactly like that."
+                mc "Ugh, this feels so good."
+                mc "Keep doing that."
+                scene 436 at topleft with dis #todo
+                mc "Rub me, slowly."
+                mc "Good lord, exactly like that..."
+                mc "Now, don't just stand there and wait for me to tell you, get something for yourself."
+                mc "You want to stick your fingers into me, don't you?"
+                scene 437 at topleft with dis #todo
+                ba "Can I?"
+                na "It was hard to believe he was actually asking me."
+                na "So much as to who was in charge around here."
+                scene 438 at topleft with dis #todo
+                mc "Yes, you may."
+                mc "Slowly, you hear me?"
+                mc "God, exactly like that."
+                pass #todo fill choice
+            "The doctor said nobody is allowed to touch me.":
+                $dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = True
+                mc "The doctor said nobody is allowed to touch me."
+                "Even as I said that, I knew how stupid that would have sounded to a smart person."
+                "And just as well, I immediately knew it was going to work."
+                ba "Really?"
+                ba "But the nurse said..."
+                mc "I'm sure she did."
+                mc "And now think about it, who's in charge here?"
+                mc "Even the nurse has to answer to the doctor, doesn't she?"
+                "It was as if any kind of heavy thinking was too much for this strong-muscled man to lift."
+                ba "Yes, you are right of course."
+                mc "See, and the doctor said no touching, it would impact my healing process."
+                ba "Alright, if the doctor said that..."
+                ba "But you have to clean yourself, that is the rule."
+                mc "And no looking, either. You hear me? That's not very nice, give a lady some space."
+                "It had been a long time since I last enjoyed taking a shower alone this much."
+        pass #todo fill choice
     scene black at topleft with dis #todo we are naked and showered now.
     mc "Are you done?"
     ba "For now."
@@ -243,110 +322,7 @@ label dc_hardong_2:
     "And the only thing that stood between me and Vivian letting him off the chain, were the whims of a woman who was clearly unhinged."
     "And so, what felt like hours passed, and I found myself increasingly shut into myself, counting my breathing until the numbers became too large."
     "Then I stopped counting, and started existing."
-    scene black at topleft with dis #todo
 
-    dialog
-            scene 424 at topleft with dis
-            ba "I do what the boss says."
-            menu:
-                "Hold still":
-                    $dc_hardong_2_hold_still = True
-                    scene 425 at topleft with dis #todo
-                    na "Sure, it was demeaning, being naked around someone who's dressed, and knowing the whole area of the clinic was deserted."
-                    scene 426 at topleft with dis #todo
-                    na "I could have yelled, and nobody would have heard me..."
-                    scene 427 at topleft with dis #todo
-                    na "Much less come to my help."
-                    scene 428 at topleft with dis #todo
-                    na "On the other hand..."
-                    scene 429 at topleft with dis #todo
-                    na "I couldn't help but enjoy his rough, unskilled hands running over my skin like a drowning man grabbing for a rope that had been tossed to him."
-                    scene 430 at topleft with dis #todo
-                    na "Something about the way he was running on pure instinct, like someone who sees food, but has never been taught any table manners."
-                    scene 431 at topleft with dis #todo
-                    na "Physically, he could have easily overpowered me..."
-                    na "But it didn't really feel like he was in charge here..."
-                    scene 432 at topleft with dis #todo
-                    na "I probably could have weaseled my way out of that situation..."
-                    menu:
-                        "Let him continue.":
-                            $dc_hardong_2_let_him_continue = True
-
-                            pass #todo fill choice
-                        "Tell him where to touch you.":
-                            $dc_hardong_2_tell_him_where_to_touch_you = True
-                            scene 433 at topleft with dis #todo
-                            mc "You don't do this often, do you?"
-                            ba "What makes you say that?"
-                            mc "Come on, nobody has ever told you how to REALLY touch a woman, have they?"
-                            ba "I, uhh..."
-                            scene 432 at topleft with dis #todo
-                            mc "You are doing a good job, but you could be doing so much better..."
-                            mc "You want me to show you?"
-                            ba "I, uh..."
-                            scene 433 at topleft with dis #todo
-                            mc "Go on, why don't you touch me where you really want to, big guy?"
-                            ba "You...you want me to touch you?"
-                            scene 434 at topleft with dis #todo
-                            mc "Poor soul, have you never met a woman who wanted to be touched by you?"
-                            mc "And let me guess, the head nurse only ever lets you do this to people she doesn't like?"
-                            mc "And who, in turn, don't like you?"
-                            scene 433 at topleft with dis #todo
-                            mc "Well, I don't know what to say, but I kinda like you, big guy."
-                            ba "You do?"
-                            scene 434 at topleft with dis #todo
-                            mc "Yes, you have such strong hands."
-                            mc "You should use them."
-                            ba "How do you mean?"
-                            scene 432 at topleft with dis #todo
-                            mc "I mean, you should run them down my body, between my legs."
-                            scene 435 at topleft with dis #todo
-                            ba "Like so?"
-                            mc "Exactly like that."
-                            mc "Ugh, this feels so good."
-                            mc "Keep doing that."
-                            scene 436 at topleft with dis #todo
-                            mc "Rub me, slowly."
-                            mc "Good lord, exactly like that..."
-                            mc "Now, don't just stand there and wait for me to tell you, get something for yourself."
-                            mc "You want to stick your fingers into me, don't you?"
-                            scene 437 at topleft with dis #todo
-                            ba "Can I?"
-                            na "It was hard to believe he was actually asking me."
-                            na "So much as to who was in charge around here."
-                            scene 438 at topleft with dis #todo
-                            mc "Yes, you may."
-                            mc "Slowly, you hear me?"
-                            mc "God, exactly like that."
-                            pass #todo fill choice
-                        "The doctor said nobody is allowed to touch me.":
-                            $dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = True
-                            mc "The doctor said nobody is allowed to touch me."
-                            "Even as I said that, I knew how stupid that would have sounded to a smart person."
-                            "And just as well, I immediately knew it was going to work."
-                            ba "Really?"
-                            ba "But the nurse said..."
-                            mc "I'm sure she did."
-                            mc "And now think about it, who's in charge here?"
-                            mc "Even the nurse has to answer to the doctor, doesn't she?"
-                            "It was as if any kind of heavy thinking was too much for this strong-muscled man to lift."
-                            ba "Yes, you are right of course."
-                            mc "See, and the doctor said no touching, it would impact my healing process."
-                            ba "Alright, if the doctor said that..."
-                            ba "But you have to clean yourself, that is the rule."
-                            mc "And no looking, either. You hear me? That's not very nice, give a lady some space."
-                            "It had been a long time since I last enjoyed taking a shower alone this much."
-                    pass #todo fill choice
-                "Kick him":
-                    $dc_hardong_2_kick_him = True
-                    scene black at topleft with dis #todo
-                    pass #todo fill choice
-            pass #todo fill choice
-        "Say nothing":
-            $dc_hardong_2_say_nothing = True
-            scene black at topleft with dis #todo
-
-            pass #todo fill choice
 
     #todo Check in, see your room, have your clothes taken away, meet the head nurse who ridicules us for being naked (you may be the doctor's new favorite pet, but around here, you do what we say), meet the male nurse who can't take their eyes off us. The nurse puts us through a rigorous course, and in the evening, we get to talk to the doctor and have a choice to snitch on the nurses. If we stay silent, the nurse gives us our socks back as a reward, and if we snitch, they take us to "the chair" where we are tied up all day, and occasionally visited by the male nurse, who masturbates in front of us. We can tell him to "at least fuck me and not just stand there."
     #todo when the head nurse visits us, we can pee on the floor, and if we do, she switches on the vibrator seat so that it vibrates for one minute every hour and tells us to to have fun, putting a clock in front of us. If we control our breathing and time it so that we orgasm, she calls us pathetic, but lets us out of the chair.
