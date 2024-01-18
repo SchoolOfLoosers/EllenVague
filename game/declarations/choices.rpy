@@ -1,3 +1,4 @@
+
 default care_to_share_your_darker_side_with_me = False
 default completed_dc_cock_lady_1 = False
 default completed_dc_cock_lady_2 = False
@@ -63,8 +64,11 @@ default dc_hardong_2_hold_still = False
 default dc_hardong_2_i_m_not_taking_my_clothes_off = False
 default dc_hardong_2_i_see_thank_you_for_explaining_the_process_to_me = False
 default dc_hardong_2_kick_him = False
+default dc_hardong_2_let_him_continue = False
 default dc_hardong_2_let_me_guess_this_is_your_job = False
 default dc_hardong_2_say_nothing = False
+default dc_hardong_2_tell_him_where_to_touch_you = False
+default dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = False
 default dc_hardong_2_uh_okay_sure = False
 default dc_hardong_2_wait_for_him_to_say_it = False
 default dc_hardong_2_would_you_mind_turning_around = False
