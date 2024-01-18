@@ -185,6 +185,67 @@ label dc_hardong_2:
             ba "Yes"
             scene 423 at topleft with dis
             mc "Perks of the job, huh?"
+            menu:
+                "Hold still":
+                    $dc_hardong_2_hold_still = True
+                    "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
+                    "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
+                    "And sure enough, he took his time with \"getting me clean\""
+                    "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
+                    "And there was nothing I could reasonably do, that wouldn't just drag this process out."
+                    "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
+                    "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
+                    "Or maybe, I was just really dirty, and needed a lot of soap."
+                "Kick him":
+                    $dc_hardong_2_kick_him = True
+                    #todo he calls the nurse
+                    v "Now, Baker tells me you are a dirty little slut who's afraid of showers."
+                    mc "You know exactly that's not it."
+                    v "Well, since you are afraid of some soap and a sponge in the hands of a man, it appears that I will have to do the work."
+                    v "And I don't like it when you make me work."
+                    v "Baker, hold her still."
+                    ba "Yes."
+                    mc "You really think I couldn't have done this myself?"
+                    v "Seems to me like you like to be dirty more than you like to be clean."
+                    v "Which means you are a health risk for everyone else."
+                    v "Now hold still, and this will be over before you know it."
+                    v "See, that wasn't so bad, was it?"
+                    v "Now, don't make me do this again, because I won't be this nice again."
+                    "What ever counted as nice for her."
+                    "My skin had never felt so rough after taking a shower."
+                    v "Don't make me come back here, I have more important things to do."
+        "Say nothing":
+            $dc_hardong_2_say_nothing = True
+            "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
+            "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
+            "And sure enough, he took his time with \"getting me clean\""
+            "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
+            "And there was nothing I could reasonably do, that wouldn't just drag this process out."
+            "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
+            "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
+            "Or maybe, I was just really dirty, and needed a lot of soap."
+    scene black at topleft with dis #todo we are naked and showered now.
+    mc "Are you done?"
+    ba "For now."
+    ba "Come with me."
+    mc "What now?"
+    ba "Now, it is time for the mud bath."
+    "Of course, that made sense."
+    "Making me clean myself right before literally throwing me into the mud, that was just the kind of process that can wear someone down."
+    "Showing you that your personal space doesn't matter, and that your time and opinion doesn't matter either."
+    "So, I just shrugged, and went along with it."
+    scene black at topleft with dis #todo
+    ba "In with you, I will tell you when you can get out again."
+    "That was the last thing he said, before sitting down and we went to watch each other, because there was nothing else in the room that either of us could have watched."
+    "And sure enough, there wasn't a clock to be found anywhere, just the mud that felt almost comfortable as it protected my naked skin from his prying eyes."
+    "Not that it did much to actually protect me from the hunger in his eyes."
+    "You could just tell that the only thing keeping him in check was the fear of reprisals."
+    "And the only thing that stood between me and Vivian letting him off the chain, were the whims of a woman who was clearly unhinged."
+    "And so, what felt like hours passed, and I found myself increasingly shut into myself, counting my breathing until the numbers became too large."
+    "Then I stopped counting, and started existing."
+    scene black at topleft with dis #todo
+
+    dialog
             scene 424 at topleft with dis
             ba "I do what the boss says."
             menu:
