@@ -190,26 +190,34 @@ label dc_hardong_2:
                     $dc_hardong_2_hold_still = True
                 "Kick him":
                     $dc_hardong_2_kick_him = True
-                    #todo he calls the nurse
+                    "I knew right away that trying to fight back would be a losing battle..."
+                    "But worst of all, I knew that he would call the crazy woman to take care of things for him."
+                    "As it became clear to me that this guy was not quite in charge of his own actions, or thoughts for that matter."
+                    scene black at topleft with dis #todo
                     v "Now, Baker tells me you are a dirty little slut who's afraid of showers."
                     mc "You know exactly that's not it."
+                    scene black at topleft with dis #todo
                     v "Well, since you are afraid of some soap and a sponge in the hands of a man, it appears that I will have to do the work."
                     v "And I don't like it when you make me work."
                     v "Baker, hold her still."
+                    scene black at topleft with dis #todo
                     ba "Yes."
+                    scene black at topleft with dis #todo
                     mc "You really think I couldn't have done this myself?"
                     v "Seems to me like you like to be dirty more than you like to be clean."
                     v "Which means you are a health risk for everyone else."
                     v "Now hold still, and this will be over before you know it."
+                    scene black at topleft with dis #todo
                     v "See, that wasn't so bad, was it?"
                     v "Now, don't make me do this again, because I won't be this nice again."
                     "What ever counted as nice for her."
                     "My skin had never felt so rough after taking a shower."
+                    scene black at topleft with dis #todo
                     v "Don't make me come back here, I have more important things to do."
         "Say nothing":
             $dc_hardong_2_say_nothing = True
     if dc_hardong_2_say_nothing or dc_hardong_2_hold_still:
-        scene 425 at topleft with dis #todo
+        scene 425 at topleft with dis
         na "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
         na "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
         na "And sure enough, he took his time with \"getting me clean\""
@@ -219,72 +227,89 @@ label dc_hardong_2:
         na "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
         na "Or maybe, I was just really dirty, and needed a lot of soap."
         na "Sure, it was demeaning, being naked around someone who's dressed, and knowing the whole area of the clinic was deserted."
-        scene 426 at topleft with dis #todo
+        scene 426 at topleft with dis
         na "I could have yelled, and nobody would have heard me..."
-        scene 427 at topleft with dis #todo
+        scene 427 at topleft with dis
         na "Much less come to my help."
-        scene 428 at topleft with dis #todo
+        scene 428 at topleft with dis
         na "On the other hand..."
-        scene 429 at topleft with dis #todo
+        scene 429 at topleft with dis
         na "I couldn't help but enjoy his rough, unskilled hands running over my skin like a drowning man grabbing for a rope that had been tossed to him."
-        scene 430 at topleft with dis #todo
+        scene 430 at topleft with dis
         na "Something about the way he was running on pure instinct, like someone who sees food, but has never been taught any table manners."
-        scene 431 at topleft with dis #todo
+        scene 431 at topleft with dis
         na "Physically, he could have easily overpowered me..."
         na "But it didn't really feel like he was in charge here..."
-        scene 432 at topleft with dis #todo
+        scene 432 at topleft with dis
         na "I probably could have weaseled my way out of that situation..."
         menu:
             "Let him continue.":
                 $dc_hardong_2_let_him_continue = True
-
-                pass #todo fill choice
+                scene 431 at topleft with dis
+                na "Thankfully, this guy ran out of ideas even quicker than most guys do."
+                na "He just couldn't fathom that a woman might have her own needs, and that he could be in a place to fulfill them."
+                na "And even if, he would have lacked the empathy to care, or even understand why he would ever do something that helped someone else."
+                na "He was just that kind of quick thinker."
+                na "And before he had really started, he was already getting bored of it, and of me holding still."
+                na "And sure enough, he quickly let go of me, before I had really stopped to even truly care."
+                na "With a guy this stupid and lackluster, I couldn't even be mad that he had violated my private space like that."
+                na "He just didn't know any better."
             "Tell him where to touch you.":
                 $dc_hardong_2_tell_him_where_to_touch_you = True
-                scene 433 at topleft with dis #todo
+                scene 433 at topleft with dis
                 mc "You don't do this often, do you?"
                 ba "What makes you say that?"
                 mc "Come on, nobody has ever told you how to REALLY touch a woman, have they?"
                 ba "I, uhh..."
-                scene 432 at topleft with dis #todo
+                scene 432 at topleft with dis
                 mc "You are doing a good job, but you could be doing so much better..."
                 mc "You want me to show you?"
                 ba "I, uh..."
-                scene 433 at topleft with dis #todo
+                scene 433 at topleft with dis
                 mc "Go on, why don't you touch me where you really want to, big guy?"
                 ba "You...you want me to touch you?"
-                scene 434 at topleft with dis #todo
+                scene 434 at topleft with dis
                 mc "Poor soul, have you never met a woman who wanted to be touched by you?"
                 mc "And let me guess, the head nurse only ever lets you do this to people she doesn't like?"
                 mc "And who, in turn, don't like you?"
-                scene 433 at topleft with dis #todo
+                scene 433 at topleft with dis
                 mc "Well, I don't know what to say, but I kinda like you, big guy."
                 ba "You do?"
-                scene 434 at topleft with dis #todo
+                scene 434 at topleft with dis
                 mc "Yes, you have such strong hands."
                 mc "You should use them."
                 ba "How do you mean?"
-                scene 432 at topleft with dis #todo
+                scene 432 at topleft with dis
                 mc "I mean, you should run them down my body, between my legs."
-                scene 435 at topleft with dis #todo
+                scene 435 at topleft with dis
                 ba "Like so?"
                 mc "Exactly like that."
                 mc "Ugh, this feels so good."
                 mc "Keep doing that."
-                scene 436 at topleft with dis #todo
+                scene 436 at topleft with dis
                 mc "Rub me, slowly."
                 mc "Good lord, exactly like that..."
                 mc "Now, don't just stand there and wait for me to tell you, get something for yourself."
                 mc "You want to stick your fingers into me, don't you?"
-                scene 437 at topleft with dis #todo
+                scene 437 at topleft with dis
                 ba "Can I?"
                 na "It was hard to believe he was actually asking me."
                 na "So much as to who was in charge around here."
-                scene 438 at topleft with dis #todo
+                scene 438 at topleft with dis
                 mc "Yes, you may."
                 mc "Slowly, you hear me?"
                 mc "God, exactly like that."
                 pass #todo fill choice
+                menu:
+                    "Enough is enough.":
+                        $dc_hardong_2_enough_is_enough = True
+                        mc "Enough is enough."
+
+                        pass #todo fill choice
+                    "You can fuck me now.":
+                        $dc_hardong_2_you_can_fuck_me_now = True
+                        mc "You can fuck me now."
+                        pass #todo fill choice
             "The doctor said nobody is allowed to touch me.":
                 $dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = True
                 mc "The doctor said nobody is allowed to touch me."
@@ -302,7 +327,6 @@ label dc_hardong_2:
                 ba "But you have to clean yourself, that is the rule."
                 mc "And no looking, either. You hear me? That's not very nice, give a lady some space."
                 "It had been a long time since I last enjoyed taking a shower alone this much."
-        pass #todo fill choice
     scene black at topleft with dis #todo we are naked and showered now.
     mc "Are you done?"
     ba "For now."
