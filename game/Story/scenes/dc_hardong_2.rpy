@@ -219,17 +219,18 @@ label dc_hardong_2:
     if dc_hardong_2_say_nothing or dc_hardong_2_hold_still:
         scene 425 at topleft with dis
         na "I could tell that there was no way around this, and that they wanted to test my reaction more than anything."
+        scene 426 at topleft with dis
         na "Or else, they wouldn't have undressed me, then sent me to the showers with a guy who couldn't wait to get his hands on me."
         na "And sure enough, he took his time with \"getting me clean\""
+        scene 427 at topleft with dis
         na "His hands all over my body, his fingers digging into my skin, pressing and massaging everything he had no business touching..."
         na "And there was nothing I could reasonably do, that wouldn't just drag this process out."
         na "So I just stood there, hands against the wall, and waited for him to get bored of fondling me."
         na "And with the minutes passing, it became clear that he didn't get this chance often, and made the best of it."
         na "Or maybe, I was just really dirty, and needed a lot of soap."
         na "Sure, it was demeaning, being naked around someone who's dressed, and knowing the whole area of the clinic was deserted."
-        scene 426 at topleft with dis
         na "I could have yelled, and nobody would have heard me..."
-        scene 427 at topleft with dis
+        scene 427 at topleft with dis #todo redo render, white tits
         na "Much less come to my help."
         scene 428 at topleft with dis
         na "On the other hand..."
@@ -297,9 +298,8 @@ label dc_hardong_2:
                 na "So much as to who was in charge around here."
                 scene 438 at topleft with dis
                 mc "Yes, you may."
-                mc "Slowly, you hear me?"
+                mc "Slowly. You hear me?"
                 mc "God, exactly like that."
-                pass #todo fill choice
                 menu:
                     "Enough is enough.":
                         $dc_hardong_2_enough_is_enough = True
@@ -309,7 +309,17 @@ label dc_hardong_2:
                     "You can fuck me now.":
                         $dc_hardong_2_you_can_fuck_me_now = True
                         mc "You can fuck me now."
-                        pass #todo fill choice
+                        na "Until that moment, it had felt like we were communicating on different levels, and there had been delays and misunderstandings along the whole way."
+                        image anim_hardong_2_shower = Movie(channel="movie_dp", play="images/anim_hardong_2_shower.webm", size = (1920,1080))
+                        show anim_hardong_2_shower
+                        na "But when I said that, it was like he knew exactly what I meant, and understood exactly what I needed."
+                        na "It was like he understood where I was coming from, and he took me into his hands like he felt my desire to be felt up."
+                        na "To be filled up, even."
+                        na "Even though I myself had zero clue what was going on in my head..."
+                        na "And why I wanted him so badly in that moment."
+                        na "Probably something about having a choice, and being the one who told him to fuck me."
+                        #todo?
+                        hide anim_hardong_2_shower
             "The doctor said nobody is allowed to touch me.":
                 $dc_hardong_2_the_doctor_said_nobody_is_allowed_to_touch_me = True
                 mc "The doctor said nobody is allowed to touch me."
@@ -336,6 +346,7 @@ label dc_hardong_2:
     "Of course, that made sense."
     "Making me clean myself right before literally throwing me into the mud, that was just the kind of process that can wear someone down."
     "Showing you that your personal space doesn't matter, and that your time and opinion doesn't matter either."
+    #todo make this optional if we fucked baker before, we can convince him to keep a secret.
     "So, I just shrugged, and went along with it."
     scene black at topleft with dis #todo
     ba "In with you, I will tell you when you can get out again."
