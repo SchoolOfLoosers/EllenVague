@@ -1,1 +1,1 @@
-E:\RenPyLauncher\renpy-8.1.3-sdk\renpy.exe "E:\GIT\EllenVague" run
+..\renpy-8.1.3-sdk\renpy.exe "E:\GIT\EllenVague" run

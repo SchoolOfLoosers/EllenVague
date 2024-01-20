@@ -1,1 +1,1 @@
-E:\RenPyLauncher\renpy-8.1.3-sdk\renpy.exe "E:\GIT\EllenVague" lint "E:\GIT\EllenVague\lint.txt"
+..\renpy-8.1.3-sdk\renpy.exe "..\EllenVague" lint "..\EllenVague\lint.txt"

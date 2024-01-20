@@ -1,1 +1,1 @@
-E:\RenPyLauncher\renpy-8.1.3-sdk\renpy.exe "E:\GIT\EllenVague" dialogue "None"
+..\renpy-8.1.3-sdk\renpy.exe "..\EllenVague" dialogue "None"

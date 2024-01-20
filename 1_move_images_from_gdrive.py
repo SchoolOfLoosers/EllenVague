@@ -1,7 +1,7 @@
 import os
 import shutil
 
-path_to_images_folder = "G:\My Drive\EllenVague\images"
+path_to_images_folder = "G:\Meine Ablage\EllenVague\images"
 
 for file in os.listdir(path_to_images_folder):
     if file.endswith(".png"):
