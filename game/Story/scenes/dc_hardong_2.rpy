@@ -304,10 +304,14 @@ label dc_hardong_2:
                     "Enough is enough.":
                         $dc_hardong_2_enough_is_enough = True
                         mc "Enough is enough."
-
-                        pass #todo fill choice
+                        mc "You had your fun, big guy."
+                        mc "Now get your hands off me, I can wash myself."
+                        ba "Oh, okay."
+                        na "It was almost fun to see how easily you could shape the guy's opinion for him."
+                        na "He was totally at the whims of whoever talked to him with authority in their voice."
                     "You can fuck me now.":
                         $dc_hardong_2_you_can_fuck_me_now = True
+                        $dc_hardong_2_had_sex_with_baker_in_shower = True
                         mc "You can fuck me now."
                         na "Until that moment, it had felt like we were communicating on different levels, and there had been delays and misunderstandings along the whole way."
                         image anim_hardong_2_shower = Movie(channel="movie_dp", play="images/anim_hardong_2_shower.webm", size = (1920,1080))
@@ -347,18 +351,150 @@ label dc_hardong_2:
     "Making me clean myself right before literally throwing me into the mud, that was just the kind of process that can wear someone down."
     "Showing you that your personal space doesn't matter, and that your time and opinion doesn't matter either."
     #todo make this optional if we fucked baker before, we can convince him to keep a secret.
-    "So, I just shrugged, and went along with it."
+    menu:
+        "Oh come on, this isn't necessary.":
+            $dc_hardong_2_oh_come_on_this_isnt_necessary = True
+            mc "Oh come on, this isn't necessary."
+            if dc_hardong_2_had_sex_with_baker_in_shower:
+                $dc_hardong_2_evaded_mud_bath = True
+                ba "But the nurse said..."
+                mc "Come on, you want to fuck me again sometime, don't you?"
+                mc "But only if you don't make me do this stupid test here."
+                na "I could already tell that the thought of getting me in his hands again was enough to steer him into pretty much any direction."
+            else:
+                ba "The nurse said you have to go in, so you go in."
+        "Go along with it.":
+            $dc_hardong_2_go_along_with_it = True
+            "So, I just shrugged, and went along with it."
+    if not dc_hardong_2_evaded_mud_bath:
+        scene black at topleft with dis #todo
+        ba "In with you, I will tell you when you can get out again."
+        "That was the last thing he said, before sitting down and we went to watch each other, because there was nothing else in the room that either of us could have watched."
+        "And sure enough, there wasn't a clock to be found anywhere, just the mud that felt almost comfortable as it protected my naked skin from his prying eyes."
+        "Not that it did much to actually protect me from the hunger in his eyes."
+        "You could just tell that the only thing keeping him in check was the fear of reprisals."
+        "And the only thing that stood between me and Vivian letting him off the chain, were the whims of a woman who was clearly unhinged."
+        "And so, what felt like hours passed, and I found myself increasingly shut into myself, counting my breathing until the numbers became too large."
+        "Then I stopped counting, and started existing."
+        #todo shower again, then back to room.
+
+        mc "There, all clean again, right?"
+        ba "Very clean, yes."
+        mc "So I can go back to my room now, yes?"
+        ba "Let us go, then."
+    else:
+        scene black at topleft with dis #todo
+        ba "Well, okay then."
+        mc "(Just like that?)"
+        mc "Great, then why don't you tell me what's next?"
+        ba "Next, you have to shower again, and then it's time to bring you back to your room."
+        mc "But I don't have to shower again, because I'm already clean, right?"
+        ba "Well, I guess that's right, yes."
+        mc "So I can go back to my room now, yes?"
+        ba "Let us go, then."
     scene black at topleft with dis #todo
-    ba "In with you, I will tell you when you can get out again."
-    "That was the last thing he said, before sitting down and we went to watch each other, because there was nothing else in the room that either of us could have watched."
-    "And sure enough, there wasn't a clock to be found anywhere, just the mud that felt almost comfortable as it protected my naked skin from his prying eyes."
-    "Not that it did much to actually protect me from the hunger in his eyes."
-    "You could just tell that the only thing keeping him in check was the fear of reprisals."
-    "And the only thing that stood between me and Vivian letting him off the chain, were the whims of a woman who was clearly unhinged."
-    "And so, what felt like hours passed, and I found myself increasingly shut into myself, counting my breathing until the numbers became too large."
-    "Then I stopped counting, and started existing."
+    v "There you are."
+    v "I trust you...enjoyed your day?"
+    menu:
+        "Fuck you, you whore.":
+            $dc_hardong_2_fuck_you_you_whore = True
+            mc "Fuck you, you whore."
 
+            pass #todo fill choice
+        "Yes, thank you, it was very enjoyable.":
+            $dc_hardong_2_yes_thank_you_it_was_very_enjoyable = True
+            mc "Yes, thank you, it was very enjoyable."
+            pass #todo fill choice
+        "No, but that was kinda the point.":
+            $dc_hardong_2_no_but_that_was_kinda_the_point = True
+            mc "No, but that was kinda the point, wasn't it?"
+            v "Look at you, you aren't just pretty, you are also pretty smart."
+            mc "Thank you, you are so nice."
+    scene black at topleft with dis #todo
+    v "Now, I am sure the doctor won't be long now, I am sure he wants to...talk to you."
+    v "I suggest you show a tiny bit of class and keep your legs pressed together when he talks to you."
+    v "Not that you will be able to keep that up, pretty bird."
+    mc "So I don't get my clothes back?"
+    v "After just one day? Keep dreaming."
+    scene black at topleft with dis #todo
+    na "And so I was left standing there, and sitting on my bed, with no other choice but to wait for the doctor's impending arrival."
+    e "Good evening, Ellen."
+    e "Why are you...dressed like this?"
+    menu:
+        "Because your stupid nurse stole my clothes to break me.":
+            $dc_hardong_2_because_your_stupid_nurse_stole_my_clothes_to_break_me = True
+            mc "Because your stupid nurse stole my clothes to break me."
+            e "She did what?"
+            mc "Yes, first she told me to undress, which was already weird."
+            mc "But I went along with it, because she said I wouldn't need personal clothes while I'm here."
+            mc "So I thought okay, I guess I'll walk around in some clinic clothes or something."
+            mc "But then, she told me I wouldn't even get any clothes at all, and left."
+            menu:
+                "Throw Baker under the bus as well.":
+                    $dc_hardong_2_throw_baker_under_the_bus_as_well = True
+                    mc "And then, I had to endure this other guy coming in here staring at me like I'm his personal fuckmeat..."
+                    mc "He led me to the showers, then got all handsy with me, and I was all alone so that I had to go along with it."
+                    if dc_hardong_2_had_sex_with_baker_in_shower:
+                        $dc_hardong_2_accused_baker_of_fucking_you = True
+                        mc "Then he fucked me, and there was nothing I could have done."
+                "Don't say anything about him.":
+                    $dc_hardong_2_don_t_say_anything_about_him = True
+                    pass
+            scene black at topleft with dis #todo
+            mc "Then after I showered, I had to jump right into the mudbath, just to break my spirits, I guess..."
+            mc "And now, I'm finally here to find out if this is all part of your grand plan."
+            scene black at topleft with dis #todo
+            e "I... I don't know what to say."
+            e "What on earth is going on?"
+            mc "Your nurse doesn't like me, that's what is going on."
+            e "I can not believe that is how she would think, or act."
+            e "I have worked with her for over a decade, now."
+            mc "But that is literally what happened."
+            e "Oh, I very much do not doubt your words, I can tell that you aren't lying."
+            e "All I can say is that I am very sorry, and I will make sure immediately that nobody will have to endure something like this from her hands again."
+            if dc_hardong_2_accused_baker_of_fucking_you:
+                e "And of course, I will report Baker to the police, if you are willing to repeat what you went through to them."
+                e "Which, I think, you really should, any potential embarrassment aside."
+                menu:
+                    "You are god damn right I want to report him.":
+                        $dc_hardong_2_you_are_god_damn_right_i_want_to_report_him = True
+                        mc "You are god damn right I want to report him."
 
+                        pass #todo fill choice
+                    "No, he wouldn't have done anything if not for her.":
+                        $dc_hardong_2_no_he_wouldnt_have_done_anything_if_not_for_her = True
+                        mc "No, he wouldn't have done anything if not for her."
+                        pass #todo fill choice
+            scene black at topleft with dis #todo
+            na "Say what you wanted about the fucked up state of the clinic under the iron rule of Head Nurse Vivian..."
+            na "But after my report, everything happened pretty fucking quickly."
+            na "The doctor called her in, and told her she was fired."
+            na "And as soon as he did so, Sheriff Fuse walked into the room to put the cuffs on her."
+            if ec_sarah_1_had_sex_with_sarah:
+                na "She glanced at me with a look in her eyes that told me I would be spending a night in her arms, to tell her everything."
+                na "And I very much looked forward to that."
+            if dc_hardong_2_you_are_god_damn_right_i_want_to_report_him:
+                scene black at topleft with dis #todo
+                na "Next thing on the list, Baker got arrested as well, and they were both stuffed into the police car."
+            scene black at topleft with dis #todo
+            s "On behalf of Bryatt Fowls and our department in particular, I want to say sorry that you had to go through this..."
+            s "And thank you for reporting it."
+            s "Not everyone would have done so, and this might have continued even longer."
+            e "Yes, thank you for bringing this to my and our attention."
+            s "And you, doctor Hardong, I also want to thank you for not trying to ignore a problem like this."
+            e "Of course not!"
+            s "I have always known you to be a stand-up guy, and you have proven to actually stand up and do something."
+            jump next_morning
+        "This is just how I dress when I'm on vacation.":
+            $dc_hardong_2_this_is_just_how_i_dress_when_im_on_vacation = True
+            mc "This is just how I dress when I'm on vacation."
+            pass #todo fill choice
+        "I figured I would save us both some time.":
+            $dc_hardong_2_i_figured_i_would_save_us_both_some_time = True
+            mc "I figured I would save us both some time."
+            pass #todo fill choice
+    #todo talk to the doctor, who tells us that we will have to go through a few more days, then we will be allowed to go to general. We can make him speed that process up by sleeping with him and telling him we don't want to go through any more tests, that you trust the nurse is doing a great job and has everything under control.
+            pass #todo fill choice
     #todo Check in, see your room, have your clothes taken away, meet the head nurse who ridicules us for being naked (you may be the doctor's new favorite pet, but around here, you do what we say), meet the male nurse who can't take their eyes off us. The nurse puts us through a rigorous course, and in the evening, we get to talk to the doctor and have a choice to snitch on the nurses. If we stay silent, the nurse gives us our socks back as a reward, and if we snitch, they take us to "the chair" where we are tied up all day, and occasionally visited by the male nurse, who masturbates in front of us. We can tell him to "at least fuck me and not just stand there."
     #todo when the head nurse visits us, we can pee on the floor, and if we do, she switches on the vibrator seat so that it vibrates for one minute every hour and tells us to to have fun, putting a clock in front of us. If we control our breathing and time it so that we orgasm, she calls us pathetic, but lets us out of the chair.
     #todo At this point, we have the option to leave the clinic, or stay, and if we complain to the doctor, he will fire the head nurse, who then becomes a shadow out of anger.
