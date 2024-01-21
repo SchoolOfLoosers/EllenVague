@@ -1,5 +1,6 @@
 label dc_hardong_2:
     scene 309 at topleft with dis
+    $renpy.notify("Achievement unlocked: Why are you hitting yourself?")
     e "Welcome, Miss Vague."
     mc "Good morning, doctor."
     e "Let me thank you again for agreeing to go through our process, I am quite interested what you will say."
@@ -190,6 +191,7 @@ label dc_hardong_2:
                     $dc_hardong_2_hold_still = True
                 "Kick him":
                     $dc_hardong_2_kick_him = True
+                    $renpy.notify("Achievement unlocked: Kick-Ass lady.")
                     "I knew right away that trying to fight back would be a losing battle..."
                     "But worst of all, I knew that he would call the crazy woman to take care of things for him."
                     "As it became clear to me that this guy was not quite in charge of his own actions, or thoughts for that matter."
@@ -257,6 +259,7 @@ label dc_hardong_2:
                 na "He just didn't know any better."
             "Tell him where to touch you.":
                 $dc_hardong_2_tell_him_where_to_touch_you = True
+                $renpy.notify("achievement unlocked: A lesson in love")
                 scene 433 at topleft with dis
                 mc "You don't do this often, do you?"
                 ba "What makes you say that?"
@@ -312,6 +315,7 @@ label dc_hardong_2:
                     "You can fuck me now.":
                         $dc_hardong_2_you_can_fuck_me_now = True
                         $dc_hardong_2_had_sex_with_baker_in_shower = True
+                        $renpy.notify("Achievement unlocked: Everyone always asks \"why\", nobody ever asks \"why not?\"")
                         mc "You can fuck me now."
                         na "Until that moment, it had felt like we were communicating on different levels, and there had been delays and misunderstandings along the whole way."
                         image anim_hardong_2_shower = Movie(channel="movie_dp", play="images/anim_hardong_2_shower.webm", size = (1920,1080))
@@ -359,6 +363,7 @@ label dc_hardong_2:
                 ba "But the nurse said..."
                 mc "Come on, you want to fuck me again sometime, don't you?"
                 mc "But only if you don't make me do this stupid test here."
+                $renpy.notify("achievement unlocked: The nurse's word is law, but my pussy is above the law.")
                 na "I could already tell that the thought of getting me in his hands again was enough to steer him into pretty much any direction."
             else:
                 ba "The nurse said you have to go in, so you go in."
@@ -414,6 +419,7 @@ label dc_hardong_2:
             v "I am glad to see that my methods are working to their desired intent."
         "Yes, thank you, it was very enjoyable.":
             $dc_hardong_2_yes_thank_you_it_was_very_enjoyable = True
+            $renpy.notify("achievement unlocked: Unbroken spirit")
             mc "Yes, thank you, it was very enjoyable."
             na "It was funny to see how easy it was to throw her off-balance."
             na "Like all bullies, she seemed to operate from a clearly defined set of rules and expectations."
@@ -598,7 +604,95 @@ label dc_hardong_2:
         "It showed me what a luxury it is to have the freedom of choice at all times.":
             $dc_hardong_2_it_showed_me_what_a_luxury_it_is_to_have_the_freedom_of_choice_at_all_times = True
             mc "It showed me what a luxury it is to have the freedom of choice at all times."
+            mc "Like, even something as simple as getting a coffee at the diner, or making one myself..."
+            mc "It's something I would have to ask for here, and likely couldn't even get."
+            e "Interesting."
+            e "Do you want a coffee?"
+            menu:
+                "Yes, please.":
+                    $dc_hardong_2_yes_please = True
+                    mc "Yes, please."
+                    e "I will try and smuggle you some here tomorrow when I come to visit you."
+                    mc "You are the best."
+                "Depends on what I have to sacrifice.":
+                    $dc_hardong_2_depends_on_what_i_have_to_sacrifice = True
+                    mc "Depends on what I have to sacrifice."
+                    e "It seems to me like you are already sacrificing everything you had on you when you arrived here, so there is nothing left to sacrifice."
+                    e "I will bring you a cup of coffee tomorrow evening when I come to visit you."
+                    menu:
+                        "Thank you, doctor.":
+                            $dc_hardong_2_thank_you_doctor = True
+                            mc "Thank you, doctor."
 
+                            pass #todo fill choice
+                            jump dc_hardong_3
+                        "Come on, not even a little coming on to me?" if not dc_hardong_2_had_sex_with_doctor:
+                            $dc_hardong_2_come_on_not_even_a_little_coming_on_to_me = True
+                            mc "Come on, not even a little coming on to me?"
+                            e "It is good to know the price you put on yourself."
+                            mc "Yes, after a day like today, I come pretty fucking cheap."
+                            mc "So, are you just going to call me a slut, or treat me like one?"
+                            e "I hesitate to say yes."
+                            mc "I hesitate to be any more obvious in voicing my needs and wants, doctor."
+                            mc "You should really do your job and listen to me."
+                            mc "And you should really get a feel for where my pain points are."
+                            e "In that case, let me open a new study into the mental health benefits of physical exercise."
+                            mc "Oh, that sounds fascinating."
+                            mc "Do you need a volunteer?"
+                            e "Are you open for some experimental treatment?"
+                            mc "Do I somehow appear closed to you?"
+                            e "I have come to know you as a very open-minded woman."
+                            mc "Is that the scientific term for \"slut\"?"
+                            e "Yes, that is the layman's term."
+                            mc "So tell me, doctor, what else is part of your treatment plan?"
+                            mc "A little bit of cough sirup, maybe?"
+                            mc "Or are you going to treat me to some experimental ointment?"
+                            e "That is the established science, yes."
+                            e "How would you like me to administer the medicine?"
+                            menu:
+                                "Just come in my face, doc.":
+                                    $dc_hardong_2_just_come_in_my_face_doc = True
+                                    mc "Just come in my face, doc."
+                                    e "Your wish is my command."
+                                    mc "How do I look?"
+                                    e "Pretty enough to fuck you again immediately."
+                                    e "If only I could."
+                                    e "But this will have to suffice for tonight."
+                                    mc "Feel free to drop by again tomorrow."
+                                    mc "I'm sure there are many questions you still want to ask me."
+                                    e "Oh, absolutely."
+                                    scene black at topleft with dis #todo
+                                    e "Good night, Ellen."
+                                    mc "Night, doc."
+                                    jump dc_hardong_3
+                                "Fill me up, doc.":
+                                    $dc_hardong_2_fill_me_up_doc = True
+                                    mc "Fill me up, doc."
+                                    "I don't know what it was about him, but I just had to have him."
+                                    na "I had to have him in me, on me, and for him to have all of me in return."
+                                    na "I needed him to need me, and to forgo all concerns that either of us might have had."
+                                    na "I needed him to abuse his position, to violate my trust..."
+                                    na "And to give me all he could possibly trust into me."
+                                    na "I was just ready to be taken, used, and then left behind to fall asleep and wake up alone."
+                                    na "Just what the doctor ordered."
+                                    e "Well, I'll see you tomorrow, Ellen."
+                                    mc "Good night, doc."
+                                    pass #todo fill choice
+                                "I want you to come all over me.":
+                                    $dc_hardong_2_i_want_you_to_come_all_over_me = True
+                                    mc "I want you to come all over me."
+                                    pass #todo fill choice
+                            e "Good night, Ellen."
+                            na "Night, doctor."
+                            jump dc_hardong_3
+                    pass #todo fill choice
+                "I'm good, but thanks.":
+                    $dc_hardong_2_i_m_good_but_thanks = True
+                    mc "I'm good, but thanks."
+                    mc "I'm pretty sure I'll survive a few days without coffee."
+                    e "Good, so you have something to look forward to once you get released to the general ward."
+                    e "There, we serve coffee once every day."
+                    pass #todo fill choice
             pass #todo fill choice
         "It gives me quite a few ideas to write about in my books.":
             $dc_hardong_2_it_gives_me_quite_a_few_ideas_to_write_about_in_my_books = True
@@ -639,7 +733,7 @@ label dc_hardong_2:
                 na "And it seemed like he himself fit perfectly that night."
                 e "Good night, Ellen."
                 na "Night, doctor."
-                pass #todo fill choice
+                jump dc_hardong_3
 
 
     #todo Check in, see your room, have your clothes taken away, meet the head nurse who ridicules us for being naked (you may be the doctor's new favorite pet, but around here, you do what we say), meet the male nurse who can't take their eyes off us. The nurse puts us through a rigorous course, and in the evening, we get to talk to the doctor and have a choice to snitch on the nurses. If we stay silent, the nurse gives us our socks back as a reward, and if we snitch, they take us to "the chair" where we are tied up all day, and occasionally visited by the male nurse, who masturbates in front of us. We can tell him to "at least fuck me and not just stand there."

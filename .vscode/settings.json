@@ -3,6 +3,7 @@
         "**/*.rpyc": true,
         "**/*.rpa": true,
         "**/*.rpymc": true,
+        "**/*.mp3": true,
         "**/cache/": true
     }
 }
