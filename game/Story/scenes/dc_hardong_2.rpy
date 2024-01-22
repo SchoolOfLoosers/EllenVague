@@ -609,8 +609,13 @@ label dc_hardong_2:
             $dc_hardong_2_it_somehow_made_me_reconsider_everything_i_believed_in_in_just_a_few_hours = True
             mc "It somehow made me reconsider everything I believed in, in just a few hours."
             e "Interesting, in what ways?"
-            mc "It has been a long time since I had to "
-            pass #todo fill choice
+            mc "It has been a long time since I had to live by someone else's rules, and..."
+            mc "Well, it sucks."
+            e "Hah, it certainly can be a stark contrast to someone who is self employed, and has been for long enough to forget what having a real boss is like."
+            e "So, your editors and whatever don't make you feel like you answer to them?"
+            mc "No, not at all."
+            mc "Honestly, it feels more like the other way around, they always ask me VERY nicely if they want any kind of changes."
+            mc "It actually feels pretty weird sometimes."
     scene black at topleft with dis #todo
     e "Now, just one more question before I leave you to yourself, I promise."
     e "How does your experience here make you feel about your life out in the real world?"
@@ -688,6 +693,13 @@ label dc_hardong_2:
                                 "I want you to come all over me.":
                                     $dc_hardong_2_i_want_you_to_come_all_over_me = True
                                     mc "I want you to come all over me."
+                                    na "All I wanted was to lie there, and not even move one inch, to let him do all the work, while I got to reap all the benefits."
+                                    na "Especially the benefits that were warm, sticky, and slowly cooling off as they ran down my sides."
+                                    na "And then, I just wanted to be left alone, and enjoy the feeling of just lying there, soaking into the sheets, left alone all used and abused..."
+                                    na "And unwilling to change a single thing about it."
+                                    mc "You aren't so bad at giving me what I need, doc."
+                                    e "Well, I am glad to hear that."
+
                                     pass #todo fill choice
                 "I'm good, but thanks.":
                     $dc_hardong_2_i_m_good_but_thanks = True
