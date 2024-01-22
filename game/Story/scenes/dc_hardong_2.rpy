@@ -587,15 +587,29 @@ label dc_hardong_2:
         "Even knowing I can always leave, it made me feel...locked up.":
             $dc_hardong_2_even_knowing_i_can_always_leave_it_made_me_feel_locked_up = True
             mc "Even knowing I can always leave, it made me feel...locked up."
-
-            pass #todo fill choice
+            mc "Like I don't really have any choice for what I do with my own life."
+            e "And how does THAT make you feel?"
+            mc "Very... helpless, to be perfectly honest."
+            mc "I haven't felt this way in a long, long time."
+            e "Thank you for your honesty."
+            e "And let me remind you that you always have a choice."
+            na "I wasn't so sure about that, because I was sure by now that the doctor had no clue what kind of reign his head nurse had over the clinic."
+            na "Her clinic."
         "So far, it has been a really fun experience.":
             $dc_hardong_2_so_far_it_has_been_a_really_fun_experience = True
             mc "So far, it has been a really fun experience."
-            pass #todo fill choice
+            e "Really?"
+            mc "Yes. I mean, it's certainly weird..."
+            mc "But nothing I couldn't handle."
+            e "I am glad to hear that."
+            e "You are the first patient whom I know to be of sound mind, so it's good to hear that our treatment plan is a novel experience to you, without being too overwhelming."
+            na "He really had no clue, it seemed, about the kind of reign his head nurse had over the clinic."
+            na "Her clinic."
         "It somehow made me reconsider everything I believed in, in just a few hours.":
             $dc_hardong_2_it_somehow_made_me_reconsider_everything_i_believed_in_in_just_a_few_hours = True
             mc "It somehow made me reconsider everything I believed in, in just a few hours."
+            e "Interesting, in what ways?"
+            mc "It has been a long time since I had to "
             pass #todo fill choice
     scene black at topleft with dis #todo
     e "Now, just one more question before I leave you to yourself, I promise."
@@ -623,11 +637,11 @@ label dc_hardong_2:
                         "Thank you, doctor.":
                             $dc_hardong_2_thank_you_doctor = True
                             mc "Thank you, doctor."
-
-                            pass #todo fill choice
-                            jump dc_hardong_3
+                            e "Just wish me luck that I manage to smuggle it past Vivian."
+                            mc "My thumbs are pressed."
                         "Come on, not even a little coming on to me?" if not dc_hardong_2_had_sex_with_doctor:
                             $dc_hardong_2_come_on_not_even_a_little_coming_on_to_me = True
+                            $dc_hardong_2_had_sex_with_doctor = True
                             mc "Come on, not even a little coming on to me?"
                             e "It is good to know the price you put on yourself."
                             mc "Yes, after a day like today, I come pretty fucking cheap."
@@ -661,10 +675,6 @@ label dc_hardong_2:
                                     mc "Feel free to drop by again tomorrow."
                                     mc "I'm sure there are many questions you still want to ask me."
                                     e "Oh, absolutely."
-                                    scene black at topleft with dis #todo
-                                    e "Good night, Ellen."
-                                    mc "Night, doc."
-                                    jump dc_hardong_3
                                 "Fill me up, doc.":
                                     $dc_hardong_2_fill_me_up_doc = True
                                     mc "Fill me up, doc."
@@ -675,33 +685,75 @@ label dc_hardong_2:
                                     na "And to give me all he could possibly trust into me."
                                     na "I was just ready to be taken, used, and then left behind to fall asleep and wake up alone."
                                     na "Just what the doctor ordered."
-                                    e "Well, I'll see you tomorrow, Ellen."
-                                    mc "Good night, doc."
-                                    pass #todo fill choice
                                 "I want you to come all over me.":
                                     $dc_hardong_2_i_want_you_to_come_all_over_me = True
                                     mc "I want you to come all over me."
                                     pass #todo fill choice
-                            e "Good night, Ellen."
-                            na "Night, doctor."
-                            jump dc_hardong_3
-                    pass #todo fill choice
                 "I'm good, but thanks.":
                     $dc_hardong_2_i_m_good_but_thanks = True
                     mc "I'm good, but thanks."
                     mc "I'm pretty sure I'll survive a few days without coffee."
                     e "Good, so you have something to look forward to once you get released to the general ward."
                     e "There, we serve coffee once every day."
-                    pass #todo fill choice
-            pass #todo fill choice
         "It gives me quite a few ideas to write about in my books.":
             $dc_hardong_2_it_gives_me_quite_a_few_ideas_to_write_about_in_my_books = True
             mc "It gives me quite a few ideas to write about in my books."
+            e "Oh really? Like what?"
+            e "If you want to share that with me, that is."
+            menu:
+                "Like being a patient in a mental clinic even though I know I'm not crazy.":
+                    $dc_hardong_2_like_being_a_patient_in_a_mental_clinic_even_though_i_know_im_not_crazy = True
+                    mc "Like being a patient in a mental clinic even though I know I'm not crazy."
+
+                    pass #todo fill choice
+                "Like some really hot doctor who asks all these stupid questions instead of fucking my brains out.":
+                    $dc_hardong_2_like_some_really_hot_doctor_who_asks_all_these_stupid_questions_instead_of_fucking_my_brains_out = True
+                    mc "Like some really hot doctor who asks all these stupid questions instead of fucking my brains out."
+                    pass #todo fill choice
+                "Oh, nothing solid enough to share, yet.":
+                    $dc_hardong_2_oh_nothing_solid_enough_to_share_yet = True
+                    mc "Oh, nothing solid enough to share, yet."
+                    pass #todo fill choice
             pass #todo fill choice
         "It makes me think I'll go on a bender as soon as I'm out of here.":
             $dc_hardong_2_it_makes_me_think_ill_go_on_a_bender_as_soon_as_im_out_of_here = True
             mc "It makes me think I'll go on a bender as soon as I'm out of here."
-            pass #todo fill choice
+            mc "Just drinking coffee, getting drunk before noon..."
+            menu:
+                "Giving my favorite doctor a call to see if he has time to fuck my brains out...":
+                    $dc_hardong_2_giving_my_favorite_doctor_a_call_to_see_if_he_has_time_to_fuck_my_brains_out_ = True
+                    mc "Giving my favorite doctor a call to see if he has time to fuck my brains out..."
+                    if not dc_hardong_2_had_sex_with_doctor:
+                        $dc_hardong_2_had_sex_with_doctor = False
+                        e "That feels like an escape mechanism to me, and I don't think I should enable you to escape from whatever you are running from."
+                        mc "I swear to god, doc, if you play all high and moralistic with me, I'll only get lower, and dirtier."
+                        mc "You have it in your power to listen to me and give a lady what she asks for."
+                        e "Who would I be to deny a woman in need the help she asks for."
+                        mc "Ugh, I swear I though you would leave me hanging."
+                        e "But instead, I can leave you lying there."
+                        mc "I won't move if I don't have to."
+                        e "I must admit, seeing your naked body like this does not leave me unaffected."
+                        mc "Normal guys would just call me a slut, or something dirty."
+                        mc "But no, you have to be all clinical about it."
+                        e "I try to refrain from derogatory language within these halls."
+                        mc "How do you even come up with those fancy words?"
+                        mc "You know what, I don't even care, just fuck me."
+                        mc "Give me the medicine I need to fix my head."
+                        e "This will be over quick, just open wide and swallow."
+                        mc "Oops, I think I spilled something, doctor."
+                        mc "Please don't be mad at me."
+                        e "Hard to be mad at someone who's this attractive."
+                        mc "If I didn't know any better, I would say my doctor is flirting with me."
+                "Just, you know, doing the things I can't around here.":
+                    $dc_hardong_2_just_you_know_doing_the_things_i_cant_around_here = True
+                    mc "Just, you know, doing the things I can't around here."
+                    e "I understand completely, yes."
+                    e "And, if it is any help for you, I find myself doing certain things in direct response to having to deny them to myself while I'm here."
+                    mc "Oh really? Like what?"
+                    e "Similar things as you mentioned, mainly coffee and drinks."
+                    e "Part of our philosophy here is to refrain from easily available distractions, so I can't walk around breaking our own rules."
+                    e "Even though they make no sense for someone like you or me, they do have quite a significant impact on our actual patients."
+                    mc "Yeah, I get that."
     scene black at topleft with dis #todo
     e "Well, Ellen, I will leave you to yourself now."
     e "In a few days, when the nurse finds you ready, you will be allowed to join the other patients in the general ward."
@@ -716,7 +768,7 @@ label dc_hardong_2:
                 mc "Good night, doctor."
                 e "Good night, Ellen."
                 jump dc_hardong_3
-            "You aren't going to leave me here, naked and unfucked?":
+            "You aren't going to leave me here, naked and unfucked?" if not dc_hardong_2_had_sex_with_doctor:
                 $dc_hardong_2_you_arent_going_to_leave_me_here_naked_and_unfucked = True
                 $dc_hardong_2_had_sex_with_doctor = True
                 mc "You aren't going to leave me here, naked and unfucked?"
@@ -733,7 +785,64 @@ label dc_hardong_2:
                 na "And it seemed like he himself fit perfectly that night."
                 e "Good night, Ellen."
                 na "Night, doctor."
+    scene black at topleft with dis #todo
+    na "Finally, I was alone with my thoughts, and the questionable comfort of a thin blanket in a cold room."
+    na "Trying to catch some sleep in a well-lit room that did not seem to have its own light switch."
+    na "Even rolling around on my stomach and pressing my face into the pillow, it still seemed like there was light finding its way past my eyelids, and straight into my brain."
+    if not dc_hardong_2_had_sex_with_doctor and not dc_hardong_2_had_sex_with_baker_in_shower:
+        menu:
+            "(No way, what if someone is watching me?)":
+                $dc_hardong_2_no_way_what_if_someone_is_watching_me = True
+                mc "(No way, what if someone is watching me?)"
+                mc "(I bet this crazy whore is standing there, having nothing better to do than watching me...)"
+                mc "(Probably gloating over how powerful she is...)"
+                mc "(I guess I'll just have to force myself to sleep...)"
+                mc "(Good night, Ellen.)"
+                na "Somehow, and surprisingly enough, that just worked, and I fell into a restless slumber that I awoke from several times during the night..."
+                na "But never long enough to actually become lucid."
                 jump dc_hardong_3
+            "(I don't care, I need to wear myself out before I can sleep.)":
+                $dc_hardong_2_i_dont_care_i_need_to_wear_myself_out_before_i_can_sleep = True
+                $met_the_queen_witch_of_the_forest_during_masturbation_dream = True
+                $dc_hardong_2_met_the_queen_witch_of_the_forest_during_masturbation_dream = True
+                mc "(I don't care, I need to wear myself out before I can sleep.)"
+                mc "(I don't care if that stupid nurse gets off on watching me or not)"
+                mc "(She'll never know true love, anyway...)"
+                mc "(God, I wish I could stop seeing that stupid face in front of me.)"
+                na "A moment later, my wish was granted, and I suddenly saw a whole different place."
+                if dc_cock_lady_2_why_the_heck_not:
+                    mc "(Wait, I know this place...)"
+                    mc "(Yes, I have been here before, when I...)"
+                    mc "(Spend some time chatting with Cecilia.)"
+                    mc "(God, that was weird.)"
+                scene black at topleft with dis #todo
+                mc "(What IS this place?)"
+                mc "(It feels so familiar...)"
+                mc "(Almost like it really exists...)"
+                scene black at topleft with hpunch #todo the witch shows up
+                w "Come with me."
+                w "I will show you the..."
+                scene black at topleft with dis #todo
+                na "Before the strange woman could finish her sentence, the shock made me tense up, and I lost any sort of balance that I had still maintained..."
+                na "And I woke up, sweaty and out of breath, cold and shivering."
+                mc "(Fuck, that was intense...)"
+                mc "(I have an actual cramp in my leg...)"
+                mc "(God, that was SUCH a vivid dream...)"
+                mc "(Almost like I was really there, speaking to...)"
+                mc "(Hah, I guess that's what my mind thinks the queen of the forest would look like, huh?)"
+                mc "(God, I'm so embarrassing sometimes...)"
+                mc "(Please, brain, just let me fall asleep now...)"
+                mc "(I gave you what you wanted...)"
+                scene black at topleft with dis #todo
+                na "Thankfully, that ever elusive sleep caught up to me right thereafter, even though it proved to be a noisy bed companion."
+                na "Like a man too used to sleeping alone, who keeps rolling around and poking you with his elbows at night..."
+                na "Or who hasn't had a good grasp on a pair of breasts for too long, and can't seem to let go of them in the dark..."
+                na "Ask me how I know..."
+                jump dc_hardong_3
+    else:
+        na "Thankfully, my body had been through enough that day to make me fall asleep regardless."
+        na "A restless slumber that I never really woke out of, and never really fully fell into."
+        jump dc_hardong_3
 
 
     #todo Check in, see your room, have your clothes taken away, meet the head nurse who ridicules us for being naked (you may be the doctor's new favorite pet, but around here, you do what we say), meet the male nurse who can't take their eyes off us. The nurse puts us through a rigorous course, and in the evening, we get to talk to the doctor and have a choice to snitch on the nurses. If we stay silent, the nurse gives us our socks back as a reward, and if we snitch, they take us to "the chair" where we are tied up all day, and occasionally visited by the male nurse, who masturbates in front of us. We can tell him to "at least fuck me and not just stand there."
