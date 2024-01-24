@@ -699,8 +699,6 @@ label dc_hardong_2:
                                     na "And unwilling to change a single thing about it."
                                     mc "You aren't so bad at giving me what I need, doc."
                                     e "Well, I am glad to hear that."
-
-                                    pass #todo fill choice
                 "I'm good, but thanks.":
                     $dc_hardong_2_i_m_good_but_thanks = True
                     mc "I'm good, but thanks."
@@ -736,7 +734,7 @@ label dc_hardong_2:
                     $dc_hardong_2_giving_my_favorite_doctor_a_call_to_see_if_he_has_time_to_fuck_my_brains_out_ = True
                     mc "Giving my favorite doctor a call to see if he has time to fuck my brains out..."
                     if not dc_hardong_2_had_sex_with_doctor:
-                        $dc_hardong_2_had_sex_with_doctor = False
+                        $dc_hardong_2_had_sex_with_doctor = True
                         e "That feels like an escape mechanism to me, and I don't think I should enable you to escape from whatever you are running from."
                         mc "I swear to god, doc, if you play all high and moralistic with me, I'll only get lower, and dirtier."
                         mc "You have it in your power to listen to me and give a lady what she asks for."
@@ -756,6 +754,12 @@ label dc_hardong_2:
                         mc "Please don't be mad at me."
                         e "Hard to be mad at someone who's this attractive."
                         mc "If I didn't know any better, I would say my doctor is flirting with me."
+                    else:
+                        e "It is fascinating to witness how fast you recover."
+                        mc "I'm still naked, and you're still a snack, doc."
+                        mc "But sure, if you don't want me, then feel free to leave."
+                        e "No amount of teasing will make me embarrass myself as I try to appear twenty years younger, and hugry as I was back then."
+                        mc "There's always another time, doc."
                 "Just, you know, doing the things I can't around here.":
                     $dc_hardong_2_just_you_know_doing_the_things_i_cant_around_here = True
                     mc "Just, you know, doing the things I can't around here."
