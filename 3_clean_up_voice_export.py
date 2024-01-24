@@ -22,7 +22,7 @@ def main():
         savepath = os.path.join(os.getcwd(), "game","audio", "voice",dialog_line[0]+".mp3")
 
         #this portion first checks if a file ending with _1 / _2 etc already exists without the suffix --> duplicate voice lines aren't generated twice but rather copied to save API calls.
-        if (not os.path.exists(savepath)):
+        if (not os.path.exists(savepath) and not dialog_line[2] == "Text to say"):
             digit = None
             if re.search(r"(_\d).mp3$", savepath):
                 digit = re.search(r"(_\d).mp3$", savepath).group(1)
