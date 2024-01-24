@@ -8,11 +8,11 @@ label dc_hardong_3:
     scene black at topleft with dis #todo
     na "I woke up alone, a cold in my bones that the thin blanket did not even try to hold at bay."
     na "After the day before, my brain hurt just as much as my pride..."
-    if dc_hardong_2_had_sex_with_baker_in_shower and dc_hardong_2_had_sex_with_doctor
+    if dc_hardong_2_had_sex_with_baker_in_shower and dc_hardong_2_had_sex_with_doctor:
         na "And my body was just as tired and worn out after letting not one, but two guys have their way with me..."
         na "What the heck was I thinking?"
         na "But as much as my body complained, it wasn't exactly complaining loudly."
-        na "More like a cozy, lazy complaint, with my eyes still closed and just allowing me to FEEl every muscle and neve ending."
+        na "More like a cozy, lazy complaint, with my eyes still closed and just allowing me to FEEL every muscle and nerve ending."
         na "In fact, I felt more myself than I had in a long time."
         na "So of course, the nurse had to waltz in and destroy any hint of cozy morning atmosphere."
         na "Not that the room lend itself to that anyway, now that I had both eyes open..."
@@ -130,6 +130,17 @@ label dc_hardong_3:
                     pass #todo fill choice
                 "Please, let me out, I have to pee so bad.":
                     $dc_hardong_3_please_let_me_out_i_have_to_pee_so_bad = True
+                    na "I hated to be begging her, or all people, for anything..."
+                    na "But I just couldn't have held it in any longer."
                     mc "Please, let me out, I have to pee so bad."
-                    pass #todo fill choice
+                    v "I'm sure you do."
+                    v "Well, let's get you out of here, and then you can go back to your room."
+    scene black at topleft with dis #todo
+    v "Here we go, bed time for you."
+    v "And because you were smart enough to keep your mouth shut, I have a reward for you."
+    v "Here are your socks back."
+    na "It was weird, but I actually was really relieved about that, more than I would have thought possible to appreciate a pair of socks..."
+    na "Enough to swallow my pride and say thanks, which she deemed abusive enough to leave with a smile on her face."
+    na "Finally leaving me alone."
+    na "God, that woman deserved everything she had coming to her."
     #todo
