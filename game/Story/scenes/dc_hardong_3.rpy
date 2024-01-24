@@ -143,4 +143,34 @@ label dc_hardong_3:
     na "Enough to swallow my pride and say thanks, which she deemed abusive enough to leave with a smile on her face."
     na "Finally leaving me alone."
     na "God, that woman deserved everything she had coming to her."
-    #todo
+    #todo doctor
+    e "Well, I will leave you to yourself, now."
+    e "When you wake up next, you will be transferred to the general ward."
+    mc "Oh really?"
+    if dc_hardong_3_had_sex_with_doctor:
+        mc "If that's the reward for sleeping with you, I would have done so before."
+        e "As I am sure you are well aware, it is quite beneath me to trade changes in treatment for sexual favors."
+        mc "You are aware of the concept of jokes, aren't you?"
+        e "Well aware, Miss Vague."
+        e "As I am sure you are aware of the concept of giving you a kiss on the stomach as a form of saying good night, and good bye."
+        mc "Good night, doc."
+    else:
+        #todo
+        mc "Good night, doc."
+    scene black at topleft with dis #todo
+    na "With him gone, all that remained was the silence of the deserted clinic at night, and my own thoughts to occupy myself with."
+    if not dc_hardong_3_had_sex_with_doctor:
+        na "And the thought that occupied my mind the most was that I had my freedom of movement back, and the freedom to use my fingers in any which way I wanted..."
+        menu:
+            "Oh god yes, I need to calm my mind down...":
+                $dc_hardong_3_oh_god_yes_i_need_to_calm_my_mind_down_ = True
+                mc "Oh god yes, I need to calm my mind down..."
+                scene black at topleft with dis #todo
+                call next_masturbation_dreams_witch
+                mc "(Holy shit, that was weird...)"
+                mc "(God, my mind loves being all creative anytime I am NOT writing, doesn't it...)"
+                mc "(Just let me sleep, brain...)"
+            "Nope, not tonight...":
+                $dc_hardong_3_nope_not_tonight_ = True
+                mc "Nope, not tonight..."
+                pass #todo fill choice

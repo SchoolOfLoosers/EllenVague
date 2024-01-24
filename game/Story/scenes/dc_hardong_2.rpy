@@ -826,21 +826,7 @@ label dc_hardong_2:
                 mc "(She'll never know true love, anyway...)"
                 mc "(God, I wish I could stop seeing that stupid face in front of me.)"
                 na "A moment later, my wish was granted, and I suddenly saw a whole different place."
-                if dc_cock_lady_2_why_the_heck_not:
-                    mc "(Wait, I know this place...)"
-                    mc "(Yes, I have been here before, when I...)"
-                    mc "(Spend some time chatting with Cecilia.)"
-                    mc "(God, that was weird.)"
-                scene black at topleft with dis #todo
-                mc "(What IS this place?)"
-                mc "(It feels so familiar...)"
-                mc "(Almost like it really exists...)"
-                scene black at topleft with hpunch #todo the witch shows up
-                w "Come with me."
-                w "I will show you the..."
-                scene black at topleft with dis #todo
-                na "Before the strange woman could finish her sentence, the shock made me tense up, and I lost any sort of balance that I had still maintained..."
-                na "And I woke up, sweaty and out of breath, cold and shivering."
+                call next_masturbation_dreams_witch
                 mc "(Fuck, that was intense...)"
                 mc "(I have an actual cramp in my leg...)"
                 mc "(God, that was SUCH a vivid dream...)"

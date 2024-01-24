@@ -62,7 +62,7 @@ def main():
                     speaker = "Roshni"
                 elif speaker == "ba":
                     speaker = "Adam"
-                elif speaker == "w":
+                elif speaker == "q":
                     speaker = "Ava"
 
                 audio = generate(
