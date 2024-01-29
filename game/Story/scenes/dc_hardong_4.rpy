@@ -1,0 +1,50 @@
+label dc_hardong_4:
+    scene black at topleft with dis #todo
+    na "I woke up in my bed, weirdly aware of the fact that I was not alone."
+    na "And of course, it couldn't be some hot dude I had spent the night with, getting up early to make us breakfast..."
+    na "...Kissing me in places he should not even be able to see, just to wake me up..."
+    na "No, of course it had to be the stupid head nurse, ruthless in her desire to displease the world with her continued existence."
+    v "Good morning, pretty bird."
+    v "Good news."
+    mc "(Good news for whom?)"
+    v "You earned your stay yesterday, so you will now be allowed into the general ward."
+    v "That's what you're here for, isn't it?"
+    v "To talk to the other crazy people who are locked up here?"
+    v "So you can use them to write your shoddy little books, isn't that right, pretty bird?"
+    v "No need to answer that, I know that you have no shame."
+    v "So come on, time to go."
+    mc "So, I get my clothes back now, don't I?"
+    v "What, your socks aren't enough for you?"
+    v "We both know that you only need clothes so that you can take them off in front of any men who smile at you."
+    v "But, since I do not want to upset the other patients, you will get this gown."
+    v "Try not to get it dirty."
+    scene black at topleft with dis #todo
+    na "For something so thin, the gown really made a world of a difference, more than I had thought it would."
+    na "Over the past days, I had almost gotten used to being naked around people who were dressed..."
+    na "But having some fabric around me gave me a sense of security that I had never gotten from a piece of clothing before."
+    na "And I felt ready for just about anything that might be coming my way..."
+    na "After all, I was pretty sure that no patient could be any more crazy than the head nurse herself."
+    scene black at topleft with dis #todo
+    na "Whatever I had expected though, it wasn't the downright cozy atmosphere of the general ward."
+    na "After the days that lay behind me, I hadn't expected things to be...normal."
+    na "As normal as things can get in a mental clinic."
+    scene black at topleft with dis #todo
+    na "Everything was clean, cozy, and decorated in a style that could have fooled you into thinking you had walked into a movie set."
+    na "And the people were all calm, talking to one another..."
+    na "At least until they noticed the newcomer."
+    scene black at topleft with dis #todo
+    v "Everyone, this is Ellen. She will be staying with us for a while."
+    scene black at topleft with dis #todo
+    c "Ah, Miss Vague."
+    c "I told you we would meet again."
+    scene black at topleft with dis #todo
+    ru "You know this woman?"
+    c "I told you about the tourist whom I met at the diner, didn't I?"
+    ru "Oh, now I remember."
+    c "Careful with this one, Miss Vague, he WILL ask you to let him paint you."
+    mc "Please, you can call me Ellen."
+    scene black at topleft with dis #todo
+    na "I just couldn't help myself, everything felt...cozy."
+    na "Warming to the soul, and calming to my nerves."
+    na "Only now did I realize how much a few short days had messed with my mind, pushed me into a dark place that only now did I emerge from..."
+    na "And how much I needed the comfort of people who clearly stood above the pettiness of the head nurse."

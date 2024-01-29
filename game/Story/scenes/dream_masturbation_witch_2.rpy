@@ -37,12 +37,12 @@ label dream_masturbation_witch_2:
             mc "The word is Spanish Inquisition."
             #todo unlock a little scene where Patty says the word on the radio, and that then unlocks the next queen scene
             pass #todo fill choice
+            #todo make choice to harm vivian if we have not already completed the clinic
         "There is this FBI agent who is becoming a problem..." if 1!=1:#todo activate this once we have completed robert_2or3
             $dream_masturbation_witch_2_there_is_this_fbi_agent_who_is_becoming_a_problem_ = True
             mc "There is this FBI agent who is becoming a problem..."
             pass #todo fill choice
-
-
-
-    #todo
+    scene black at topleft with dis #todo
+    q "Well, I see it is time for you to leave again, you are already twitching and shivering..."
+    q "We will meet again."
     return

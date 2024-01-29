@@ -170,7 +170,13 @@ label dc_hardong_3:
                 mc "(Holy shit, that was weird...)"
                 mc "(God, my mind loves being all creative anytime I am NOT writing, doesn't it...)"
                 mc "(Just let me sleep, brain...)"
+                jump dc_hardong_4
             "Nope, not tonight...":
                 $dc_hardong_3_nope_not_tonight_ = True
                 mc "Nope, not tonight..."
                 pass #todo fill choice
+                jump dc_hardong_4
+    na "And my sticky, sweaty skin that was so rough in all the soft places..."
+    na "I could not come up with any excuses for that..."
+    na "And so, instead of admitting any sort of responsibility for my own actions, I rather just fell asleep..."
+    jump dc_hardong_4
