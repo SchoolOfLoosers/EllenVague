@@ -209,8 +209,12 @@ screen choice(items):
     style_prefix "choice"
 
     vbox:
+        $the_key = 0
+
         for i in items:
-            textbutton i.caption action i.action
+            $the_key += 1
+            textbutton "[the_key]. " + i.caption style "menu_choice" action i.action
+            key str(the_key) action i.action
 
 
 style choice_vbox is vbox
