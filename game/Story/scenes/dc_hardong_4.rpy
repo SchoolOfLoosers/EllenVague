@@ -295,10 +295,11 @@ label dc_hardong_4_evening:
                                                 pass #todo fill choice
                                         pass #todo fill choice
                                     "Leave her":
-                                        $dc_hardong_4_Leave her = True
+                                        $dc_hardong_4_Leave_her = True
                                         pass #todo fill choice
                                 #todo
                             elif inventory_has_dream_vibrator:
+                                "inventory_has_dream_vibrator"
                                 #todo
                             pass #todo fill choice
                         "Just wait.":
